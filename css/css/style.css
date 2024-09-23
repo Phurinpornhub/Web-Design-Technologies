@@ -1,137 +1,153 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Custom Styles for the Sidebar and Cards */
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo-search {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 40px;
-    margin-right: 20px;
-}
-
-input[type="text"] {
+.sidebar-menu {
+    background-color: white;
+    border-radius: 10px;
     padding: 10px;
-    border-radius: 20px;
-    border: 1px solid #ddd;
-    width: 200px;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
+.sidebar-menu .list-group-item {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
 }
 
-nav ul li {
-    margin-left: 20px;
-    font-weight: bold;
-}
-
-.user-actions span {
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-.container {
-    display: flex;
-    margin-top: 20px;
-}
-
-.sidebar {
-    width: 250px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar ul {
-    list-style: none;
-}
-
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar ul li a {
+.sidebar-menu .list-group-item a {
     text-decoration: none;
     color: #333;
-    font-weight: bold;
 }
 
-.profile-section {
-    flex-grow: 1;
-    padding: 20px;
+.sidebar-menu .list-group-item.active-item {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+.sidebar-menu .list-group-item.active-item a {
+    color: white;
+}
+
+.sidebar-menu .list-group-item:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Product Card Buttons */
+.btn-outline-secondary,
+.btn-dark {
+    border-radius: 30px;
+}
+
+/* Other global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.header {
     background-color: #fff;
-    margin-left: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
 }
 
-.profile-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+.breadcrumb-container {
+    background-color: #f8f8f8;
+}
+
+.breadcrumb a {
+    color: #999;
+}
+
+.breadcrumb a:hover {
+    color: #333;
+}
+
+.breadcrumb-item.active {
+    color: #333;
+}
+
+/* CSS for หน้าสมาชิก (Member Page) */
+
+/* Header */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Adjust the size of the logo */
+.header .logo {
+    width: 120px;
+    /* Adjust the width for an appropriate logo size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.search-btn {
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+/* Breadcrumb */
+.breadcrumb-container {
+    background-color: #f8f8f8;
+}
+
+.breadcrumb a {
+    color: #999;
+}
+
+.breadcrumb a:hover {
+    color: #333;
+}
+
+.breadcrumb-item.active {
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar .list-group-item.active {
+    background-color: black;
+    color: white;
+}
+
+.sidebar .list-group-item a {
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar .list-group-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Profile Section */
+.profile-section .card {
+    background-color: #f8f8f8;
 }
 
 .profile-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-right: 20px;
-}
-
-.profile-info {
-    flex-grow: 1;
 }
 
 .logout-button {
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
+    background-color: red;
+    color: white;
     border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.orders-section {
-    margin-top: 20px;
+/* Orders Table */
+.orders-section h3 {
+    margin-bottom: 20px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
+.table-hover tbody tr:hover {
+    background-color: #f0f0f0;
 }
 
-table,
-th,
-td {
-    border: 1px solid #ddd;
-}
-
-th,
-td {
-    padding: 15px;
-    text-align: left;
-}
-
-thead th {
-    background-color: #000;
-    color: #fff;
+.table-dark {
+    background-color: black;
+    color: white;
 }

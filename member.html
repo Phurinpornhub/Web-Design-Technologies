@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมาชิก</title>
+    <link rel="stylesheet" href="css/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-search">
+            <img src="logo.png" alt="Logo" class="logo">
+            <input type="text" placeholder="ค้นหา...">
+        </div>
+        <nav>
+            <ul>
+                <li>สินค้า</li>
+                <li>การสั่งซื้อ</li>
+                <li>ข่าวสาร</li>
+                <li>ติดต่อเรา</li>
+            </ul>
+            <div class="user-actions">
+                <span>🛒</span>
+                <span>👤</span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#">หน้าหลัก</a></li>
+                <li><a href="#">การซื้อของฉัน</a></li>
+                <li><a href="#">สินค้าที่ถูกใจ</a></li>
+                <li><a href="#">คืนเงิน/คืนสินค้า</a></li>
+                <li><a href="#">ตั้งค่าบัญชี</a></li>
+                <li><a href="#">ที่อยู่จัดส่ง</a></li>
+                <li><a href="#">ตั้งค่าการชำระเงิน</a></li>
+            </ul>
+        </aside>
+
+        <main class="profile-section">
+            <div class="profile-header">
+                <img src="profile.jpg" alt="โปรไฟล์" class="profile-img">
+                <div class="profile-info">
+                    <h2>เจน</h2>
+                    <button class="logout-button">ออกจากระบบ</button>
+                </div>
+            </div>
+
+            <div class="orders-section">
+                <h3>คำสั่งซื้อล่าสุด</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>รหัสคำสั่งซื้อ</th>
+                            <th>วันสั่งซื้อ</th>
+                            <th>สถานะคำสั่งซื้อ</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#OR8372937302</td>
+                            <td>27/09/2567</td>
+                            <td>รอชำระเงิน</td>
+                        </tr>
+                        <tr>
+                            <td>#OR2546379801</td>
+                            <td>27/09/2567</td>
+                            <td>กำลังจัดส่ง</td>
+                        </tr>
+                        <tr>
+                            <td>#OR3994736300</td>
+                            <td>27/09/2567</td>
+                            <td>จัดส่งสำเร็จ</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General Styles */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.search-bar {
+    padding: 5px;
+    width: 200px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+}
+
+.cart-icon {
+    font-size: 24px;
+}
+
+/* Main Banner */
+.main-banner {
+    text-align: center;
+    padding: 50px 0;
+    background-color: white;
+}
+
+.main-image {
+    width: 500px;
+}
+
+.banner-text h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-details {
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+/* Recommended Products */
+.recommended-products {
+    padding: 50px;
+    background-color: white;
+}
+
+.recommended-products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-item:hover{
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+
+.product-item img {
+    width: 100%;
+}
+
+.product-item p {
+    margin: 10px 0;
+}
+
+.btn-view-all {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-top {
+    text-align: center;
+}
+
+.footer-top h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.staff-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.staff-item {
+    text-align: center;
+}
+
+.staff-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.staff-item p {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.staff-item span {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #444;
+    padding-top: 40px;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+</style>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-search-container">
+            <img src="logo.png" alt="SportX Logo" class="logo">
+            <input type="text" class="search-bar" placeholder="ค้นหา...">
+        </div>
+        <nav class="nav-links">
+            <a href="#">สินค้า</a>
+            <a href="#">การสั่งซื้อ</a>
+            <a href="#">ข่าวสาร</a>
+            <a href="#">ติดต่อเรา</a>
+            <a href="#" class="cart-icon">🛒</a>
+        </nav>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="main-banner">
+        <img src="/img/Homepage.jpg" alt="Tennis" class="main-image">
+        <div class="banner-text">
+            <h1>อย่าปล่อยให้ความเชื่อมั่นของคุณสูญเปล่า</h1>
+            <p>
+                ในสนามที่เต็มไปด้วยเสียงเชียร์ ความตื่นเต้น และการทุ่มเทของนักกีฬา <br>
+                ทุกการเคลื่อนไหวคือการทำลายกำแพงที่ไม่มีวันยอมแพ้...
+            </p>
+            <button class="btn-details">รายละเอียด</button>
+        </div>
+    </section>
+
+    <!-- Recommended Products Section -->
+    <section class="recommended-products">
+        <h2>สินค้าแนะนำ</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="/img/product1.jpg" alt="Nike Air Force 1 '07">
+                <p>Nike Air Force 1 '07</p>
+                <span>฿4,300</span>
+            </div>
+            <div class="product-item">
+                <img src="/img/product2.jpg" alt="Nike Free RN NN">
+                <p>Nike Free RN NN</p>
+                <span>฿2,219</span>
+            </div>
+            <div class="product-item">
+                <img src="/img/product3.jpg" alt="Air Jordan 1 Low Quai 54">
+                <p>Air Jordan 1 Low Quai 54</p>
+                <span>฿5,400</span>
+            </div>
+            <div class="product-item">
+                <img src="/img/product4.jpg" alt="Nike Indy Light Support">
+                <p>Nike Indy Light Support</p>
+                <span>฿1,300</span>
+            </div>
+            <div class="product-item">
+                <img src="/img/product5.jpg" alt="Adidas Future Icons Badge">
+                <p>Adidas Future Icons Badge of Sport</p>
+                <span>฿900</span>
+            </div>
+            <div class="product-item">
+                <img src="/img/product6.jpg" alt="Essentials 3-Stripes">
+                <p>Essentials 3-Stripes</p>
+                <span>฿360</span>
+            </div>
+        </div>
+        <button class="btn-view-all">ดูสินค้าทั้งหมด</button>
+    </section>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <h3>ติดต่อเรา</h3>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <p>โทรศัพท์: 099-123-5567</p>
+            </div>
+            <div class="contact-item">
+                <span class="icon">💬</span>
+                <p>แอดไลน์: SportX</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="staff-section">
+        <div class="staff-item">
+            <img src="/img/Pan.jpg" alt="แพน">
+            <p>แพน</p>
+            <span>ฝ่ายขาย</span>
+        </div>
+        <div class="staff-item">
+            <img src="/img/Noey.jpg" alt="เนย">
+            <p>เนย</p>
+            <span>ฝ่ายขาย</span>
+        </div>
+        <div class="staff-item">
+            <img src="/img/Put.jpg" alt="ภัทร">
+            <p>ภัทร</p>
+            <span>ฝ่ายจัดส่ง</span>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-column">
+            <h4>บริษัท SportX จำกัด</h4>
+            <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+        </div>
+        <div class="footer-column">
+            <h4>สินค้าต่างๆ</h4>
+            <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+            <p>ชุดออกกำลังกาย</p>
+            <p>อุปกรณ์เล่นกีฬา</p>
+        </div>
+        <div class="footer-column">
+            <h4>สินค้าต่างๆ</h4>
+            <p>นโยบายธุรกิจ</p>
+            <p>นโยบายความเป็นส่วนตัว</p>
+            <p>ขอคืนเงิน/สินค้า</p>
+        </div>
+        <div class="footer-column">
+            <h4>สินค้าต่างๆ</h4>
+            <p>ติดต่อเรา</p>
+            <p>คำถามที่พบบ่อย</p>
+            <p>วิธีดูแลสินค้า</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

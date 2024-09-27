@@ -7,22 +7,129 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="products.css">
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="logo-search-container">
-            <img src="logo.png" alt="SportX Logo" class="logo">
-            <input type="text" class="search-bar" placeholder="ค้นหา...">
-        </div>
-        <nav class="nav-links">
-            <a href="#">สินค้า</a>
-            <a href="#">การสั่งซื้อ</a>
-            <a href="#">ข่าวสาร</a>
-            <a href="#">ติดต่อเรา</a>
-            <a href="#" class="cart-icon">🛒</a>
-        </nav>
-    </header>
+<style>
+ /* Global Styling */
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
 
+        /* Header */
+        header {
+            color: #fff;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+        .search-bar {
+            max-width: 500px;
+            margin-left: 20px;
+        }
+        .nav .nav-link {
+            color: #000000;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        .nav .nav-link:hover {
+            color: #ddd;
+        }
+
+/* Products Section */
+.products-section {
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.products-section h1, .products-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-list .product-item {
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+.product-item:hover{
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.filter-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.filter-box h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.filter-box form label {
+    font-weight: bold;
+}
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-view-all {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+/* Footer */
+
+
+</style>
+<body>
+<!-- Header -->
+<header class="shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="img/image.png" alt="Logo" class="logo">
+            <div class="input-group search-bar">
+                <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
+            </div>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link">สินค้า</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">การสั่งซื้อ</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">ข่าวสาร</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">ติดต่อเรา</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">🛒</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">👤</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
     <!-- Breadcrumb -->
     <div class="breadcrumb-container container mt-4">
@@ -70,57 +177,66 @@
                 <h2>เชิ้ตที่เข้าคู่กัน</h2>
                 <div class="row product-list mb-4">
                     <div class="col-md-4 product-item">
-                        <img src="product1.png" alt="Product 1" class="img-fluid">
+                        <img src="/img/productjacket.jpg" alt="Product 1" class="img-fluid">
                         <p>Jordan Renegade</p>
+                        <p>เสื้อแจ็คเก็ตน้ำหนักเบาผู้หญิง</p>
                         <span>฿5,300</span>
                     </div>
                     <div class="col-md-4 product-item">
-                        <img src="product2.png" alt="Product 2" class="img-fluid">
+                        <img src="/img/productplant2.jpg" alt="Product 2" class="img-fluid">
                         <p>Jordan Chicago</p>
+                        <p>กางเกงขายาวผู้หญิง</p>
                         <span>฿3,400</span>
                     </div>
                     <div class="col-md-4 product-item">
-                        <img src="product3.png" alt="Product 3" class="img-fluid">
+                        <img src="/img/product3.jpg" alt="Product 3" class="img-fluid">
                         <p>Air Jordan 1 Low</p>
+                        <p>รองเท้าผู้หญิง</p>
                         <span>฿4,300</span>
                     </div>
                     <div class="col-md-4 product-item">
-                        <img src="product4.png" alt="Product 4" class="img-fluid">
+                        <img src="/img/product4.jpg" alt="Product 4" class="img-fluid">
                         <p>Air Jordan 1 Low SE</p>
+                        <p>รองเท้าผู้ชาย</p>
                         <span>฿4,900</span>
                     </div>
                     <div class="col-md-4 product-item">
-                        <img src="product5.png" alt="Product 5" class="img-fluid">
+                        <img src="/img/productplant.jpg" alt="Product 5" class="img-fluid">
                         <p>Jordan Chicago (ชาย)</p>
+                        <p>กางเกงขายาวผู้ชาย</p>
                         <span>฿3,400</span>
                     </div>
                     <div class="col-md-4 product-item">
-                        <img src="product6.png" alt="Product 6" class="img-fluid">
+                        <img src="/img/product6.jpg" alt="Product 6" class="img-fluid">
                         <p>Jordan Stadium 90</p>
+                        <p>รองเท้าผู้หญิง</p>
                         <span>฿5,400</span>
                     </div>
                 </div>
-                <button class="btn btn-outline-dark mb-5">ดูเพิ่มเติม</button>
+                <button class="btn-view-all">ดูเพิ่มเติม</button>
                 
                 <h2>อุปกรณ์กีฬา</h2>
                 <div class="row product-list mb-4">
                     <div class="col-md-4 product-item">
-                        <img src="sports1.png" alt="Sport Equipment 1" class="img-fluid">
+                        <img src="/img/YONEX_Astrox_99_Play.jpg" alt="Sport Equipment 1" class="img-fluid">
                         <p>YONEX Astrox 99 Play</p>
+                        <p>ไม้แบดมินตัน</p>
                         <span>฿1,870</span>
                     </div>
                     <div class="col-md-4 product-item">
-                        <img src="sports2.png" alt="Sport Equipment 2" class="img-fluid">
+                        <img src="/img/S_SPORTS_SPQ123TENNIS4.jpg" alt="Sport Equipment 2" class="img-fluid">
                         <p>S SPORTS SPQ123TENNIS4 ลูกเทนนิส</p>
+                        <p>ลูกเทนนิส (แพ็ค 3 ลูก)</p>
                         <span>฿260</span>
                     </div>
                     <div class="col-md-4 product-item">
-                        <img src="sports3.png" alt="Sport Equipment 3" class="img-fluid">
+                        <img src="/img/MOLTEN_B7G4500.jpg" alt="Sport Equipment 3" class="img-fluid">
                         <p>MOLTEN B7G4500 ลูกบาสเกตบอล</p>
+                        <p>ลูกบาสเกตบอล</p>
                         <span>฿1,990</span>
                     </div>
                 </div>
-                <button class="btn btn-outline-dark">ดูเพิ่มเติม</button>
+                <button class="btn-view-all">ดูเพิ่มเติม</button>
             </div>
         </div>
     </section>
@@ -183,7 +299,7 @@
             <p>วิธีดูแลสินค้า</p>
         </div>
     </div>
-    
 </footer>
+
 </body>
 </html>

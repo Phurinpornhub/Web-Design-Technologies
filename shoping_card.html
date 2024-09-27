@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportX</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ตะกร้าสินค้า | SportX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="shopping-cart.css">
 </head>
 <style>
      /* Global Styling */
@@ -63,51 +64,60 @@
             color: black;
             text-decoration: none;
         }
-/* Recommended Products */
-.recommended-products {
-    padding: 50px;
-    background-color: white;
-}
 
-.recommended-products h2 {
-    text-align: center;
+        /* Shopping Cart Section */
+.shopping-cart h1 {
+    font-size: 32px;
     margin-bottom: 30px;
 }
 
-.product-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.cart-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
 }
 
-.product-item {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-    width: 150px;
+.cart-item p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.quantity-input {
+    width: 50px;
     text-align: center;
-    margin-bottom: 20px;
+    border-radius: 0;
+    margin-left: 3px;
+    margin-right: 3px;
+
 }
 
-.product-item:hover{
-    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
-  transform: translateY(-2px);
+/* Summary Box */
+.summary-box {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-
-.product-item img {
-    width: 100%;
+.summary-box h4 {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.product-item p {
-    margin: 10px 0;
+.summary-box ul {
+    padding: 0;
+    list-style: none;
 }
 
+.summary-box p {
+    font-size: 18px;
+}
 button {
     cursor: pointer;
     padding: 10px 20px;
     border: none;
     background-color: black;
     color: white;
-    border-radius: px;
 }
 .btn-view-all {
     display: block;
@@ -115,7 +125,9 @@ button {
     margin-top: 20px;
     border-radius: 50px;
 }
-
+/* .btnsymbol{
+    border-radius: 0px;
+} */
 
 /* Footer */
 .footer {
@@ -200,8 +212,6 @@ button {
     font-size: 16px;
     color: #ccc;
 }
-
-
 </style>
 <body>
     <!-- Header -->
@@ -226,57 +236,96 @@ button {
         </div>
     </header>
 
-    <!-- Main Banner Section -->
-    <section class="main-banner">
-        <img src="/img/Homepage.jpg" alt="Tennis" class="main-image">
-        <div class="banner-text">
-            <h1>อย่าปล่อยให้ความเชื่อมั่นของคุณสูญเปล่า</h1>
-            <p>
-                ในสนามที่เต็มไปด้วยเสียงเชียร์ ความตื่นเต้น และการทุ่มเทของนักกีฬา <br>
-                ทุกการเคลื่อนไหวคือการทำลายกำแพงที่ไม่มีวันยอมแพ้...
-            </p>
-            <button class="btn-details">รายละเอียด</button>
-        </div>
-    </section>
+    <!-- Shopping Cart Section -->
+    <section class="shopping-cart container mt-5">
+        <h1 class="mb-4">ตะกร้าสินค้า</h1>
+        <div class="row">
+            <!-- Cart Items -->
+            <div class="col-md-8">
+                <div class="cart-item p-3 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <img src="/img/product9.jpg" alt="Air Jordan 1 Low" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-1">Air Jordan 1 Low</p>
+                            <p class="text-muted">รองเท้าผู้หญิง</p>
+                        </div>
+                        <div class="col-md-2 text-end">
+                            <p>4,300 บาท</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <button class="btn btn-dark">-</button>
+                                <input type="text" value="1" class="form-control quantity-input">
+                                <button class="btn btn-dark">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-item p-3 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <img src="/img/product3.jpg" alt="Air Jordan 1 Low SE" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-1">Air Jordan 1 Low SE</p>
+                            <p class="text-muted">รองเท้าผู้ชาย</p>
+                        </div>
+                        <div class="col-md-2 text-end">
+                            <p>5,400 บาท</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <button class="btn btn-dark">-</button>
+                                <input type="text" value="2" class="form-control quantity-input">
+                                <button class="btn btn-dark">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-item p-3 mb-4">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <img src="/img/productjacket.jpg" alt="Jordan Renegade" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="mb-1">Jordan Renegade</p>
+                            <p class="text-muted">เสื้อแจ็คเก็ตน้ำหนักเบาผู้หญิง</p>
+                        </div>
+                        <div class="col-md-2 text-end">
+                            <p>5,300 บาท</p>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <button class="btn btn-dark">-</button>
+                                <input type="text" value="1" class="form-control quantity-input">
+                                <button class="btn btn-dark">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Recommended Products Section -->
-    <section class="recommended-products">
-        <h2>สินค้าแนะนำ</h2>
-        <div class="product-list">
-            <div class="product-item">
-                <img src="/img/product1.jpg" alt="Nike Air Force 1 '07">
-                <p>Nike Air Force 1 '07</p>
-                <span>฿4,300</span>
-            </div>
-            <div class="product-item">
-                <img src="/img/product2.jpg" alt="Nike Free RN NN">
-                <p>Nike Free RN NN</p>
-                <span>฿2,219</span>
-            </div>
-            <div class="product-item">
-                <img src="/img/product3.jpg" alt="Air Jordan 1 Low Quai 54">
-                <p>Air Jordan 1 Low Quai 54</p>
-                <span>฿5,400</span>
-            </div>
-            <div class="product-item">
-                <img src="/img/product4.jpg" alt="Nike Indy Light Support">
-                <p>Nike Indy Light Support</p>
-                <span>฿1,300</span>
-            </div>
-            <div class="product-item">
-                <img src="/img/product5.jpg" alt="Adidas Future Icons Badge">
-                <p>Adidas Future Icons Badge of Sport</p>
-                <span>฿900</span>
-            </div>
-            <div class="product-item">
-                <img src="/img/product6.jpg" alt="Essentials 3-Stripes">
-                <p>Essentials 3-Stripes</p>
-                <span>฿360</span>
+            <!-- Order Summary -->
+            <div class="col-md-4">
+                <div class="summary-box p-4 mb-4">
+                    <h4 class="mb-3">สรุปรายการ</h4>
+                    <ul class="list-unstyled">
+                        <li>Air Jordan 1 Low <span class="float-end">4,300 บาท</span></li>
+                        <li>Air Jordan 1 Low SE <span class="float-end">9,800 บาท</span></li>
+                        <li>Jordan Renegade <span class="float-end">5,300 บาท</span></li>
+                    </ul>
+                    <hr>
+                    <p class="mb-3"><strong>รวม</strong> <span class="float-end">19,400 บาท</span></p>
+                    <button class="btn-view-all">สั่งซื้อสินค้า</button>
+                </div>
             </div>
         </div>
-        <button class="btn-view-all">ดูสินค้าทั้งหมด</button>
     </section>
-    <!-- Footer Section -->
+<!-- Footer Section -->
 <footer class="footer">
     <div class="footer-top">
         <h3>ติดต่อเรา</h3>

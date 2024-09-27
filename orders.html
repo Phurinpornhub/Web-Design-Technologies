@@ -106,6 +106,23 @@
         .table-hover tbody tr:hover {
             background-color: #f0f0f0;
         }
+        .orders-section .btn-outline-secondary {
+            color: #555;
+            border-color: #555;
+        }
+        .orders-section .btn-outline-secondary:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        /* Keep original links */
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -146,7 +163,7 @@
             <!-- Sidebar -->
             <aside class="col-md-3 sidebar">
                 <ul class="list-group shadow-sm">
-                    <li class="list-group-item "><a href ="member.html" >หน้าหลัก</a></li>
+                    <li class="list-group-item "><a href="member.html">หน้าหลัก</a></li>
                     <li class="list-group-item active"><a href="orders.html" class="text-white">การซื้อของฉัน</a></li>
                     <li class="list-group-item"><a href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
                     <li class="list-group-item"><a href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
@@ -161,10 +178,10 @@
                 <div class="card profile-section shadow-sm">
                     <div class="d-flex align-items-center">
                         <img src="img/jan.jpg" alt="โปรไฟล์" class="profile-img me-3">
-                        <div>
+                        <div class="flex-grow-1">
                             <h2 class="mb-0">แคป</h2>
-                            <button class="btn logout-button mt-2">ออกจากระบบ</button>
                         </div>
+                        <button class="btn logout-button ms-auto mt-2">ออกจากระบบ</button>
                     </div>
                 </div>
 
@@ -179,8 +196,8 @@
                                     <h5 class="card-title">Essentials 3-Stripes</h5>
                                     <p class="card-text">x1 ฿360</p>
                                     <div class="d-grid gap-2">
-                                        <button class="btn btn-outline-secondary rounded-pill">ติดต่อผู้ขาย</button>
-                                        <button class="btn btn-dark rounded-pill">ซื้ออีกครั้ง</button>
+                                        <button class="btn btn-outline-secondary rounded-pill"><a href="help-center.html">ติดต่อผู้ขาย</a></button>
+                                        <button class="btn btn-dark rounded-pill"><a href="#">ซื้ออีกครั้ง</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -192,8 +209,8 @@
                                     <h5 class="card-title">Air Jordan 1 Low Quai 54</h5>
                                     <p class="card-text">x1 ฿5,400</p>
                                     <div class="d-grid gap-2">
-                                        <button class="btn btn-outline-secondary rounded-pill">ติดต่อผู้ขาย</button>
-                                        <button class="btn btn-dark rounded-pill">ซื้ออีกครั้ง</button>
+                                        <button class="btn btn-outline-secondary rounded-pill"><a href="help-center.html">ติดต่อผู้ขาย</a></button>
+                                        <button class="btn btn-dark rounded-pill"><a href="#">ซื้ออีกครั้ง</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -205,8 +222,8 @@
                                     <h5 class="card-title">Nike Free RN NN</h5>
                                     <p class="card-text">x1 ฿2,219</p>
                                     <div class="d-grid gap-2">
-                                        <button class="btn btn-outline-secondary rounded-pill">ติดต่อผู้ขาย</button>
-                                        <button class="btn btn-dark rounded-pill">ซื้ออีกครั้ง</button>
+                                        <button class="btn btn-outline-secondary rounded-pill"><a href="help-center.html">ติดต่อผู้ขาย</a></button>
+                                        <button class="btn btn-dark rounded-pill"><a href="#">ซื้ออีกครั้ง</a></button>
                                     </div>
                                 </div>
                             </div>

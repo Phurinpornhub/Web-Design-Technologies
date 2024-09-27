@@ -89,10 +89,20 @@
             padding: 10px 30px;
         }
 
-        /* Breadcrumb */
-        .breadcrumb {
-            background-color: transparent;
-        }
+       .breadcrumb {
+    color: #000; /* เปลี่ยนสีตัวหนังสือเป็นสีดำ */
+}
+.breadcrumb-item a {
+    color: #000; /* เปลี่ยนสีลิงก์ใน breadcrumb */
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: #000; /* สีเมื่อ hover */
+}
+.breadcrumb-item.active {
+    color: #555; /* สีของ breadcrumb ที่ active */
+}
+
 
     </style>
 </head>

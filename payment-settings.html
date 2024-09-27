@@ -72,13 +72,15 @@
             padding: 30px;
         }
         .payment-card {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
         }
         .payment-card img {
             width: 50px;
@@ -95,10 +97,20 @@
             padding: 10px 30px;
         }
 
-        /* Breadcrumb */
-        .breadcrumb {
-            background-color: transparent;
-        }
+       .breadcrumb {
+    color: #000; /* เปลี่ยนสีตัวหนังสือเป็นสีดำ */
+}
+.breadcrumb-item a {
+    color: #000; /* เปลี่ยนสีลิงก์ใน breadcrumb */
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: #000; /* สีเมื่อ hover */
+}
+.breadcrumb-item.active {
+    color: #555; /* สีของ breadcrumb ที่ active */
+}
+
 
     </style>
 </head>
@@ -154,7 +166,6 @@
 
             <!-- Payment Settings Section -->
             <section class="col-md-9">
-                <h1 class="mb-4">ตั้งค่าการชำระเงิน</h1>
                 <h4>บัตรเครดิต-บัตรเดบิต (1)</h4>
 
                 <div class="payment-card shadow-sm">

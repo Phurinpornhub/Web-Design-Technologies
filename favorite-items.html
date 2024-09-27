@@ -69,10 +69,13 @@
         .favorite-items h1 {
             font-weight: 500;
             margin-bottom: 20px;
+            text-align: center; /* จัดตำแหน่งตรงกลาง */
+            margin-top: 20px; /* เพิ่มระยะห่างจากด้านบน */
         }
         .product-card {
             border-radius: 10px;
             transition: box-shadow 0.3s ease;
+            height: 100%;
         }
         .product-card:hover {
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -80,6 +83,8 @@
         .product-card img {
             border-radius: 10px 10px 0 0;
             object-fit: cover;
+            height: 200px; /* Fixed height for equal sizing */
+            width: 100%; /* Ensure images cover the full width */
         }
         .favorite-icon {
             color: #000;
@@ -90,10 +95,20 @@
             color: #e74c3c;
         }
 
-        /* Breadcrumb */
-        .breadcrumb {
-            background-color: transparent;
+       .breadcrumb {
+            color: #000; /* เปลี่ยนสีตัวหนังสือเป็นสีดำ */
         }
+        .breadcrumb-item a {
+            color: #000; /* เปลี่ยนสีลิงก์ใน breadcrumb */
+            text-decoration: none;
+        }
+        .breadcrumb-item a:hover {
+            color: #000; /* สีเมื่อ hover */
+        }
+        .breadcrumb-item.active {
+            color: #555; /* สีของ breadcrumb ที่ active */
+        }
+
     </style>
 </head>
 <body>
@@ -136,26 +151,18 @@
              <!-- Sidebar -->
                 <aside class="col-md-3 sidebar">
                     <ul class="list-group shadow-sm">
-                        <li class="list-group-item "><a href="member.html"
-                               >หน้าหลัก</a></li>
-                        <li class="list-group-item"><a
-                                href="orders.html">การซื้อของฉัน</a></li>
-                        <li class="list-group-item active "><a
-                                 class="text-white" href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
-                        <li class="list-group-item"><a
-                                href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
-                        <li class="list-group-item"><a
-                                href="account-settings.html">ตั้งค่าบัญชี</a></li>
-                        <li class="list-group-item"><a
-                                href="delivery-addresses.html">ที่อยู่จัดส่ง</a></li>
-                        <li class="list-group-item"><a
-                                href="payment-settings.html">ตั้งค่าการชำระเงิน</a></li>
+                        <li class="list-group-item "><a href="member.html">หน้าหลัก</a></li>
+                        <li class="list-group-item"><a href="orders.html">การซื้อของฉัน</a></li>
+                        <li class="list-group-item active"><a class="text-white" href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
+                        <li class="list-group-item"><a href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
+                        <li class="list-group-item"><a href="account-settings.html">ตั้งค่าบัญชี</a></li>
+                        <li class="list-group-item"><a href="delivery-addresses.html">ที่อยู่จัดส่ง</a></li>
+                        <li class="list-group-item"><a href="payment-settings.html">ตั้งค่าการชำระเงิน</a></li>
                     </ul>
                 </aside>
 
             <!-- Favorite Products Section -->
             <section class="col-md-9 favorite-items">
-                <h1 class="mb-4 ">สินค้าที่ถูกใจ</h1>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4">
                         <div class="card product-card shadow-sm">
@@ -214,13 +221,15 @@
                     </div>
                      <div class="col-md-6 col-lg-4">
                         <div class="card product-card shadow-sm">
-                            <img src="img/กางเกงน้ำตาล.png" class="card-img-top" alt="MOLTEN B7G4500">
+                            <img src="img/กางเกงน้ำตาล.png" class="card-img-top" alt="Jordan Chicago">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Jordan Chicago</h5>
                                 <p class="card-text">กางเกงขายาวผู้ชาย</p>
                                 <p>฿3,400</p>
                                 <i class="bi bi-heart favorite-icon"></i>
                             </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

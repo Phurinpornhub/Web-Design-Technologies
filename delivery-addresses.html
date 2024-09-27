@@ -72,17 +72,33 @@
             padding: 30px;
         }
         .address-card {
-            background-color: #f8f9fa;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             margin-bottom: 15px;
             position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+        .address-card h5 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .address-card p {
+            font-size: 14px;
+            color: #555;
         }
         .address-card .edit-link {
             position: absolute;
             right: 20px;
             top: 20px;
             font-size: 0.9rem;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .address-card .edit-link:hover {
+            text-decoration: underline;
         }
         .btn-save {
             background-color: #000;
@@ -91,10 +107,20 @@
             padding: 10px 30px;
         }
 
-        /* Breadcrumb */
-        .breadcrumb {
-            background-color: transparent;
-        }
+       .breadcrumb {
+    color: #000; /* เปลี่ยนสีตัวหนังสือเป็นสีดำ */
+}
+.breadcrumb-item a {
+    color: #000; /* เปลี่ยนสีลิงก์ใน breadcrumb */
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: #000; /* สีเมื่อ hover */
+}
+.breadcrumb-item.active {
+    color: #555; /* สีของ breadcrumb ที่ active */
+}
+
 
     </style>
 </head>
@@ -150,24 +176,23 @@
 
             <!-- Delivery Addresses Section -->
             <section class="col-md-9">
-                <h1 class="mb-4">ที่อยู่การจัดส่ง</h1>
                 <div class="address-card">
                     <h5>เจน (ค่าเริ่มต้น)</h5>
                     <p>123 หมู่ที่ 16 ถ.มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40002</p>
                     <p>09xxxxxxxx</p>
-                    <a href="#" class="edit-link">แก้ไข</a>
+                    <a href="edit-address.html" class="edit-link">แก้ไข</a>
                 </div>
                 <div class="address-card">
                     <h5>โมว์</h5>
                     <p>239 ถ. ห้วยแก้ว ตำบลสุเทพ อำเภอเมืองเชียงใหม่ เชียงใหม่ 50200</p>
                     <p>09xxxxxxxx</p>
-                    <a href="#" class="edit-link">แก้ไข</a>
+                    <a href="edit-address.html" class="edit-link">แก้ไข</a>
                 </div>
                 <div class="address-card">
                     <h5>แคป</h5>
                     <p>41 ตำบล บางเรียง อำเภอกันทรวิชัย มหาสารคาม 44150</p>
                     <p>09xxxxxxxx</p>
-                    <a href="#" class="edit-link">แก้ไข</a>
+                    <a href="edit-address.html" class="edit-link">แก้ไข</a>
                 </div>
                 <div class="text-end mt-4">
                     <button class="btn btn-save">บันทึก</button>

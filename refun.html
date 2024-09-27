@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คืนเงิน | SportX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="refund.css">
+</head>
+<style>
+    /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+/* Header */
+.header .search-bar {
+    width: 250px;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.cart-icon, .user-icon {
+    font-size: 24px;
+}
+
+/* Refund Section */
+.refund h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.refund form .form-control {
+    border-radius: 5px;
+}
+
+.refund form .form-label {
+    font-weight: bold;
+}
+
+.refund form button {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #ccc;
+}
+
+</style>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <img src="logo.png" alt="SportX Logo" class="logo">
+            <input type="text" class="search-bar form-control" placeholder="ค้นหา...">
+            <nav class="nav-links">
+                <a href="#">สินค้า</a>
+                <a href="#">การสั่งซื้อ</a>
+                <a href="#">ข่าวสาร</a>
+                <a href="#">ติดต่อเรา</a>
+                <a href="#" class="cart-icon">🛒</a>
+                <a href="#" class="user-icon">👤</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Refund Section -->
+    <section class="refund container mt-5">
+        <h1 class="mb-4">คืนเงิน</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="orderNumber" class="form-label">หมายเลขคำสั่งซื้อ</label>
+                    <input type="text" class="form-control" id="orderNumber" placeholder="หมายเลขคำสั่งซื้อ" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="phoneNumber" class="form-label">เบอร์โทรศัพท์</label>
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="เบอร์โทรศัพท์" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="receipt" class="form-label">หลักฐานสินค้าที่ชำรุด</label>
+                <input type="file" class="form-control" id="receipt" required>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">ขอคืนเงิน</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>บริษัท SportX จำกัด</h4>
+                    <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>สินค้าต่างๆ</h4>
+                    <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+                    <p>ชุดออกกำลังกาย</p>
+                    <p>อุปกรณ์เล่นกีฬา</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>สินค้าต่างๆ</h4>
+                    <p>นโยบายธุรกิจ</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>ขอคืนเงิน/สินค้า</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>สินค้าต่างๆ</h4>
+                    <p>ติดต่อเรา</p>
+                    <p>คำถามที่พบบ่อย</p>
+                    <p>วิธีดูแลสินค้า</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

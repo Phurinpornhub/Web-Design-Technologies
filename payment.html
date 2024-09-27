@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แจ้งชำระเงิน | SportX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="payment-notification.css">
+</head>
+<style>
+ /* Global Styling */
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            color: #fff;
+            padding: 15px 0;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+        .search-bar {
+            max-width: 500px;
+            margin-left: 20px;
+        }
+        .nav .nav-link {
+            color: #000000;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        .nav .nav-link:hover {
+            color: #ddd;
+        }
+
+
+/* Payment Form */
+.payment-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.payment-form .form-label {
+    font-weight: bold;
+}
+
+.payment-form .bank-logo {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.payment-form .form-control {
+    border-radius: 5px;
+}
+
+.payment-form button {
+    margin-top: 20px;
+    font-size: 18px;
+}
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: px;
+}
+.btn-view-all {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-top {
+    text-align: center;
+}
+
+.footer-top h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.staff-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.staff-item {
+    text-align: center;
+}
+
+.staff-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.staff-item p {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.staff-item span {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #444;
+    padding-top: 40px;
+}
+
+.footer-column {
+    width: 200px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+
+
+
+</style>
+<body>
+    <!-- Header -->
+<header class="shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="img/image.png" alt="Logo" class="logo">
+            <div class="input-group search-bar">
+                <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
+            </div>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link">สินค้า</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">การสั่งซื้อ</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">ข่าวสาร</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">ติดต่อเรา</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">🛒</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">👤</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+                <li class="breadcrumb-item active" aria-current="page">แจ้งชำระเงิน</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Payment Form Section -->
+    <section class="payment-form container mt-5">
+        <h1 class="mb-4">แจ้งชำระเงิน</h1>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">ชื่อ <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="firstName" placeholder="ชื่อ" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">นามสกุล <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="lastName" placeholder="นามสกุล" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="orderNumber" class="form-label">เลขที่คำสั่งซื้อ <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" id="orderNumber" placeholder="เลขที่คำสั่งซื้อ" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="amount" class="form-label">จำนวนเงิน <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="amount" placeholder="จำนวนเงิน" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label">บัญชีธนาคาร</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="bank" id="bank1" checked>
+                        <label class="form-check-label" for="bank1">
+                            <img src="/img/logo_kbank.jpg" alt="ธนาคารกสิกรไทย" class="bank-logo">
+                            ธนาคารกสิกรไทย
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">เลขที่บัญชี</label>
+                    <p>336-7-98546-0</p>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="transferDate" class="form-label">วันและเวลาที่โอน</label>
+                    <input type="date" class="form-control" id="transferDate" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="receiptUpload" class="form-label">แนบหลักฐานการโอน <span class="text-danger">*</span></label>
+                    <input type="file" class="form-control" id="receiptUpload" required>
+                </div>
+            </div>
+            <button class="btn-view-all">แจ้งชำรเงิน</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-top">
+        <h3>ติดต่อเรา</h3>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <p>โทรศัพท์: 099-123-5567</p>
+            </div>
+            <div class="contact-item">
+                <span class="icon">💬</span>
+                <p>แอดไลน์: SportX</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="staff-section">
+        <div class="staff-item">
+            <img src="/img/Pan.jpg" alt="แพน">
+            <p>แพน</p>
+            <span>ฝ่ายขาย</span>
+        </div>
+        <div class="staff-item">
+            <img src="/img/Noey.jpg" alt="เนย">
+            <p>เนย</p>
+            <span>ฝ่ายขาย</span>
+        </div>
+        <div class="staff-item">
+            <img src="/img/Put.jpg" alt="ภัทร">
+            <p>ภัทร</p>
+            <span>ฝ่ายจัดส่ง</span>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-column">
+            <h4>บริษัท SportX จำกัด</h4>
+            <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+        </div>
+        <div class="footer-column">
+            <h4>สินค้าต่างๆ</h4>
+            <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+            <p>ชุดออกกำลังกาย</p>
+            <p>อุปกรณ์เล่นกีฬา</p>
+        </div>
+        <div class="footer-column">
+            <h4>สินค้าต่างๆ</h4>
+            <p>นโยบายธุรกิจ</p>
+            <p>นโยบายความเป็นส่วนตัว</p>
+            <p>ขอคืนเงิน/สินค้า</p>
+        </div>
+        <div class="footer-column">
+            <h4>สินค้าต่างๆ</h4>
+            <p>ติดต่อเรา</p>
+            <p>คำถามที่พบบ่อย</p>
+            <p>วิธีดูแลสินค้า</p>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

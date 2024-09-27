@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เกี่ยวกับเรา | SportX</title>
+    <title>ตรวจสอบสถานะพัสดุ | SportX</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="track-order.css">
 </head>
 <style>
-     /* Global Styling */
-    * {
+  /* Global Styling */
+  * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -42,56 +42,44 @@
         .nav .nav-link:hover {
             color: #ddd;
         }
-/* Main Banner */
-.main-banner {
-    text-align: center;
-    padding: 50px 0;
+
+
+/* Track Order Section */
+.track-order {
     background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-.main-image {
-    width: 500px;
+.track-order h1 {
+    font-size: 32px;
 }
 
-.banner-text h1 {
-    font-size: 24px;
+.track-order p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.track-order form .form-label {
+    font-weight: bold;
+}
+
+.track-order form .form-control {
+    border-radius: 5px;
+}
+
+/* .track-order button {
     margin-top: 20px;
-}
-
-.banner-text p {
     font-size: 18px;
-    line-height: 1.6;
-}
-
-.btn-details {
+} */
+.btn-view-all {
+    display: block;
+    margin: 0 auto;
     margin-top: 20px;
     border-radius: 50px;
 }
-    /* About Section */
-.about-section {
-    background-color: white;
-    padding: 50px 20px;
-}
 
-.about-section img {
-    max-width: 100%;
-    height: auto;
-}
-
-.about-section h1, .about-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.text-center img {
-    width: 100%;
-    max-width: 500px;
-}
 /* Footer */
 .footer {
     background-color: black;
@@ -176,6 +164,7 @@
     color: #ccc;
 }
 
+
 </style>
 <body>
     <!-- Header -->
@@ -199,43 +188,24 @@
         </nav>
     </div>
 </header>
-    <!-- About Us Section -->
-    <section class="about-section container mt-5">
-        <div class="breadcrumb mb-4">
-            <a href="#">หน้าแรก</a> > <span>เกี่ยวกับเรา</span>
-        </div>
-        <h1 class="mb-4">เกี่ยวกับเรา</h1>
-        <div class="row align-items-center mb-5">
+    <!-- Track Order Section -->
+    <section class="track-order container text-center mt-5">
+        <h1 class="mb-4">ตรวจสอบสถานะ</h1>
+        <p>กรุณากรอกรหัสคำสั่งซื้อของคุณ แล้วกดปุ่ม "ติดตาม" เพื่อติดตามสถานะพัสดุ</p>
+        <div class="row justify-content-center mt-4">
             <div class="col-md-6">
-                <p>
-                    การออกกำลังกายและการเล่นกีฬาไม่เพียงแต่เป็นวิธีการที่ดีที่สุดในการรักษาสุขภาพและความฟิต 
-                    แต่ยังเป็นการลงทุนที่คุ้มค่าในความสุขและคุณภาพชีวิตของคุณด้วย! หากคุณกำลังมองหาอุปกรณ์ที่ครบครัน 
-                    เพื่อสนับสนุนการออกกำลังกายและการเล่นกีฬาในระดับที่สูงขึ้น คุณมาถึงที่ที่ถูกต้องแล้ว! <br>
-                    ที่ SportX เราเข้าใจดีว่าอุปกรณ์กีฬาที่ดีสามารถเปลี่ยนแปลงประสบการณ์การออกกำลังกายของคุณ
-                    ให้ดีขึ้นได้อย่างไร เรามุ่งมั่นที่จะให้บริการสินค้าที่มีคุณภาพสูงและทันสมัยที่สุด 
-                    เพื่อช่วยให้คุณบรรลุเป้าหมายทางสุขภาพและการเล่นกีฬาอย่างมีประสิทธิภาพ
-                </p>
-                <p><b>อุปกรณ์หลากหลายสำหรับทุกกิจกรรม</b></p>
-                <p> ไม่ว่าคุณจะเป็นนักกีฬามืออาชีพหรือเพียงแค่เริ่มต้นการออกกำลังกาย เรามีอุปกรณ์กีฬาครบครัน 
-                    <br>ตั้งแต่เครื่องออกกำลังกาย, ชุดกีฬา, อุปกรณ์ฝึกซ้อม ไปจนถึงอุปกรณ์กีฬาเฉพาะทางสำหรับกีฬาต่าง ๆ</p>
-                <p><b>คุณภาพที่คุณซื้อได้</b></p>
-                <p>เราคัดสรรอุปกรณ์จากแบรนด์ที่มีชื่อเสียงและได้รับการยอมรับในระดับสากล 
-                    <br>ทุกชิ้นถูกออกแบบมาเพื่อความทนทานและประสิทธิภาพสูงสุด</p>
-                <p><b>นวัตกรรมและเทคโนโลยีใหม่</b></p>
-                <p>เรานำเสนอนวัตกรรมล่าสุดในวงการกีฬาและฟิตเนส 
-                    <br>เพื่อตอบโจทย์ความต้องการของลูกค้าทุกคนและช่วยให้คุณได้รับประสบการณ์ที่ดีที่สุด</p>
-                <p><b>บริการลูกค้าที่ดีที่สุด</b></p>
-                <p>  ทีมงานของเราพร้อมให้คำแนะนำและบริการหลังการขายที่เป็นมิตรและมีความรู้ เพื่อให้คุณมั่นใจในการเลือกซื้อและใช้งานอุปกรณ์ของเรา</p>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="orderCode" class="form-label">รหัสคำสั่งซื้อ</label>
+                        <input type="text" class="form-control" id="orderCode" placeholder="รหัสคำสั่งซื้อของคุณ" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="อีเมลล์ของคุณ" required>
+                    </div>
+                    <button class="btn-view-all">ติดตาม</button>
+                </form>
             </div>
-            <div class="col-md-3">
-                <img src="/img/about.jpg" alt="SportX" class="img-fluid">
-            </div>
-        </div>
-        <div class="text-center mb-5">
-            <h2>เริ่มต้นการเปลี่ยนแปลงวันนี้!</h2>
-            <img src="/img/about(1).jpg" alt="Athletes" class="img-fluid">
-            <p class="mt-3">เตรียมพร้อมให้ร่างกายของคุณแข็งแรงและพร้อมรับความท้าทายใหม่ๆ...</p>
-            <p><strong>SportX</strong> ความสำเร็จของคุณเริ่มต้นที่นี่!</p>
         </div>
     </section>
 
@@ -302,3 +272,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

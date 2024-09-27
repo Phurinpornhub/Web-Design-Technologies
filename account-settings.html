@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตั้งค่าบัญชี</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            padding: 15px 0;
+            background-color: #fff;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+        .search-bar {
+            max-width: 500px;
+            margin-left: 20px;
+        }
+        .nav .nav-link {
+            color: #000000;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        .nav .nav-link:hover {
+            color: #777;
+        }
+
+        /* Sidebar */
+        .sidebar .list-group-item.active {
+            background-color: #000000;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+        .sidebar .list-group-item {
+            background-color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .sidebar .list-group-item:hover {
+            background-color: #f0f0f0;
+        }
+        .sidebar a {
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Account Settings Section */
+        .account-settings {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .form-control {
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .btn-save {
+            background-color: #000;
+            color: white;
+            border-radius: 20px;
+            padding: 10px 30px;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            background-color: transparent;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="img/image.png" alt="Sportix Logo" class="logo">
+                <div class="input-group search-bar">
+                    <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
+                    <span class="input-group-text bg-transparent border-0" id="search-icon"><i class="bi bi-search"></i></span>
+                </div>
+            </div>
+            <nav class="d-flex gap-4">
+                <a href="#" class="nav-link">สินค้า</a>
+                <a href="#" class="nav-link">การสั่งซื้อ</a>
+                <a href="#" class="nav-link">ข่าวสาร</a>
+                <a href="#" class="nav-link">ติดต่อเรา</a>
+                <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
+                <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb-container my-3">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+                <li class="breadcrumb-item"><a href="#">โปรไฟล์</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ตั้งค่าบัญชี</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-3 sidebar">
+                <ul class="list-group shadow-sm">
+                    <li class="list-group-item"><a href="member.html">หน้าหลัก</a></li>
+                    <li class="list-group-item"><a href="orders.html">การซื้อของฉัน</a></li>
+                    <li class="list-group-item"><a href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
+                    <li class="list-group-item"><a href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
+                    <li class="list-group-item active"><a href="account-settings.html" class="text-white">ตั้งค่าบัญชี</a></li>
+                    <li class="list-group-item"><a href="delivery-addresses.html">ที่อยู่จัดส่ง</a></li>
+                    <li class="list-group-item"><a href="payment-settings.html">ตั้งค่าการชำระเงิน</a></li>
+                </ul>
+            </aside>
+
+            <!-- Account Settings Section -->
+            <section class="col-md-9">
+                <div class="account-settings shadow-sm p-4">
+                    <div class="text-center">
+                        <img src="img/jan.jpg" alt="โปรไฟล์" class="profile-img">
+                    </div>
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="username" class="form-label">ชื่อ</label>
+                                <input type="text" class="form-control" id="username" placeholder="ชื่อ">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">อีเมล์</label>
+                                <input type="email" class="form-control" id="email" placeholder="อีเมล์">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="password" class="form-label">รหัสผ่าน</label>
+                                <input type="password" class="form-control" id="password" placeholder="รหัสผ่าน">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="confirm-password" class="form-label">ยืนยันรหัสผ่าน</label>
+                                <input type="password" class="form-control" id="confirm-password" placeholder="ยืนยันรหัสผ่าน">
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-save">บันทึก</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+
+</body>
+</html>

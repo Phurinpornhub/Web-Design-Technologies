@@ -9,38 +9,39 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <style>
-    /* General Styles */
-    body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f5f5f5;
-        color: #333;
-    }
+    /* Global Styling */
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    h1, h2 {
-        font-weight: bold;
-    }
-  .logo {
+        /* Header */
+        header {
+            padding: 15px 0;
+            background-color: #fff;
+        }
+        .logo {
             width: 100px;
             height: auto;
         }
-    /* Header */
-    .header .search-bar {
-        width: 250px;
-    }
-
-    .nav-links a {
-        margin: 0 10px;
-        font-size: 18px;
-    }
-
-    .cart-icon, .user-icon {
-        font-size: 24px;
-    }
+        .search-bar {
+            max-width: 500px;
+            margin-left: 20px;
+        }
+        .nav .nav-link {
+            color: #000000;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        .nav .nav-link:hover {
+            color: #777;
+        }
 
 
 /* News Section */
@@ -108,15 +109,16 @@
 </style>
 <body>
     <!-- Header -->
-    <header class="shadow-sm">
+    <header class="header py-3 shadow-sm">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <a href="/homepage.html"><img src="img/image.png" alt="Logo" class="logo"></a>
+                <img src="img/image.png" alt="Sportix Logo" class="logo">
                 <div class="input-group search-bar">
                     <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
+                    <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
                 </div>
             </div>
-                        <nav class="d-flex gap-4">
+            <nav class="d-flex gap-4">
                 <a href="#" class="nav-link">สินค้า</a>
                 <a href="#" class="nav-link">การสั่งซื้อ</a>
                 <a href="#" class="nav-link">ข่าวสาร</a>

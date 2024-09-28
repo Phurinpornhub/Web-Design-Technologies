@@ -23,12 +23,11 @@
 
         /* Header */
         header {
-            color: #fff;
             padding: 15px 0;
-            margin-bottom: 20px;
+            background-color: #fff;
         }
         .logo {
-            width: 80px;
+            width: 100px;
             height: auto;
         }
         .search-bar {
@@ -41,7 +40,7 @@
             font-weight: 500;
         }
         .nav .nav-link:hover {
-            color: #ddd;
+            color: #777;
         }
 
 /* Products Section */
@@ -111,22 +110,24 @@ button {
 </style>
 <body>
 <!-- Header -->
-<header class="shadow-sm">
+<!-- Header -->
+<header class="header py-3 shadow-sm">
     <div class="container d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
-            <a href="/homepage.html"><img src="img/image.png" alt="Logo" class="logo"></a>
+            <img src="img/image.png" alt="Sportix Logo" class="logo">
             <div class="input-group search-bar">
                 <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
+                <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
             </div>
         </div>
-                   <nav class="d-flex gap-4">
-                <a href="#" class="nav-link">สินค้า</a>
-                <a href="#" class="nav-link">การสั่งซื้อ</a>
-                <a href="#" class="nav-link">ข่าวสาร</a>
-                <a href="#" class="nav-link">ติดต่อเรา</a>
-                <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-                <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-            </nav>
+        <nav class="d-flex gap-4">
+            <a href="#" class="nav-link">สินค้า</a>
+            <a href="#" class="nav-link">การสั่งซื้อ</a>
+            <a href="#" class="nav-link">ข่าวสาร</a>
+            <a href="#" class="nav-link">ติดต่อเรา</a>
+            <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
+            <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
+        </nav>
     </div>
 </header>
 

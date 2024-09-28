@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* Variables for color, font size, and layout */
 :root {
@@ -117,6 +118,8 @@ header {
 }
 
 
+=======
+>>>>>>> cb76d58648d2f36e1043f3c36b5f4bdffa29c783
 /* Styles from checkout_product.html */
 
 
@@ -3634,7 +3637,11 @@ button {
             font-size: 14px;
             color: #555;
         }
+<<<<<<< HEAD
         .address-card .edit-link {
+=======
+        .address-card .edit-link  {
+>>>>>>> cb76d58648d2f36e1043f3c36b5f4bdffa29c783
             position: absolute;
             right: 20px;
             top: 20px;
@@ -3667,6 +3674,7 @@ button {
 }
 
 
+<<<<<<< HEAD
     
 
 
@@ -3693,3 +3701,6 @@ button {
     max-width: 1400px;
   }
 }
+=======
+    
+>>>>>>> cb76d58648d2f36e1043f3c36b5f4bdffa29c783

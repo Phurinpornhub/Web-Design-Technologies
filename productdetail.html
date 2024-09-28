@@ -10,18 +10,39 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <style>
-    /* Navbar */
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-}
-  .logo {
-            width: 80px;
+    /* Global Styling */
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            padding: 15px 0;
+            background-color: #fff;
+        }
+        .logo {
+            width: 100px;
             height: auto;
         }
-.nav-link {
-  font-size: 16px;
-}
+        .search-bar {
+            max-width: 500px;
+            margin-left: 20px;
+        }
+        .nav .nav-link {
+            color: #000000;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+        .nav .nav-link:hover {
+            color: #777;
+        }
 
 /* Breadcrumb */
 .breadcrumb-container {
@@ -85,24 +106,26 @@
 
 </style>
 <body>
-   <header class="header py-3 shadow-sm">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="img/image.png" alt="Sportix Logo" class="logo">
-                <div class="input-group search-bar">
-                    <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
-                </div>
-            </div>
-            <nav class="d-flex gap-4">
-                <a href="#" class="nav-link">สินค้า</a>
-                <a href="#" class="nav-link">การสั่งซื้อ</a>
-                <a href="#" class="nav-link">ข่าวสาร</a>
-                <a href="#" class="nav-link">ติดต่อเรา</a>
-                <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-                <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-            </nav>
-        </div>
-    </header>
+  <!-- Header -->
+<header class="header py-3 shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+          <img src="img/image.png" alt="Sportix Logo" class="logo">
+          <div class="input-group search-bar">
+              <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
+              <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+          </div>
+      </div>
+      <nav class="d-flex gap-4">
+          <a href="#" class="nav-link">สินค้า</a>
+          <a href="#" class="nav-link">การสั่งซื้อ</a>
+          <a href="#" class="nav-link">ข่าวสาร</a>
+          <a href="#" class="nav-link">ติดต่อเรา</a>
+          <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
+          <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
+      </nav>
+  </div>
+</header>
 
   <!-- Breadcrumb -->
   <div class="breadcrumb-container mt-3 mb-4">

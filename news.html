@@ -1,182 +1,94 @@
 <!DOCTYPE html>
+
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข่าวสาร | SportX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="news.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<style>
-    /* Global Styling */
-    * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ข่าวสาร | SportX</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="news.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 
-        /* Header */
-        header {
-            padding: 15px 0;
-            background-color: #fff;
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .search-bar {
-            max-width: 500px;
-            margin-left: 20px;
-        }
-        .nav .nav-link {
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-        .nav .nav-link:hover {
-            color: #777;
-        }
-
-
-    /* Breadcrumb Styling */
-    .breadcrumb {
-        color: #000;
-    }
-
-    .breadcrumb-item a {
-        color: #000;
-        text-decoration: none;
-    }
-
-    .breadcrumb-item a:hover {
-        color: #000;
-    }
-
-    .breadcrumb-item.active {
-        color: #555;
-    }
-
-    /* News Section */
-    .news h1 {
-        font-size: 32px;
-        margin-bottom: 30px;
-    }
-
-    .news-item img {
-        width: 100%;
-        height: 300px; /* Ensure all images are the same size */
-        object-fit: cover; /* Keep image proportions */
-        border-radius: 10px;
-    }
-    .news-item img:hover{
-        transform: translateY(-2px);
-
-
-    }
-    /* Footer */
-    .footer {
-        background-color: #2f2f2f;
-        color: white;
-        padding: 40px 20px;
-    }
-
-    .footer h4 {
-        font-size: 18px;
-        margin-bottom: 15px;
-    }
-
-    .footer p {
-        color: #ccc;
-    }
-</style>
 <body>
-    <!-- Header -->
-    <header class="header py-3 shadow-sm">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="img/image.png" alt="Sportix Logo" class="logo">
-                <div class="input-group search-bar">
-                    <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
-                    <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
-                </div>
-            </div>
-            <nav class="d-flex gap-4">
-                <a href="#" class="nav-link">สินค้า</a>
-                <a href="#" class="nav-link">การสั่งซื้อ</a>
-                <a href="#" class="nav-link">ข่าวสาร</a>
-                <a href="#" class="nav-link">ติดต่อเรา</a>
-                <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-                <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-            </nav>
-        </div>
-    </header>
-    <!-- Breadcrumb -->
-    <div class="breadcrumb-container container mt-4">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/homepage.html">หน้าแรก</a></li>
-                <li class="breadcrumb-item active" aria-current="page">สินค้า</li>
-            </ol>
-        </nav>
-    </div>
-
-    <!-- News Section -->
-    <section class="news container mt-5">
-        <h1 class="mb-4">ข่าวสาร</h1>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="news-item">
-                    <img src="/img/news.jpg" alt="อุปกรณ์กีฬา" class="img-fluid mb-3">
-                    <a href="/news_detail.html"><h3>อุปกรณ์กีฬา</h3></a>
-                    <p>เตรียมตัวให้พร้อมกับอุปกรณ์กีฬารุ่นใหม่! ยกระดับเกมของคุณด้วยเทคโนโลยีล่าสุด ทั้งความเร็ว ความแม่นยำ และการควบคุม ทุกสิ่งออกแบบมาเพื่อเพิ่มทักษะกีฬาตัวจริง พร้อมให้คุณพิสูจน์ฝีมือแล้ววันนี้!</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="news-item">
-                    <img src="/img/news2.jpg" alt="สินค้าฤดูกาลนี้" class="img-fluid mb-3">
-                    <h3>สินค้าฤดูกาลนี้</h3>
-                    <p>ไอเท็มที่ต้องมีในฤดูกาลนี้: Vivid Horizon Pack ด้วย F50, Predator, และ Copa Pure 2 คุณคู่หูที่ต้องการเพื่อครองเกม ไม่ว่าจะเป็นการเคลื่อนที่รวดเร็ว ยิงประตู หรือควบคุมบอลอย่างเหนือชั้น ทางเลือกเป็นของคุณ!</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer mt-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-3">
-                    <h4>บริษัท SportX จำกัด</h4>
-                    <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-                    <p>ชุดออกกำลังกาย</p>
-                    <p>อุปกรณ์เล่นกีฬา</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>นโยบายธุรกิจ</p>
-                    <p>นโยบายความเป็นส่วนตัว</p>
-                    <p>ขอคืนเงิน/สินค้า</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>ติดต่อเรา</p>
-                    <p>คำถามที่พบบ่อย</p>
-                    <p>วิธีดูแลสินค้า</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Header -->
+<header class="header py-3 shadow-sm">
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+<span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+</div>
+</div>
+<nav class="d-flex gap-4">
+<a class="nav-link" href="#">สินค้า</a>
+<a class="nav-link" href="#">การสั่งซื้อ</a>
+<a class="nav-link" href="#">ข่าวสาร</a>
+<a class="nav-link" href="#">ติดต่อเรา</a>
+<a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+<a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+</nav>
+</div>
+</header>
+<!-- Breadcrumb -->
+<div class="breadcrumb-container container mt-4">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="/homepage.html">หน้าแรก</a></li>
+<li aria-current="page" class="breadcrumb-item active">สินค้า</li>
+</ol>
+</nav>
+</div>
+<!-- News Section -->
+<section class="news container mt-5">
+<h1 class="mb-4">ข่าวสาร</h1>
+<div class="row">
+<div class="col-md-6">
+<div class="news-item">
+<img alt="อุปกรณ์กีฬา" class="img-fluid mb-3" src="/img/news.jpg"/>
+<a href="/news_detail.html"><h3>อุปกรณ์กีฬา</h3></a>
+<p>เตรียมตัวให้พร้อมกับอุปกรณ์กีฬารุ่นใหม่! ยกระดับเกมของคุณด้วยเทคโนโลยีล่าสุด ทั้งความเร็ว ความแม่นยำ และการควบคุม ทุกสิ่งออกแบบมาเพื่อเพิ่มทักษะกีฬาตัวจริง พร้อมให้คุณพิสูจน์ฝีมือแล้ววันนี้!</p>
+</div>
+</div>
+<div class="col-md-6">
+<div class="news-item">
+<img alt="สินค้าฤดูกาลนี้" class="img-fluid mb-3" src="/img/news2.jpg"/>
+<h3>สินค้าฤดูกาลนี้</h3>
+<p>ไอเท็มที่ต้องมีในฤดูกาลนี้: Vivid Horizon Pack ด้วย F50, Predator, และ Copa Pure 2 คุณคู่หูที่ต้องการเพื่อครองเกม ไม่ว่าจะเป็นการเคลื่อนที่รวดเร็ว ยิงประตู หรือควบคุมบอลอย่างเหนือชั้น ทางเลือกเป็นของคุณ!</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer mt-5">
+<div class="container py-5">
+<div class="row">
+<div class="col-md-3">
+<h4>บริษัท SportX จำกัด</h4>
+<p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+</div>
+<div class="col-md-3">
+<h4>สินค้าต่างๆ</h4>
+<p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+<p>ชุดออกกำลังกาย</p>
+<p>อุปกรณ์เล่นกีฬา</p>
+</div>
+<div class="col-md-3">
+<h4>สินค้าต่างๆ</h4>
+<p>นโยบายธุรกิจ</p>
+<p>นโยบายความเป็นส่วนตัว</p>
+<p>ขอคืนเงิน/สินค้า</p>
+</div>
+<div class="col-md-3">
+<h4>สินค้าต่างๆ</h4>
+<p>ติดต่อเรา</p>
+<p>คำถามที่พบบ่อย</p>
+<p>วิธีดูแลสินค้า</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

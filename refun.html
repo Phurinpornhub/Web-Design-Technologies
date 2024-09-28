@@ -1,159 +1,86 @@
 <!DOCTYPE html>
+
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>คืนเงิน | SportX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="refund.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<style>
-    /* Global Styling */
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>คืนเงิน | SportX</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="refund.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 
-        /* Header */
-        header {
-            padding: 15px 0;
-            background-color: #fff;
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .search-bar {
-            max-width: 500px;
-            margin-left: 20px;
-        }
-        .nav .nav-link {
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-        .nav .nav-link:hover {
-            color: #777;
-        }
-
-
-/* Refund Section */
-.refund h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.refund form .form-control {
-    border-radius: 5px;
-}
-
-.refund form .form-label {
-    font-weight: bold;
-}
-
-.refund form button {
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-/* Footer */
-.footer {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 40px 20px;
-}
-
-.footer h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer p {
-    color: #ccc;
-}
-
-</style>
 <body>
-    <!-- Header -->
+<!-- Header -->
 <header class="header py-3 shadow-sm">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-            <img src="img/image.png" alt="Sportix Logo" class="logo">
-            <div class="input-group search-bar">
-                <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
-                <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
-            </div>
-        </div>
-        <nav class="d-flex gap-4">
-            <a href="#" class="nav-link">สินค้า</a>
-            <a href="#" class="nav-link">การสั่งซื้อ</a>
-            <a href="#" class="nav-link">ข่าวสาร</a>
-            <a href="#" class="nav-link">ติดต่อเรา</a>
-            <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-            <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-        </nav>
-    </div>
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+<span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+</div>
+</div>
+<nav class="d-flex gap-4">
+<a class="nav-link" href="#">สินค้า</a>
+<a class="nav-link" href="#">การสั่งซื้อ</a>
+<a class="nav-link" href="#">ข่าวสาร</a>
+<a class="nav-link" href="#">ติดต่อเรา</a>
+<a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+<a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+</nav>
+</div>
 </header>
-
-    <!-- Refund Section -->
-    <section class="refund container mt-5">
-        <h1 class="mb-4">คืนเงิน</h1>
-        <form action="#" method="post" enctype="multipart/form-data">
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="orderNumber" class="form-label">หมายเลขคำสั่งซื้อ</label>
-                    <input type="text" class="form-control" id="orderNumber" placeholder="หมายเลขคำสั่งซื้อ" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="phoneNumber" class="form-label">เบอร์โทรศัพท์</label>
-                    <input type="tel" class="form-control" id="phoneNumber" placeholder="เบอร์โทรศัพท์" required>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="receipt" class="form-label">หลักฐานสินค้าที่ชำรุด</label>
-                <input type="file" class="form-control" id="receipt" required>
-            </div>
-            <button type="submit" class="btn btn-dark w-100">ขอคืนเงิน</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer mt-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-3">
-                    <h4>บริษัท SportX จำกัด</h4>
-                    <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-                    <p>ชุดออกกำลังกาย</p>
-                    <p>อุปกรณ์เล่นกีฬา</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>นโยบายธุรกิจ</p>
-                    <p>นโยบายความเป็นส่วนตัว</p>
-                    <p>ขอคืนเงิน/สินค้า</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>ติดต่อเรา</p>
-                    <p>คำถามที่พบบ่อย</p>
-                    <p>วิธีดูแลสินค้า</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Refund Section -->
+<section class="refund container mt-5">
+<h1 class="mb-4">คืนเงิน</h1>
+<form action="#" enctype="multipart/form-data" method="post">
+<div class="row mb-3">
+<div class="col-md-6">
+<label class="form-label" for="orderNumber">หมายเลขคำสั่งซื้อ</label>
+<input class="form-control" id="orderNumber" placeholder="หมายเลขคำสั่งซื้อ" required="" type="text"/>
+</div>
+<div class="col-md-6">
+<label class="form-label" for="phoneNumber">เบอร์โทรศัพท์</label>
+<input class="form-control" id="phoneNumber" placeholder="เบอร์โทรศัพท์" required="" type="tel"/>
+</div>
+</div>
+<div class="mb-3">
+<label class="form-label" for="receipt">หลักฐานสินค้าที่ชำรุด</label>
+<input class="form-control" id="receipt" required="" type="file"/>
+</div>
+<button class="btn btn-dark w-100" type="submit">ขอคืนเงิน</button>
+</form>
+</section>
+<!-- Footer -->
+<footer class="footer mt-5">
+<div class="container py-5">
+<div class="row">
+<div class="col-md-3">
+<h4>บริษัท SportX จำกัด</h4>
+<p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+</div>
+<div class="col-md-3">
+<h4>สินค้าต่างๆ</h4>
+<p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+<p>ชุดออกกำลังกาย</p>
+<p>อุปกรณ์เล่นกีฬา</p>
+</div>
+<div class="col-md-3">
+<h4>สินค้าต่างๆ</h4>
+<p>นโยบายธุรกิจ</p>
+<p>นโยบายความเป็นส่วนตัว</p>
+<p>ขอคืนเงิน/สินค้า</p>
+</div>
+<div class="col-md-3">
+<h4>สินค้าต่างๆ</h4>
+<p>ติดต่อเรา</p>
+<p>คำถามที่พบบ่อย</p>
+<p>วิธีดูแลสินค้า</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

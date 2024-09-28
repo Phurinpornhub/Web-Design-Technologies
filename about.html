@@ -52,7 +52,6 @@
     }
 
     /* Main Banner */
-    /* Hero Section */
     .hero-section {
         background-color: #fff;
         text-align: center;
@@ -78,6 +77,21 @@
         height: auto;
         border-radius: 10px;
     }
+    /* Breadcrumb Styling */
+.breadcrumb {
+    color: #000; /* เปลี่ยนสีตัวหนังสือเป็นสีดำ */
+}
+.breadcrumb-item a {
+    color: #000; /* เปลี่ยนสีลิงก์ใน breadcrumb */
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: #000; /* สีเมื่อ hover */
+}
+.breadcrumb-item.active {
+    color: #555; /* สีของ breadcrumb ที่ active */
+}
+
 
 
     /* Footer */
@@ -165,83 +179,70 @@
     }
 </style>
 
-    <body>
-        <!-- Header -->
-        <header class="shadow-sm">
-            <div
-                class="container d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                    <img src="img/image.png" alt="Logo" class="logo">
-                    <div class="input-group search-bar">
-                        <input type="text" class="form-control rounded-pill"
-                            placeholder="ค้นหา...">
-                    </div>
+<body>
+    <!-- Header -->
+    <header class="shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="img/image.png" alt="Logo" class="logo">
+                <div class="input-group search-bar">
+                    <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
                 </div>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">สินค้า</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">การสั่งซื้อ</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">ข่าวสาร</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">ติดต่อเรา</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">🛒</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">👤</a></li>
-                    </ul>
-                </nav>
             </div>
-        </header>
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb" class="breadcrumb-container my-3">
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
-                    <li class="breadcrumb-item active"
-                        aria-current="page">เกี่ยวกับเรา</li>
-                </ol>
-            </div>
-        </nav>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link">สินค้า</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">การสั่งซื้อ</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ข่าวสาร</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ติดต่อเรา</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">🛒</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">👤</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="breadcrumb-container my-3">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+                <li class="breadcrumb-item active" aria-current="page">เกี่ยวกับเรา</li>
+            </ol>
+        </div>
+    </nav>
 
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <h2 class="mb-4">เกี่ยวกับเรา</h2>
-            <div class="container text-center">
-                <img src="/img/about.jpg" alt="About Us Banner"
-                    class="img-fluid">
-            </div>
-            <div class="container text-center">
-                <p class="lead mb-5">
-                    การออกกำลังกายและการเล่นกีฬาไม่เพียงแต่เป็นบริการที่ดีที่สุดในการรักษาสุขภาพและความฟิต
-                    <br>
-                    แต่ยังเป็นการลงทุนที่คุ้มค่าในความสุขและคุณภาพชีวิตของคุณด้วย!
-                    หากคุณคือส่วนหนึ่งของความมุ่งมั่นนี้ <br>
-                    SportX
-                    เรามุ่งมั่นที่จะให้บริการสินค้าที่ดีที่สุดจากผู้ผลิตชั้นนำ<br>
-                    เพื่อช่วยให้คุณบรรลุเป้าหมายสูงสุดของคุณ
-                </p>
-                <h3 class="mb-4">เริ่มต้นการเปลี่ยนแปลงวันนี้!</h3>
-                <img src="/img/about(1).jpg" alt="Team" class="img-fluid mb-4">
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-top">
-                <h3>ติดต่อเรา</h3>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="icon">📞</span>
-                        <p>โทรศัพท์: 099-123-5567</p>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">💬</span>
-                        <p>แอดไลน์: SportX</p>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h2 class="mb-4">เกี่ยวกับเรา</h2>
+        <div class="container text-center">
+            <img src="/img/about.jpg" alt="About Us Banner" class="img-fluid">
+        </div>
+        <div class="container text-center">
+            <p class="lead mb-5">
+                การออกกำลังกายและการเล่นกีฬาไม่เพียงแต่เป็นบริการที่ดีที่สุดในการรักษาสุขภาพและความฟิต <br>
+                แต่ยังเป็นการลงทุนที่คุ้มค่าในความสุขและคุณภาพชีวิตของคุณด้วย! หากคุณคือส่วนหนึ่งของความมุ่งมั่นนี้ <br>
+                SportX เรามุ่งมั่นที่จะให้บริการสินค้าที่ดีที่สุดจากผู้ผลิตชั้นนำ<br>
+                เพื่อช่วยให้คุณบรรลุเป้าหมายสูงสุดของคุณ
+            </p>
+            <h3 class="mb-4">เริ่มต้นการเปลี่ยนแปลงวันนี้!</h3>
+            <img src="/img/about(1).jpg" alt="Team" class="img-fluid mb-4">
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <h3>ติดต่อเรา</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <p>โทรศัพท์: 099-123-5567</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">💬</span>
+                    <p>แอดไลน์: SportX</p>
                 </div>
             </div>
+        </div>
 
             <div class="staff-section">
                 <div class="staff-item">

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ตรวจสอบสถานะพัสดุ | SportX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="track-status.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ตรวจสอบสถานะพัสดุ | SportX</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet" href="track-status.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet">
+    </head>
+    <style>
      /* Global Styling */
      * {
             margin: 0;
@@ -176,123 +180,129 @@
 
 
 </style>
-<body>
-    <!-- Header -->
-<header class="shadow-sm">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-            <img src="img/image.png" alt="Logo" class="logo">
-            <div class="input-group search-bar">
-                <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
+    <body>
+        <!-- Header -->
+        <header class="shadow-sm">
+            <div
+                class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img src="img/image.png" alt="Logo" class="logo">
+                    <div class="input-group search-bar">
+                        <input type="text" class="form-control rounded-pill"
+                            placeholder="ค้นหา...">
+                    </div>
+                </div>
+                <nav class="d-flex gap-4">
+                    <a href="#" class="nav-link">สินค้า</a>
+                    <a href="#" class="nav-link">การสั่งซื้อ</a>
+                    <a href="#" class="nav-link">ข่าวสาร</a>
+                    <a href="#" class="nav-link">ติดต่อเรา</a>
+                    <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
+                    <a href="#" class="nav-link"><i
+                            class="bi bi-person"></i></a>
+                </nav>
             </div>
-        </div>
-        <nav>
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link">สินค้า</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">การสั่งซื้อ</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">ข่าวสาร</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">ติดต่อเรา</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">🛒</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">👤</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-    <!-- Track Status Section -->
-    <section class="track-status container text-center mt-5">
-        <h1 class="mb-4">ตรวจสอบสถานะ</h1>
-        <div class="row justify-content-center align-items-center status-icons">
-            <div class="col-md-3">
-                <div class="status-icon">
-                    <img src="icon-packaging.png" alt="กำลังจัดเตรียมพัสดุ" class="img-fluid">
-                    <p>กำลังจัดเตรียมพัสดุ</p>
+        </header>
+        <!-- Track Status Section -->
+        <section class="track-status container text-center mt-5">
+            <h1 class="mb-4">ตรวจสอบสถานะ</h1>
+            <div
+                class="row justify-content-center align-items-center status-icons">
+                <div class="col-md-3">
+                    <div class="status-icon">
+                        <img src="icon-packaging.png" alt="กำลังจัดเตรียมพัสดุ"
+                            class="img-fluid">
+                        <p>กำลังจัดเตรียมพัสดุ</p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <img src="icon-arrow.png" alt="Arrow" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <div class="status-icon active">
+                        <img src="icon-shipping.png" alt="อยู่ในระหว่างจัดส่ง"
+                            class="img-fluid">
+                        <p>อยู่ในระหว่างจัดส่ง</p>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <img src="icon-arrow.png" alt="Arrow" class="img-fluid">
+                </div>
+                <div class="col-md-3">
+                    <div class="status-icon">
+                        <img src="icon-delivered.png" alt="จัดส่งสำเร็จ"
+                            class="img-fluid">
+                        <p>จัดส่งสำเร็จ</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-1">
-                <img src="icon-arrow.png" alt="Arrow" class="img-fluid">
+            <div class="tracking-info mt-5 p-4">
+                <p><strong>สถานะสินค้า :</strong> อยู่ระหว่างการจัดส่ง</p>
+                <p><strong>หมายเลขพัสดุ :</strong> TH5662487952</p>
+                <p class="note"><strong>หมายเหตุ :</strong></p>
             </div>
-            <div class="col-md-3">
-                <div class="status-icon active">
-                    <img src="icon-shipping.png" alt="อยู่ในระหว่างจัดส่ง" class="img-fluid">
-                    <p>อยู่ในระหว่างจัดส่ง</p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-top">
+                <h3>ติดต่อเรา</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="icon">📞</span>
+                        <p>โทรศัพท์: 099-123-5567</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="icon">💬</span>
+                        <p>แอดไลน์: SportX</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-1">
-                <img src="icon-arrow.png" alt="Arrow" class="img-fluid">
-            </div>
-            <div class="col-md-3">
-                <div class="status-icon">
-                    <img src="icon-delivered.png" alt="จัดส่งสำเร็จ" class="img-fluid">
-                    <p>จัดส่งสำเร็จ</p>
+
+            <div class="staff-section">
+                <div class="staff-item">
+                    <img src="/img/Pan.jpg" alt="แพน">
+                    <p>แพน</p>
+                    <span>ฝ่ายขาย</span>
+                </div>
+                <div class="staff-item">
+                    <img src="/img/Noey.jpg" alt="เนย">
+                    <p>เนย</p>
+                    <span>ฝ่ายขาย</span>
+                </div>
+                <div class="staff-item">
+                    <img src="/img/Put.jpg" alt="ภัทร">
+                    <p>ภัทร</p>
+                    <span>ฝ่ายจัดส่ง</span>
                 </div>
             </div>
-        </div>
-        <div class="tracking-info mt-5 p-4">
-            <p><strong>สถานะสินค้า :</strong> อยู่ระหว่างการจัดส่ง</p>
-            <p><strong>หมายเลขพัสดุ :</strong> TH5662487952</p>
-            <p class="note"><strong >หมายเหตุ :</strong></p>
-        </div>
-    </section>
 
- <!-- Footer Section -->
- <footer class="footer">
-    <div class="footer-top">
-        <h3>ติดต่อเรา</h3>
-        <div class="contact-info">
-            <div class="contact-item">
-                <span class="icon">📞</span>
-                <p>โทรศัพท์: 099-123-5567</p>
+            <div class="footer-bottom">
+                <div class="footer-column">
+                    <h4>บริษัท SportX จำกัด</h4>
+                    <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น
+                        ขอนแก่น 40000</p>
+                </div>
+                <div class="footer-column">
+                    <h4>สินค้าต่างๆ</h4>
+                    <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+                    <p>ชุดออกกำลังกาย</p>
+                    <p>อุปกรณ์เล่นกีฬา</p>
+                </div>
+                <div class="footer-column">
+                    <h4>สินค้าต่างๆ</h4>
+                    <p>นโยบายธุรกิจ</p>
+                    <p>นโยบายความเป็นส่วนตัว</p>
+                    <p>ขอคืนเงิน/สินค้า</p>
+                </div>
+                <div class="footer-column">
+                    <h4>สินค้าต่างๆ</h4>
+                    <p>ติดต่อเรา</p>
+                    <p>คำถามที่พบบ่อย</p>
+                    <p>วิธีดูแลสินค้า</p>
+                </div>
             </div>
-            <div class="contact-item">
-                <span class="icon">💬</span>
-                <p>แอดไลน์: SportX</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="staff-section">
-        <div class="staff-item">
-            <img src="/img/Pan.jpg" alt="แพน">
-            <p>แพน</p>
-            <span>ฝ่ายขาย</span>
-        </div>
-        <div class="staff-item">
-            <img src="/img/Noey.jpg" alt="เนย">
-            <p>เนย</p>
-            <span>ฝ่ายขาย</span>
-        </div>
-        <div class="staff-item">
-            <img src="/img/Put.jpg" alt="ภัทร">
-            <p>ภัทร</p>
-            <span>ฝ่ายจัดส่ง</span>
-        </div>
-    </div>
+        </footer>
 
-    <div class="footer-bottom">
-        <div class="footer-column">
-            <h4>บริษัท SportX จำกัด</h4>
-            <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
-        </div>
-        <div class="footer-column">
-            <h4>สินค้าต่างๆ</h4>
-            <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-            <p>ชุดออกกำลังกาย</p>
-            <p>อุปกรณ์เล่นกีฬา</p>
-        </div>
-        <div class="footer-column">
-            <h4>สินค้าต่างๆ</h4>
-            <p>นโยบายธุรกิจ</p>
-            <p>นโยบายความเป็นส่วนตัว</p>
-            <p>ขอคืนเงิน/สินค้า</p>
-        </div>
-        <div class="footer-column">
-            <h4>สินค้าต่างๆ</h4>
-            <p>ติดต่อเรา</p>
-            <p>คำถามที่พบบ่อย</p>
-            <p>วิธีดูแลสินค้า</p>
-        </div>
-    </div>
-</footer>
-
-</body>
+    </body>
 </html>

@@ -1,305 +1,127 @@
 <!DOCTYPE html>
+
 <html lang="th">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ตรวจสอบสถานะพัสดุ | SportX</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet" href="track-status.css">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-            rel="stylesheet">
-    </head>
-    <style>
-     /* Global Styling */
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ตรวจสอบสถานะพัสดุ | SportX</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="track-status.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 
-        /* Header */
-        header {
-            padding: 15px 0;
-            background-color: #fff;
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .search-bar {
-            max-width: 500px;
-            margin-left: 20px;
-        }
-        .nav .nav-link {
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-        .nav .nav-link:hover {
-            color: #777;
-        }
-
-
-        /* Track Status Section */
-.track-status h1 {
-    font-size: 32px;
-}
-
-.status-icons {
-    margin-bottom: 50px;
-}
-
-.status-icon {
-    text-align: center;
-}
-
-.status-icon img {
-    width: 100px;
-}
-
-.status-icon p {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-.status-icon.active img {
-    filter: grayscale(0%);
-}
-
-.status-icon img {
-    filter: grayscale(100%);
-}
-
-.tracking-info {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.tracking-info p {
-    font-size: 18px;
-    margin-bottom: 10px;
-    
-}
-
-.tracking-info .note {
-    margin-right: 165px; 
-}
-
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-top h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-
-
-</style>
-    <!-- Header -->
+<!-- Header -->
 <header class="header py-3 shadow-sm">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-            <img src="img/image.png" alt="Sportix Logo" class="logo">
-            <div class="input-group search-bar">
-                <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
-                <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
-            </div>
-        </div>
-        <nav class="d-flex gap-4">
-            <a href="#" class="nav-link">สินค้า</a>
-            <a href="#" class="nav-link">การสั่งซื้อ</a>
-            <a href="#" class="nav-link">ข่าวสาร</a>
-            <a href="#" class="nav-link">ติดต่อเรา</a>
-            <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-            <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-        </nav>
-    </div>
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+<span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+</div>
+</div>
+<nav class="d-flex gap-4">
+<a class="nav-link" href="#">สินค้า</a>
+<a class="nav-link" href="#">การสั่งซื้อ</a>
+<a class="nav-link" href="#">ข่าวสาร</a>
+<a class="nav-link" href="#">ติดต่อเรา</a>
+<a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+<a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+</nav>
+</div>
 </header>
-        <!-- Track Status Section -->
-        <section class="track-status container text-center mt-5">
-            <h1 class="mb-4">ตรวจสอบสถานะ</h1>
-            <div
-                class="row justify-content-center align-items-center status-icons">
-                <div class="col-md-3">
-                    <div class="status-icon">
-                        <img src="icon-packaging.png" alt="กำลังจัดเตรียมพัสดุ"
-                            class="img-fluid">
-                        <p>กำลังจัดเตรียมพัสดุ</p>
-                    </div>
-                </div>
-                <div class="col-md-1">
-                    <img src="icon-arrow.png" alt="Arrow" class="img-fluid">
-                </div>
-                <div class="col-md-3">
-                    <div class="status-icon active">
-                        <img src="icon-shipping.png" alt="อยู่ในระหว่างจัดส่ง"
-                            class="img-fluid">
-                        <p>อยู่ในระหว่างจัดส่ง</p>
-                    </div>
-                </div>
-                <div class="col-md-1">
-                    <img src="icon-arrow.png" alt="Arrow" class="img-fluid">
-                </div>
-                <div class="col-md-3">
-                    <div class="status-icon">
-                        <img src="icon-delivered.png" alt="จัดส่งสำเร็จ"
-                            class="img-fluid">
-                        <p>จัดส่งสำเร็จ</p>
-                    </div>
-                </div>
-            </div>
-            <div class="tracking-info mt-5 p-4">
-                <p><strong>สถานะสินค้า :</strong> อยู่ระหว่างการจัดส่ง</p>
-                <p><strong>หมายเลขพัสดุ :</strong> TH5662487952</p>
-                <p class="note"><strong>หมายเหตุ :</strong></p>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <div class="footer-top">
-                <h3>ติดต่อเรา</h3>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="icon">📞</span>
-                        <p>โทรศัพท์: 099-123-5567</p>
-                    </div>
-                    <div class="contact-item">
-                        <span class="icon">💬</span>
-                        <p>แอดไลน์: SportX</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="staff-section">
-                <div class="staff-item">
-                    <img src="/img/Pan.jpg" alt="แพน">
-                    <p>แพน</p>
-                    <span>ฝ่ายขาย</span>
-                </div>
-                <div class="staff-item">
-                    <img src="/img/Noey.jpg" alt="เนย">
-                    <p>เนย</p>
-                    <span>ฝ่ายขาย</span>
-                </div>
-                <div class="staff-item">
-                    <img src="/img/Put.jpg" alt="ภัทร">
-                    <p>ภัทร</p>
-                    <span>ฝ่ายจัดส่ง</span>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-column">
-                    <h4>บริษัท SportX จำกัด</h4>
-                    <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น
+<!-- Track Status Section -->
+<section class="track-status container text-center mt-5">
+<h1 class="mb-4">ตรวจสอบสถานะ</h1>
+<div class="row justify-content-center align-items-center status-icons">
+<div class="col-md-3">
+<div class="status-icon">
+<img alt="กำลังจัดเตรียมพัสดุ" class="img-fluid" src="icon-packaging.png"/>
+<p>กำลังจัดเตรียมพัสดุ</p>
+</div>
+</div>
+<div class="col-md-1">
+<img alt="Arrow" class="img-fluid" src="icon-arrow.png"/>
+</div>
+<div class="col-md-3">
+<div class="status-icon active">
+<img alt="อยู่ในระหว่างจัดส่ง" class="img-fluid" src="icon-shipping.png"/>
+<p>อยู่ในระหว่างจัดส่ง</p>
+</div>
+</div>
+<div class="col-md-1">
+<img alt="Arrow" class="img-fluid" src="icon-arrow.png"/>
+</div>
+<div class="col-md-3">
+<div class="status-icon">
+<img alt="จัดส่งสำเร็จ" class="img-fluid" src="icon-delivered.png"/>
+<p>จัดส่งสำเร็จ</p>
+</div>
+</div>
+</div>
+<div class="tracking-info mt-5 p-4">
+<p><strong>สถานะสินค้า :</strong> อยู่ระหว่างการจัดส่ง</p>
+<p><strong>หมายเลขพัสดุ :</strong> TH5662487952</p>
+<p class="note"><strong>หมายเหตุ :</strong></p>
+</div>
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+<div class="footer-top">
+<h3>ติดต่อเรา</h3>
+<div class="contact-info">
+<div class="contact-item">
+<span class="icon">📞</span>
+<p>โทรศัพท์: 099-123-5567</p>
+</div>
+<div class="contact-item">
+<span class="icon">💬</span>
+<p>แอดไลน์: SportX</p>
+</div>
+</div>
+</div>
+<div class="staff-section">
+<div class="staff-item">
+<img alt="แพน" src="/img/Pan.jpg"/>
+<p>แพน</p>
+<span>ฝ่ายขาย</span>
+</div>
+<div class="staff-item">
+<img alt="เนย" src="/img/Noey.jpg"/>
+<p>เนย</p>
+<span>ฝ่ายขาย</span>
+</div>
+<div class="staff-item">
+<img alt="ภัทร" src="/img/Put.jpg"/>
+<p>ภัทร</p>
+<span>ฝ่ายจัดส่ง</span>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-column">
+<h4>บริษัท SportX จำกัด</h4>
+<p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น
                         ขอนแก่น 40000</p>
-                </div>
-                <div class="footer-column">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-                    <p>ชุดออกกำลังกาย</p>
-                    <p>อุปกรณ์เล่นกีฬา</p>
-                </div>
-                <div class="footer-column">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>นโยบายธุรกิจ</p>
-                    <p>นโยบายความเป็นส่วนตัว</p>
-                    <p>ขอคืนเงิน/สินค้า</p>
-                </div>
-                <div class="footer-column">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>ติดต่อเรา</p>
-                    <p>คำถามที่พบบ่อย</p>
-                    <p>วิธีดูแลสินค้า</p>
-                </div>
-            </div>
-        </footer>
+</div>
+<div class="footer-column">
+<h4>สินค้าต่างๆ</h4>
+<p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+<p>ชุดออกกำลังกาย</p>
+<p>อุปกรณ์เล่นกีฬา</p>
+</div>
+<div class="footer-column">
+<h4>สินค้าต่างๆ</h4>
+<p>นโยบายธุรกิจ</p>
+<p>นโยบายความเป็นส่วนตัว</p>
+<p>ขอคืนเงิน/สินค้า</p>
+</div>
+<div class="footer-column">
+<h4>สินค้าต่างๆ</h4>
+<p>ติดต่อเรา</p>
+<p>คำถามที่พบบ่อย</p>
+<p>วิธีดูแลสินค้า</p>
+</div>
+</div>
+</footer>
 
-    </body>
 </html>

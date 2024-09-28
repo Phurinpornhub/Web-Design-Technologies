@@ -1,227 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="th">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ติดต่อเรา | SportX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-           /* Global Styling */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ติดต่อเรา | SportX</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-        /* Header */
-        header {
-            padding: 15px 0;
-            background-color: #fff;
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .search-bar {
-            max-width: 500px;
-            margin-left: 20px;
-        }
-        .nav .nav-link {
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-        .nav .nav-link:hover {
-            color: #777;
-        }
-        /* Contact Section */
-        .contact-title {
-            text-align: center;
-            margin-top: 40px;
-            font-size: 36px;
-        }
-
-        .breadcrumb-container {
-            margin-top: 20px;
-        }
-
-        .breadcrumb {
-            color: #000;
-        }
-
-        .breadcrumb-item a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .breadcrumb-item.active {
-            color: #555;
-        }
-
-        .contact-content {
-            margin: 50px auto;
-            text-align: center;
-        }
-
-        .contact-content p {
-            margin-bottom: 20px;
-        }
-
-        .contact-box {
-            margin-top: 20px;
-        }
-
-        .contact-info {
-            margin-top: 40px;
-        }
-
-        .contact-info h4 {
-            font-weight: bold;
-        }
-
-        .contact-info p {
-            color: #555;
-        }
-
-        /* Flexbox for vertical alignment */
-        .contact-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .contact-column {
-            flex: 1;
-            margin: 20px;
-        }
-        .map-container {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .map-container iframe {
-            width: 100%;
-            height: 450px;
-            border: none;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #2f2f2f;
-            color: white;
-            padding: 40px 20px;
-        }
-
-        .footer h4 {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
-
-        .footer p {
-            color: #ccc;
-        }
-
-    </style>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 <body>
-    <!-- Header -->
-    <header class="header py-3 shadow-sm">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="img/image.png" alt="Sportix Logo" class="logo">
-                <div class="input-group search-bar">
-                    <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
-                    <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
-                </div>
-            </div>
-            <nav class="d-flex gap-4">
-                <a href="#" class="nav-link">สินค้า</a>
-                <a href="#" class="nav-link">การสั่งซื้อ</a>
-                <a href="#" class="nav-link">ข่าวสาร</a>
-                <a href="#" class="nav-link">ติดต่อเรา</a>
-                <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-                <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Breadcrumb -->
-    <div class="breadcrumb-container container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/homepage.html">หน้าแรก</a></li>
-                <li class="breadcrumb-item active" aria-current="page">ติดต่อเรา</li>
-            </ol>
-        </nav>
-    </div>
-
-    <!-- Contact Section -->
-    <section class="contact-section container">
-        <h1 class="contact-title">ติดต่อเรา</h1>
-        <div class="contact-row">
-            <div class="contact-column">
-                <h4>ติดต่อสอบถามปัญหาต่างๆ</h4>
-                <p>เราเลยไม่มีทีมขายหรือทีมซัพพอร์ตทางแชทหรือโทรศัพท์ หากซื้อสินค้าแล้วต้องการความช่วยเหลือสามารถดูที่หน้าศูนย์ช่วยเหลือ การตอบคำถามต่างๆ จุดประสงค์คือการแบ่งปันความรู้และเพื่อช่วยกันแก้ไขปัญหา</p>
-            </div>
-            <div class="contact-column">
-                <h4>ติดต่อฝ่ายบัญชี การเงิน</h4>
-                <p>การขอใบเสนอราคา กรุณาขอชื่อ ที่อยู่ เลขประจำตัวผู้เสียภาษี ส่งเข้าเมล account@rantonmai.com ได้เลยครับ หากต้องการติดต่อทางโทรศัพท์ สามารถโทร 02-2222229 ต่อ 2 เพื่อติดต่อฝ่ายบัญชีได้ครับ</p>
-            </div>
-        </div>
-
-        <div class="contact-row">
-            <div class="contact-column">
-                <h4>ติดต่อทั่วไป</h4>
-                <p>ติดต่อสอบถามเรื่องทั่วไป สามารถโทร 02-2222229 ต่อ 1 เพื่อติดต่อทีมงาน ได้เลยครับ</p>
-            </div>
-        </div>
-        <!-- Google Map -->
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.7387425226584!2d102.8270595757946!3d16.473914533444275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228a66410d3e29%3A0x19e2b84a33c6a914!2sCollege%20of%20Computing%20Khon%20Kaen%20University!5e0!3m2!1sen!2sth!4v1695977299392!5m2!1sen!2sth" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer mt-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-md-3">
-                    <h4>บริษัท SportX จำกัด</h4>
-                    <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-                    <p>ชุดออกกำลังกาย</p>
-                    <p>อุปกรณ์เล่นกีฬา</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>นโยบาย</h4>
-                    <p>นโยบายธุรกิจ</p>
-                    <p>นโยบายความเป็นส่วนตัว</p>
-                    <p>ขอคืนเงิน/สินค้า</p>
-                </div>
-                <div class="col-md-3">
-                    <h4>การติดต่อ</h4>
-                    <p>ติดต่อเรา</p>
-                    <p>คำถามที่พบบ่อย</p>
-                    <p>วิธีดูแลสินค้า</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Header -->
+<header class="header py-3 shadow-sm">
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+<span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+</div>
+</div>
+<nav class="d-flex gap-4">
+<a class="nav-link" href="#">สินค้า</a>
+<a class="nav-link" href="#">การสั่งซื้อ</a>
+<a class="nav-link" href="#">ข่าวสาร</a>
+<a class="nav-link" href="#">ติดต่อเรา</a>
+<a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+<a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+</nav>
+</div>
+</header>
+<!-- Breadcrumb -->
+<div class="breadcrumb-container container">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="/homepage.html">หน้าแรก</a></li>
+<li aria-current="page" class="breadcrumb-item active">ติดต่อเรา</li>
+</ol>
+</nav>
+</div>
+<!-- Contact Section -->
+<section class="contact-section container">
+<h1 class="contact-title">ติดต่อเรา</h1>
+<div class="contact-row">
+<div class="contact-column">
+<h4>ติดต่อสอบถามปัญหาต่างๆ</h4>
+<p>เราเลยไม่มีทีมขายหรือทีมซัพพอร์ตทางแชทหรือโทรศัพท์ หากซื้อสินค้าแล้วต้องการความช่วยเหลือสามารถดูที่หน้าศูนย์ช่วยเหลือ การตอบคำถามต่างๆ จุดประสงค์คือการแบ่งปันความรู้และเพื่อช่วยกันแก้ไขปัญหา</p>
+</div>
+<div class="contact-column">
+<h4>ติดต่อฝ่ายบัญชี การเงิน</h4>
+<p>การขอใบเสนอราคา กรุณาขอชื่อ ที่อยู่ เลขประจำตัวผู้เสียภาษี ส่งเข้าเมล account@rantonmai.com ได้เลยครับ หากต้องการติดต่อทางโทรศัพท์ สามารถโทร 02-2222229 ต่อ 2 เพื่อติดต่อฝ่ายบัญชีได้ครับ</p>
+</div>
+</div>
+<div class="contact-row">
+<div class="contact-column">
+<h4>ติดต่อทั่วไป</h4>
+<p>ติดต่อสอบถามเรื่องทั่วไป สามารถโทร 02-2222229 ต่อ 1 เพื่อติดต่อทีมงาน ได้เลยครับ</p>
+</div>
+</div>
+<!-- Google Map -->
+<div class="map-container">
+<iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.7387425226584!2d102.8270595757946!3d16.473914533444275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31228a66410d3e29%3A0x19e2b84a33c6a914!2sCollege%20of%20Computing%20Khon%20Kaen%20University!5e0!3m2!1sen!2sth!4v1695977299392!5m2!1sen!2sth"></iframe>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer mt-5">
+<div class="container py-5">
+<div class="row">
+<div class="col-md-3">
+<h4>บริษัท SportX จำกัด</h4>
+<p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+</div>
+<div class="col-md-3">
+<h4>สินค้าต่างๆ</h4>
+<p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+<p>ชุดออกกำลังกาย</p>
+<p>อุปกรณ์เล่นกีฬา</p>
+</div>
+<div class="col-md-3">
+<h4>นโยบาย</h4>
+<p>นโยบายธุรกิจ</p>
+<p>นโยบายความเป็นส่วนตัว</p>
+<p>ขอคืนเงิน/สินค้า</p>
+</div>
+<div class="col-md-3">
+<h4>การติดต่อ</h4>
+<p>ติดต่อเรา</p>
+<p>คำถามที่พบบ่อย</p>
+<p>วิธีดูแลสินค้า</p>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

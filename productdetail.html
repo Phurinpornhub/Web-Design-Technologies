@@ -1,181 +1,83 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Details</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<style>
-    /* Global Styling */
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Product Details</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 
-        /* Header */
-        header {
-            padding: 15px 0;
-            background-color: #fff;
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .search-bar {
-            max-width: 500px;
-            margin-left: 20px;
-        }
-        .nav .nav-link {
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-        .nav .nav-link:hover {
-            color: #777;
-        }
-
-/* Breadcrumb */
-.breadcrumb-container {
-  background-color: #f8f9fa;
-  padding: 10px 0;
-}
-
-.breadcrumb a {
-  text-decoration: none;
-  color: #000;
-}
-
-.breadcrumb-item.active {
-  color: #6c757d;
-}
-
-/* Product Section */
-.product-details {
-  padding: 20px 0;
-}
-
-.product-image {
-    margin-left: 150px;
-  max-width: 50%;
-  height: auto;
-}
-
-.product-description {
-  font-size: 14px;
-  color: #6c757d;
-  margin-left: 150px;
-}
-
-.product-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.product-price {
-  font-size: 22px;
-  color: #000;
-  font-weight: bold;
-}
-
-.product-size {
-  font-size: 18px;
-  color: #6c757d;
-  margin-bottom: 15px;
-}
-
-.form-select {
-  max-width: 120px;
-  margin-bottom: 20px;
-}
-
-.btn-secondary, .btn-dark {
-  width: 140px;
-  border-radius: 50px;
-}
-
-</style>
 <body>
-  <!-- Header -->
+<!-- Header -->
 <header class="header py-3 shadow-sm">
-  <div class="container d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-          <img src="img/image.png" alt="Sportix Logo" class="logo">
-          <div class="input-group search-bar">
-              <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
-              <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
-          </div>
-      </div>
-      <nav class="d-flex gap-4">
-          <a href="#" class="nav-link">สินค้า</a>
-          <a href="#" class="nav-link">การสั่งซื้อ</a>
-          <a href="#" class="nav-link">ข่าวสาร</a>
-          <a href="#" class="nav-link">ติดต่อเรา</a>
-          <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-          <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-      </nav>
-  </div>
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+<span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+</div>
+</div>
+<nav class="d-flex gap-4">
+<a class="nav-link" href="#">สินค้า</a>
+<a class="nav-link" href="#">การสั่งซื้อ</a>
+<a class="nav-link" href="#">ข่าวสาร</a>
+<a class="nav-link" href="#">ติดต่อเรา</a>
+<a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+<a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+</nav>
+</div>
 </header>
-
-  <!-- Breadcrumb -->
-  <div class="breadcrumb-container mt-3 mb-4">
-    <div class="container">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
-          <li class="breadcrumb-item"><a href="#">ผู้หญิง</a></li>
-          <li class="breadcrumb-item active" aria-current="page">รองเท้า</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-
-  <!-- Product Section -->
-  <div class="container product-details">
-    <div class="row">
-      <div class="col-md-6">
-        <img src="/img/productbag.jpg" class="img-fluid product-image" alt="Nike Heritage">
-        <p class="product-description mt-3">
+<!-- Breadcrumb -->
+<div class="breadcrumb-container mt-3 mb-4">
+<div class="container">
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+<li class="breadcrumb-item"><a href="#">ผู้หญิง</a></li>
+<li aria-current="page" class="breadcrumb-item active">รองเท้า</li>
+</ol>
+</nav>
+</div>
+</div>
+<!-- Product Section -->
+<div class="container product-details">
+<div class="row">
+<div class="col-md-6">
+<img alt="Nike Heritage" class="img-fluid product-image" src="/img/productbag.jpg"/>
+<p class="product-description mt-3">
             ปกป้องจากอากาศหนาวเย็นด้วยเป้สะพายหลัง Nike Heritage 
             แผงเสริมความแข็งแรงช่วยปกป้องอุปกรณ์จาก
             สภาพอากาศไม่เป็นใจ ตัวดึงซิปขนาดโอเวอร์ไซส์ช่วยให้หยิบสิ่งของได้ง่าย 
             คุณจึงเคลื่อนไหวได้อย่างต่อเนื่องขณะที่ต้องเผชิญความหนาวจัด
         </p>
-      </div>
-      <div class="col-md-6">
-        <h2 class="product-title">Nike Heritage</h2>
-        <p class="product-price">฿23,00</p>
-        <p class="product-size">ไซส์เดียว</p>
-        <select class="form-select" aria-label="Select size">
-          <option selected>จำนวน</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-
-        </select>
-        <div class="mt-4">
-          <button class="btn btn-secondary">รายการโปรด</button>
-          <button class="btn btn-dark">เพิ่มในตะกร้า</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+<div class="col-md-6">
+<h2 class="product-title">Nike Heritage</h2>
+<p class="product-price">฿23,00</p>
+<p class="product-size">ไซส์เดียว</p>
+<select aria-label="Select size" class="form-select">
+<option selected="">จำนวน</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+</select>
+<div class="mt-4">
+<button class="btn btn-secondary">รายการโปรด</button>
+<button class="btn btn-dark">เพิ่มในตะกร้า</button>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

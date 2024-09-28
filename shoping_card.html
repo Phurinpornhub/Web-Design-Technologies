@@ -1,388 +1,178 @@
 <!DOCTYPE html>
+
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ตะกร้าสินค้า | SportX</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="shopping-cart.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-<style>
-     /* Global Styling */
- * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ตะกร้าสินค้า | SportX</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="shopping-cart.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 
-        /* Header */
-        header {
-            padding: 15px 0;
-            background-color: #fff;
-        }
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .search-bar {
-            max-width: 500px;
-            margin-left: 20px;
-        }
-        .nav .nav-link {
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-        .nav .nav-link:hover {
-            color: #777;
-        }
-
-        /* Sidebar */
-        .sidebar .list-group-item.active {
-            background-color: #000000;
-            color: white;
-            font-weight: bold;
-            border-radius: 8px;
-        }
-        .sidebar .list-group-item {
-            background-color: #fff;
-            border: none;
-            padding: 15px;
-            font-size: 16px;
-            transition: background-color 0.3s ease;
-        }
-        .sidebar .list-group-item:hover {
-            background-color: #f0f0f0;
-        }
-        .sidebar a {
-            color: black;
-            text-decoration: none;
-        }
-
-        /* Shopping Cart Section */
-.shopping-cart h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.cart-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-
-}
-
-.cart-item p {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.quantity-input {
-    width: 50px;
-    text-align: center;
-    border-radius: 0;
-    margin-left: 3px;
-    margin-right: 3px;
-
-}
-
-/* Summary Box */
-.summary-box {
-    background-color: white;
-    border-radius: 4px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.summary-box h4 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.summary-box ul {
-    padding: 0;
-    list-style: none;
-}
-
-.summary-box p {
-    font-size: 18px;
-}
-button {
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    background-color: black;
-    color: white;
-}
-.btn-view-all {
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius: 50px;
-}
-/* .btnsymbol{
-    border-radius: 0px;
-} */
-
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-top h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-</style>
 <body>
-    <!-- Header -->
+<!-- Header -->
 <header class="header py-3 shadow-sm">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center">
-            <img src="img/image.png" alt="Sportix Logo" class="logo">
-            <div class="input-group search-bar">
-                <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
-                <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
-            </div>
-        </div>
-        <nav class="d-flex gap-4">
-            <a href="#" class="nav-link">สินค้า</a>
-            <a href="#" class="nav-link">การสั่งซื้อ</a>
-            <a href="#" class="nav-link">ข่าวสาร</a>
-            <a href="#" class="nav-link">ติดต่อเรา</a>
-            <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-            <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-        </nav>
-    </div>
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+<span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+</div>
+</div>
+<nav class="d-flex gap-4">
+<a class="nav-link" href="#">สินค้า</a>
+<a class="nav-link" href="#">การสั่งซื้อ</a>
+<a class="nav-link" href="#">ข่าวสาร</a>
+<a class="nav-link" href="#">ติดต่อเรา</a>
+<a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+<a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+</nav>
+</div>
 </header>
-
-    <!-- Shopping Cart Section -->
-    <section class="shopping-cart container mt-5">
-        <h1 class="mb-4">ตะกร้าสินค้า</h1>
-        <div class="row">
-            <!-- Cart Items -->
-            <div class="col-md-8">
-                <div class="cart-item p-3 mb-4">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <img src="/img/product9.jpg" alt="Air Jordan 1 Low" class="img-fluid">
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-1">Air Jordan 1 Low</p>
-                            <p class="text-muted">รองเท้าผู้หญิง</p>
-                        </div>
-                        <div class="col-md-2 text-end">
-                            <p>4,300 บาท</p>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <button class="btn btn-dark">-</button>
-                                <input type="text" value="1" class="form-control quantity-input">
-                                <button class="btn btn-dark">+</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cart-item p-3 mb-4">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <img src="/img/product3.jpg" alt="Air Jordan 1 Low SE" class="img-fluid">
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-1">Air Jordan 1 Low SE</p>
-                            <p class="text-muted">รองเท้าผู้ชาย</p>
-                        </div>
-                        <div class="col-md-2 text-end">
-                            <p>5,400 บาท</p>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <button class="btn btn-dark">-</button>
-                                <input type="text" value="2" class="form-control quantity-input">
-                                <button class="btn btn-dark">+</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="cart-item p-3 mb-4">
-                    <div class="row align-items-center">
-                        <div class="col-md-2">
-                            <img src="/img/productjacket.jpg" alt="Jordan Renegade" class="img-fluid">
-                        </div>
-                        <div class="col-md-6">
-                            <p class="mb-1">Jordan Renegade</p>
-                            <p class="text-muted">เสื้อแจ็คเก็ตน้ำหนักเบาผู้หญิง</p>
-                        </div>
-                        <div class="col-md-2 text-end">
-                            <p>5,300 บาท</p>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <button class="btn btn-dark">-</button>
-                                <input type="text" value="1" class="form-control quantity-input">
-                                <button class="btn btn-dark">+</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Order Summary -->
-            <div class="col-md-4">
-                <div class="summary-box p-4 mb-4">
-                    <h4 class="mb-3">สรุปรายการ</h4>
-                    <ul class="list-unstyled">
-                        <li>Air Jordan 1 Low <span class="float-end">4,300 บาท</span></li>
-                        <li>Air Jordan 1 Low SE <span class="float-end">9,800 บาท</span></li>
-                        <li>Jordan Renegade <span class="float-end">5,300 บาท</span></li>
-                    </ul>
-                    <hr>
-                    <p class="mb-3"><strong>รวม</strong> <span class="float-end">19,400 บาท</span></p>
-                    <a href="/payment.html"><button class="btn-view-all">สั่งซื้อสินค้า</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Shopping Cart Section -->
+<section class="shopping-cart container mt-5">
+<h1 class="mb-4">ตะกร้าสินค้า</h1>
+<div class="row">
+<!-- Cart Items -->
+<div class="col-md-8">
+<div class="cart-item p-3 mb-4">
+<div class="row align-items-center">
+<div class="col-md-2">
+<img alt="Air Jordan 1 Low" class="img-fluid" src="/img/product9.jpg"/>
+</div>
+<div class="col-md-6">
+<p class="mb-1">Air Jordan 1 Low</p>
+<p class="text-muted">รองเท้าผู้หญิง</p>
+</div>
+<div class="col-md-2 text-end">
+<p>4,300 บาท</p>
+</div>
+<div class="col-md-2">
+<div class="d-flex align-items-center justify-content-between">
+<button class="btn btn-dark">-</button>
+<input class="form-control quantity-input" type="text" value="1"/>
+<button class="btn btn-dark">+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="cart-item p-3 mb-4">
+<div class="row align-items-center">
+<div class="col-md-2">
+<img alt="Air Jordan 1 Low SE" class="img-fluid" src="/img/product3.jpg"/>
+</div>
+<div class="col-md-6">
+<p class="mb-1">Air Jordan 1 Low SE</p>
+<p class="text-muted">รองเท้าผู้ชาย</p>
+</div>
+<div class="col-md-2 text-end">
+<p>5,400 บาท</p>
+</div>
+<div class="col-md-2">
+<div class="d-flex align-items-center justify-content-between">
+<button class="btn btn-dark">-</button>
+<input class="form-control quantity-input" type="text" value="2"/>
+<button class="btn btn-dark">+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="cart-item p-3 mb-4">
+<div class="row align-items-center">
+<div class="col-md-2">
+<img alt="Jordan Renegade" class="img-fluid" src="/img/productjacket.jpg"/>
+</div>
+<div class="col-md-6">
+<p class="mb-1">Jordan Renegade</p>
+<p class="text-muted">เสื้อแจ็คเก็ตน้ำหนักเบาผู้หญิง</p>
+</div>
+<div class="col-md-2 text-end">
+<p>5,300 บาท</p>
+</div>
+<div class="col-md-2">
+<div class="d-flex align-items-center justify-content-between">
+<button class="btn btn-dark">-</button>
+<input class="form-control quantity-input" type="text" value="1"/>
+<button class="btn btn-dark">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Order Summary -->
+<div class="col-md-4">
+<div class="summary-box p-4 mb-4">
+<h4 class="mb-3">สรุปรายการ</h4>
+<ul class="list-unstyled">
+<li>Air Jordan 1 Low <span class="float-end">4,300 บาท</span></li>
+<li>Air Jordan 1 Low SE <span class="float-end">9,800 บาท</span></li>
+<li>Jordan Renegade <span class="float-end">5,300 บาท</span></li>
+</ul>
+<hr/>
+<p class="mb-3"><strong>รวม</strong> <span class="float-end">19,400 บาท</span></p>
+<a href="/payment.html"><button class="btn-view-all">สั่งซื้อสินค้า</button></a>
+</div>
+</div>
+</div>
+</section>
 <!-- Footer Section -->
 <footer class="footer">
-    <div class="footer-top">
-        <h3>ติดต่อเรา</h3>
-        <div class="contact-info">
-            <div class="contact-item">
-                <span class="icon">📞</span>
-                <p>โทรศัพท์: 099-123-5567</p>
-            </div>
-            <div class="contact-item">
-                <span class="icon">💬</span>
-                <p>แอดไลน์: SportX</p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="staff-section">
-        <div class="staff-item">
-            <img src="/img/Pan.jpg" alt="แพน">
-            <p>แพน</p>
-            <span>ฝ่ายขาย</span>
-        </div>
-        <div class="staff-item">
-            <img src="/img/Noey.jpg" alt="เนย">
-            <p>เนย</p>
-            <span>ฝ่ายขาย</span>
-        </div>
-        <div class="staff-item">
-            <img src="/img/Put.jpg" alt="ภัทร">
-            <p>ภัทร</p>
-            <span>ฝ่ายจัดส่ง</span>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <div class="footer-column">
-            <h4>บริษัท SportX จำกัด</h4>
-            <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
-        </div>
-        <div class="footer-column">
-            <h4>สินค้าต่างๆ</h4>
-            <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-            <p>ชุดออกกำลังกาย</p>
-            <p>อุปกรณ์เล่นกีฬา</p>
-        </div>
-        <div class="footer-column">
-            <h4>สินค้าต่างๆ</h4>
-            <p>นโยบายธุรกิจ</p>
-            <p>นโยบายความเป็นส่วนตัว</p>
-            <p>ขอคืนเงิน/สินค้า</p>
-        </div>
-        <div class="footer-column">
-            <h4>สินค้าต่างๆ</h4>
-            <p>ติดต่อเรา</p>
-            <p>คำถามที่พบบ่อย</p>
-            <p>วิธีดูแลสินค้า</p>
-        </div>
-    </div>
+<div class="footer-top">
+<h3>ติดต่อเรา</h3>
+<div class="contact-info">
+<div class="contact-item">
+<span class="icon">📞</span>
+<p>โทรศัพท์: 099-123-5567</p>
+</div>
+<div class="contact-item">
+<span class="icon">💬</span>
+<p>แอดไลน์: SportX</p>
+</div>
+</div>
+</div>
+<div class="staff-section">
+<div class="staff-item">
+<img alt="แพน" src="/img/Pan.jpg"/>
+<p>แพน</p>
+<span>ฝ่ายขาย</span>
+</div>
+<div class="staff-item">
+<img alt="เนย" src="/img/Noey.jpg"/>
+<p>เนย</p>
+<span>ฝ่ายขาย</span>
+</div>
+<div class="staff-item">
+<img alt="ภัทร" src="/img/Put.jpg"/>
+<p>ภัทร</p>
+<span>ฝ่ายจัดส่ง</span>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-column">
+<h4>บริษัท SportX จำกัด</h4>
+<p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+</div>
+<div class="footer-column">
+<h4>สินค้าต่างๆ</h4>
+<p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+<p>ชุดออกกำลังกาย</p>
+<p>อุปกรณ์เล่นกีฬา</p>
+</div>
+<div class="footer-column">
+<h4>สินค้าต่างๆ</h4>
+<p>นโยบายธุรกิจ</p>
+<p>นโยบายความเป็นส่วนตัว</p>
+<p>ขอคืนเงิน/สินค้า</p>
+</div>
+<div class="footer-column">
+<h4>สินค้าต่างๆ</h4>
+<p>ติดต่อเรา</p>
+<p>คำถามที่พบบ่อย</p>
+<p>วิธีดูแลสินค้า</p>
+</div>
+</div>
 </footer>
-
 </body>
 </html>

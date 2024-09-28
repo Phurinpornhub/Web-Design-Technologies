@@ -1,135 +1,52 @@
 <!DOCTYPE html>
+
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ศูนย์ช่วยเหลือ</title>
-    <!-- Include Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
-    
-    <style>
-        body {
-            font-family: 'Kanit', sans-serif;
-            background-color: #fff;
-            color: #333;
-        }
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ศูนย์ช่วยเหลือ</title>
+<!-- Include Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 
-        /* Header */
-        header {
-            padding: 15px 0;
-            background-color: #fff;
-        }
-
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-
-        .search-bar {
-            max-width: 400px;
-            margin-left: 20px;
-        }
-
-        .nav .nav-link {
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-
-        .nav .nav-link:hover {
-            color: #777;
-        }
-
-        /* Help Center Section */
-        .help-center {
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .help-center h1 {
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .help-center .icon {
-            font-size: 200px;
-            color: #000;
-        }
-
-        .help-center .description {
-            margin-top: 10px;
-            font-weight: 500;
-        }
-
-        .help-center .options {
-            margin-top: 30px;
-        }
-
-        .help-center .btn-option {
-            background-color: #d3d3d3;
-            color: black;
-            padding: 15px;
-            border-radius: 10px;
-            font-weight: 500;
-            width: 200px;
-            display: block;
-            margin: 10px auto;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .help-center .btn-option:hover {
-            background-color: #bbb;
-            color: #fff;
-        }
-
-    </style>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 <body>
-
-    <!-- Header -->
-    <header class="header py-3 shadow-sm">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img src="img/image.png" alt="Sportix Logo" class="logo">
-                <div class="input-group search-bar">
-                    <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
-                    <span class="input-group-text bg-transparent border-0" id="search-icon"><i class="bi bi-search"></i></span>
-                </div>
-            </div>
-            <nav class="d-flex gap-4">
-                <a href="#" class="nav-link">สินค้า</a>
-                <a href="#" class="nav-link">การสั่งซื้อ</a>
-                <a href="#" class="nav-link">ข่าวสาร</a>
-                <a href="#" class="nav-link">ติดต่อเรา</a>
-                <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-                <a href="#" class="nav-link"><i class="bi bi-person"></i></a>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <div class="container help-center">
-        <h1>ศูนย์ช่วยเหลือ</h1>
-        
-        <!-- Icon -->
-        <div class="icon">
-            <i class="bi bi-headset"></i> <!-- ไอคอนรูปหูฟัง -->
-        </div>
-        <p class="description">เราช่วยอะไรให้คุณได้บ้าง</p>
-        
-        <!-- Options -->
-        <div class="options">
-            <a href="#" class="btn-option">คำถามที่พบบ่อย</a>
-            <a href="#" class="btn-option">ติดต่อเรา</a>
-        </div>
-    </div>
-
-    <!-- Bootstrap JS and Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
-
+<!-- Header -->
+<header class="header py-3 shadow-sm">
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+</div>
+</div>
+<nav class="d-flex gap-4">
+<a class="nav-link" href="#">สินค้า</a>
+<a class="nav-link" href="#">การสั่งซื้อ</a>
+<a class="nav-link" href="#">ข่าวสาร</a>
+<a class="nav-link" href="#">ติดต่อเรา</a>
+<a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+<a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<div class="container help-center">
+<h1>ศูนย์ช่วยเหลือ</h1>
+<!-- Icon -->
+<div class="icon">
+<i class="bi bi-headset"></i> <!-- ไอคอนรูปหูฟัง -->
+</div>
+<p class="description">เราช่วยอะไรให้คุณได้บ้าง</p>
+<!-- Options -->
+<div class="options">
+<a class="btn-option" href="#">คำถามที่พบบ่อย</a>
+<a class="btn-option" href="#">ติดต่อเรา</a>
+</div>
+</div>
+<!-- Bootstrap JS and Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
 </body>
 </html>

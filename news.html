@@ -9,77 +9,91 @@
 </head>
 <style>
     /* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-}
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+    }
 
-a {
-    text-decoration: none;
-    color: black;
-}
+    a {
+        text-decoration: none;
+        color: black;
+    }
 
-h1, h2 {
-    font-weight: bold;
-}
+    h1, h2 {
+        font-weight: bold;
+    }
 
-/* Header */
-.header .search-bar {
-    width: 250px;
-}
+    /* Header */
+    .header .search-bar {
+        width: 250px;
+    }
 
-.nav-links a {
-    margin: 0 10px;
-    font-size: 18px;
-}
+    .nav-links a {
+        margin: 0 10px;
+        font-size: 18px;
+    }
 
-.cart-icon, .user-icon {
-    font-size: 24px;
-}
+    .cart-icon, .user-icon {
+        font-size: 24px;
+    }
 
-/* News Section */
-.news h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
+    /* Breadcrumb Styling */
+    .breadcrumb {
+        color: #000;
+    }
 
-.news-item img {
-    border-radius: 10px;
-}
+    .breadcrumb-item a {
+        color: #000;
+        text-decoration: none;
+    }
 
-.news-item h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
+    .breadcrumb-item a:hover {
+        color: #000;
+    }
 
-.news-item p {
-    font-size: 16px;
-}
+    .breadcrumb-item.active {
+        color: #555;
+    }
 
-/* Footer */
-.footer {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 40px 20px;
-}
+    /* News Section */
+    .news h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
 
-.footer h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
+    .news-item img {
+        width: 100%;
+        height: 300px; /* Ensure all images are the same size */
+        object-fit: cover; /* Keep image proportions */
+        border-radius: 10px;
+    }
+    .news-item img:hover{
+        transform: translateY(-2px);
 
-.footer p {
-    color: #ccc;
-}
 
+    }
+    /* Footer */
+    .footer {
+        background-color: #2f2f2f;
+        color: white;
+        padding: 40px 20px;
+    }
+
+    .footer h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .footer p {
+        color: #ccc;
+    }
 </style>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container d-flex justify-content-between align-items-center py-3">
-            <img src="logo.png" alt="SportX Logo" class="logo">
+            <a href="/homepage.html"><img src="logo.png" alt="SportX Logo" class="logo"></a>
             <input type="text" class="search-bar form-control" placeholder="ค้นหา...">
             <nav class="nav-links">
                 <a href="#">สินค้า</a>
@@ -92,6 +106,16 @@ h1, h2 {
         </div>
     </header>
 
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/homepage.html">หน้าแรก</a></li>
+                <li class="breadcrumb-item active" aria-current="page">สินค้า</li>
+            </ol>
+        </nav>
+    </div>
+
     <!-- News Section -->
     <section class="news container mt-5">
         <h1 class="mb-4">ข่าวสาร</h1>
@@ -99,7 +123,7 @@ h1, h2 {
             <div class="col-md-6">
                 <div class="news-item">
                     <img src="/img/news.jpg" alt="อุปกรณ์กีฬา" class="img-fluid mb-3">
-                    <h3>อุปกรณ์กีฬา</h3>
+                    <a href="/news_detail.html"><h3>อุปกรณ์กีฬา</h3></a>
                     <p>เตรียมตัวให้พร้อมกับอุปกรณ์กีฬารุ่นใหม่! ยกระดับเกมของคุณด้วยเทคโนโลยีล่าสุด ทั้งความเร็ว ความแม่นยำ และการควบคุม ทุกสิ่งออกแบบมาเพื่อเพิ่มทักษะกีฬาตัวจริง พร้อมให้คุณพิสูจน์ฝีมือแล้ววันนี้!</p>
                 </div>
             </div>

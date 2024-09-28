@@ -50,7 +50,6 @@
     }
 
     /* Main Banner */
-    /* Hero Section */
     .hero-section {
         background-color: #fff;
         text-align: center;
@@ -76,6 +75,21 @@
         height: auto;
         border-radius: 10px;
     }
+    /* Breadcrumb Styling */
+.breadcrumb {
+    color: #000; /* เปลี่ยนสีตัวหนังสือเป็นสีดำ */
+}
+.breadcrumb-item a {
+    color: #000; /* เปลี่ยนสีลิงก์ใน breadcrumb */
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: #000; /* สีเมื่อ hover */
+}
+.breadcrumb-item.active {
+    color: #555; /* สีของ breadcrumb ที่ active */
+}
+
 
 
     /* Footer */
@@ -168,7 +182,7 @@
     <header class="shadow-sm">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <img src="img/image.png" alt="Logo" class="logo">
+                <a href="/homepage.html"><img src="img/image.png" alt="Logo" class="logo"></a>
                 <div class="input-group search-bar">
                     <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
                 </div>
@@ -189,11 +203,12 @@
     <nav aria-label="breadcrumb" class="breadcrumb-container my-3">
         <div class="container">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+                <li class="breadcrumb-item"><a href="/homepage.html">หน้าแรก</a></li>
                 <li class="breadcrumb-item active" aria-current="page">เกี่ยวกับเรา</li>
             </ol>
         </div>
     </nav>
+
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -201,6 +216,7 @@
         <div class="container text-center">
             <img src="/img/about.jpg" alt="About Us Banner" class="img-fluid">
         </div>
+
         <div class="container text-center">
             <p class="lead mb-5">
                 การออกกำลังกายและการเล่นกีฬาไม่เพียงแต่เป็นบริการที่ดีที่สุดในการรักษาสุขภาพและความฟิต <br>

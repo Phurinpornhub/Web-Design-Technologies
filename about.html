@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="th">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>เกี่ยวกับเรา | SportX</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เกี่ยวกับเรา | SportX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
 
-    </head>
-    <style>
+<style>
     /* Global Styling */
     * {
         margin: 0;
@@ -79,22 +77,24 @@
         height: auto;
         border-radius: 10px;
     }
+
     /* Breadcrumb Styling */
-.breadcrumb {
-    color: #000; /* เปลี่ยนสีตัวหนังสือเป็นสีดำ */
-}
-.breadcrumb-item a {
-    color: #000; /* เปลี่ยนสีลิงก์ใน breadcrumb */
-    text-decoration: none;
-}
-.breadcrumb-item a:hover {
-    color: #000; /* สีเมื่อ hover */
-}
-.breadcrumb-item.active {
-    color: #555; /* สีของ breadcrumb ที่ active */
-}
+    .breadcrumb {
+        color: #000;
+    }
 
+    .breadcrumb-item a {
+        color: #000;
+        text-decoration: none;
+    }
 
+    .breadcrumb-item a:hover {
+        color: #000;
+    }
+
+    .breadcrumb-item.active {
+        color: #555;
+    }
 
     /* Footer */
     .footer {
@@ -191,25 +191,42 @@
                     <input type="text" class="form-control rounded-pill" placeholder="ค้นหา...">
                 </div>
             </div>
-            <nav>
-                    <ul class="nav">
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">สินค้า</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">การสั่งซื้อ</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">ข่าวสาร</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link">ติดต่อเรา</a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link"><i class="bi bi-bag-fill"></i></a></li>
-                        <li class="nav-item"><a href="#"
-                                class="nav-link"><i class="bi bi-person-fill"></i></a></li>
-                                
-                    </ul>
-                </nav>
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                   
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">สินค้า</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">การสั่งซื้อ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ข่าวสาร</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ติดต่อเรา</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-cart"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="bi bi-person"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
+
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" class="breadcrumb-container my-3">
         <div class="container">
@@ -237,6 +254,7 @@
             <img src="/img/about(1).jpg" alt="Team" class="img-fluid mb-4">
         </div>
     </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-top">
@@ -253,53 +271,51 @@
             </div>
         </div>
 
-            <div class="staff-section">
-                <div class="staff-item">
-                    <img src="/img/Pan.jpg" alt="แพน">
-                    <p>แพน</p>
-                    <span>ฝ่ายขาย</span>
-                </div>
-                <div class="staff-item">
-                    <img src="/img/Noey.jpg" alt="เนย">
-                    <p>เนย</p>
-                    <span>ฝ่ายขาย</span>
-                </div>
-                <div class="staff-item">
-                    <img src="/img/Put.jpg" alt="ภัทร">
-                    <p>ภัทร</p>
-                    <span>ฝ่ายจัดส่ง</span>
-                </div>
+        <div class="staff-section">
+            <div class="staff-item">
+                <img src="/img/Pan.jpg" alt="แพน">
+                <p>แพน</p>
+                <span>ฝ่ายขาย</span>
             </div>
-
-            <div class="footer-bottom">
-                <div class="footer-column">
-                    <h4>บริษัท SportX จำกัด</h4>
-                    <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น
-                        ขอนแก่น 40000</p>
-                </div>
-                <div class="footer-column">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-                    <p>ชุดออกกำลังกาย</p>
-                    <p>อุปกรณ์เล่นกีฬา</p>
-                </div>
-                <div class="footer-column">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>นโยบายธุรกิจ</p>
-                    <p>นโยบายความเป็นส่วนตัว</p>
-                    <p>ขอคืนเงิน/สินค้า</p>
-                </div>
-                <div class="footer-column">
-                    <h4>สินค้าต่างๆ</h4>
-                    <p>ติดต่อเรา</p>
-                    <p>คำถามที่พบบ่อย</p>
-                    <p>วิธีดูแลสินค้า</p>
-                </div>
+            <div class="staff-item">
+                <img src="/img/Noey.jpg" alt="เนย">
+                <p>เนย</p>
+                <span>ฝ่ายขาย</span>
             </div>
-        </footer>
+            <div class="staff-item">
+                <img src="/img/Put.jpg" alt="ภัทร">
+                <p>ภัทร</p>
+                <span>ฝ่ายจัดส่ง</span>
+            </div>
+        </div>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4>บริษัท SportX จำกัด</h4>
+                <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+                <p>ชุดออกกำลังกาย</p>
+                <p>อุปกรณ์เล่นกีฬา</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>นโยบายธุรกิจ</p>
+                <p>นโยบายความเป็นส่วนตัว</p>
+                <p>ขอคืนเงิน/สินค้า</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>ติดต่อเรา</p>
+                <p>คำถามที่พบบ่อย</p>
+                <p>วิธีดูแลสินค้า</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>

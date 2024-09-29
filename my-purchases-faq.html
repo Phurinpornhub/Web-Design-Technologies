@@ -1,95 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="th">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>การซื้อของฉัน</title>
-<!-- Include Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/></head>
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>การซื้อของฉัน</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
 <body>
-<!-- Header -->
-<header class="header py-3 shadow-sm">
-<div class="container d-flex justify-content-between align-items-center">
-<div class="d-flex align-items-center">
-<img alt="Sportix Logo" class="logo" src="img/image.png"/>
-<div class="input-group search-bar">
-<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
-</div>
-</div>
-<nav class="d-flex gap-4">
-    <a class="nav-link" href="#">สินค้า</a>
-    <a class="nav-link" href="#">การสั่งซื้อ</a>
-    <a class="nav-link" href="/news.html">ข่าวสาร</a>
-    <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
-    <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
-    <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
-    </nav>
-</div>
-</header>
-<!-- Main Content -->
-<div class="container faq-section">
-<h1>คำถามที่พบบ่อย</h1>
-<!-- FAQ Items -->
-<div class="row">
-<div class="col-md-6">
-<!-- FAQ Item 1 -->
-<div class="faq-item">
-<div class="faq-header" onclick="toggleFaq(this)">
-<span>ใช้เวลาในการจัดส่งที่รับ</span>
-<i class="bi bi-chevron-down"></i>
-</div>
-<div class="faq-content">
+    <!-- Header -->
+    <header class="header py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img alt="Sportix Logo" class="logo" src="img/image.png" />
+                <div class="input-group search-bar">
+                    <input class="form-control rounded-pill" placeholder="ค้นหา..." type="text" />
+                </div>
+            </div>
+            <nav class="d-flex gap-4">
+                <a class="nav-link" href="#">สินค้า</a>
+                <a class="nav-link" href="#">การสั่งซื้อ</a>
+                <a class="nav-link" href="/news.html">ข่าวสาร</a>
+                <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
+                <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
+                <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <div class="container faq-section">
+        <h1>คำถามที่พบบ่อย</h1>
+        <!-- FAQ Items -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <span>ใช้เวลาในการจัดส่งที่รับ</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
                         ระยะเวลาการจัดส่งขึ้นอยู่กับสถานที่ที่จัดส่ง โดยปกติจะใช้เวลาประมาณ 3-7 วันทำการ.
                     </div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item">
-<div class="faq-header" onclick="toggleFaq(this)">
-<span>ชำระเงินปลายทางมีค่าธรรมเนียมหรือไม่</span>
-<i class="bi bi-chevron-down"></i>
-</div>
-<div class="faq-content">
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <span>ชำระเงินปลายทางมีค่าธรรมเนียมหรือไม่</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
                         สำหรับการชำระเงินปลายทางไม่มีค่าธรรมเนียมเพิ่มเติม นอกจากยอดเงินสินค้าที่ต้องชำระ.
                     </div>
-</div>
-</div>
-<div class="col-md-6">
-<!-- FAQ Item 3 -->
-<div class="faq-item active">
-<div class="faq-header" onclick="toggleFaq(this)">
-<span>สินค้ามีปัญหาควรทำอย่างไร</span>
-<i class="bi bi-chevron-down"></i>
-</div>
-<div class="faq-content">
-                        เมื่อลูกค้าพบปัญหาเกี่ยวกับสินค้า สามารถติดต่อฝ่ายลูกค้าสัมพันธ์ของร้านค้าเพื่อแก้ไขปัญหาได้โดยตรง.
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- FAQ Item 3 -->
+                <div class="faq-item active">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <span>สินค้ามีปัญหาควรทำอย่างไร</span>
+                        <i class="bi bi-chevron-down"></i>
                     </div>
-</div>
-<!-- FAQ Item 4 -->
-<div class="faq-item">
-<div class="faq-header" onclick="toggleFaq(this)">
-<span>หากมีปัญหาในการจัดส่งควรทำอย่างไร</span>
-<i class="bi bi-chevron-down"></i>
-</div>
-<div class="faq-content">
+                    <div class="faq-content">
+                        เมื่อลูกค้าพบปัญหาเกี่ยวกับสินค้า
+                        สามารถติดต่อฝ่ายลูกค้าสัมพันธ์ของร้านค้าเพื่อแก้ไขปัญหาได้โดยตรง.
+                    </div>
+                </div>
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <div class="faq-header" onclick="toggleFaq(this)">
+                        <span>หากมีปัญหาในการจัดส่งควรทำอย่างไร</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="faq-content">
                         ลูกค้าสามารถติดต่อฝ่ายบริการลูกค้าของเราผ่านช่องทางติดต่อที่แจ้งไว้บนเว็บไซต์.
                     </div>
-</div>
-</div>
-</div>
-</div>
-<!-- Bootstrap JS and Icons -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
-<script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script>
         function toggleFaq(element) {
             var faqItem = element.closest('.faq-item');
             var content = faqItem.querySelector('.faq-content');
-            
+
             if (faqItem.classList.contains('active')) {
                 content.style.display = 'none';
                 faqItem.classList.remove('active');
@@ -100,4 +104,5 @@
         }
     </script>
 </body>
+
 </html>

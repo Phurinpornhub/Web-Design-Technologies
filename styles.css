@@ -2,190 +2,317 @@
 
 
     /* Global Styling */
-   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  /* Global Styling */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Kanit', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+
+  /* Responsive Grid */
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .col-12 {
+      width: 100%;
+  }
+
+  /* Responsive Typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-weight: bold;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  h3 {
+      font-size: 1.75rem;
+  }
+
+  h4 {
+      font-size: 1.5rem;
+  }
+
+  h5 {
+      font-size: 1.25rem;
+  }
+
+  h6 {
+      font-size: 1rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+
+  /* Header */
+  header {
+      padding: 15px 0;
+      background-color: #fff;
+  }
+
+  .logo {
+      width: 100px;
+      height: auto;
+  }
+
+  .search-bar {
+      max-width: 500px;
+      margin-left: 20px;
+  }
+
+  .nav .nav-link {
+      color: #000000;
+      margin-left: 20px;
+      font-weight: 500;
+  }
+
+  .nav .nav-link:hover {
+      color: #777;
+  }
+
+  /* Footer */
+  .footer {
+      background-color: #2f2f2f;
+      color: white;
+      padding: 50px 20px;
+  }
+
+  .footer h4 {
+      font-size: 18px;
+      margin-bottom: 15px;
+  }
+
+  .footer p {
+      color: #ccc;
+  }
+
+  .footer-top {
+      text-align: center;
+  }
+
+  .footer-bottom {
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid #444;
+      padding-top: 40px;
+  }
+
+  .footer-column {
+      width: 200px;
+  }
+
+  .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      margin-bottom: 40px;
+  }
+
+  .contact-item {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+  }
+
+  .icon {
+      font-size: 24px;
+      margin-right: 10px;
+  }
+
+  .staff-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 50px;
+  }
+
+  .staff-item {
+      text-align: center;
+  }
+
+  .staff-item img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+  }
+
+  .staff-item p {
+      font-size: 18px;
+      margin: 10px 0 5px;
+  }
+
+  .staff-item span {
+      font-size: 16px;
+      color: #ccc;
+  }
+
+  /* Button Styling */
+  button,
+  .btn-view-all {
+      cursor: pointer;
+      padding: 10px 20px;
+      border: none;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
+  }
+
+  .btn-view-all {
+      display: block;
+      margin: 20px auto;
+      border-radius: 50px;
+  }
+
+  button:hover,
+  .btn-view-all:hover {
+      background-color: #333;
+  }
+
+  /* Product Section */
+  .product-list .product-item {
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .product-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+/* Custom CSS for nested dropdowns */
+.dropdown-submenu {
+    position: relative;
 }
-body {
-    font-family: 'Kanit', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-}
-header {
-    padding: 15px 0;
-    background-color: #fff;
-}
-.logo {
-    width: 100px;
-    height: auto;
-}
-.search-bar {
-    max-width: 500px;
-    margin-left: 20px;
-}
-.nav .nav-link {
-    color: #000000;
-    margin-left: 20px;
-    font-weight: 500;
-}
-.nav .nav-link:hover {
-    color: #777;
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    margin-left: 0;
 }
 
-        .logo {
-            width: 100px;
-            height: auto;
-        }
-        .search-bar {
-            max-width: 500px;
-            margin-left: 20px;
-        }
-        .nav .nav-link {
-            color: #000000;
-            margin-left: 20px;
-            font-weight: 500;
-        }
-        .nav .nav-link:hover {
-            color: #777;
-        }
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+/* Custom CSS for active link */
+.nav-link.active,
+.nav-link:focus,
+.nav-link:hover {
+    color: black !important;
+    /* เปลี่ยนสีลิงก์เป็นสีดำเมื่อ active หรือ hover */
+}
 
-    /* Checkout Section */
-    .checkout h1 {
-        font-size: 32px;
-        margin-bottom: 30px;
-    }
+.dropdown-item.active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: white !important;
+    background-color: black !important;
+    /* เปลี่ยนสีพื้นหลังและข้อความของ dropdown เป็นสีดำ */
+}
 
-    .checkout form .form-control {
-        border-radius: 5px;
-    }
+  /* Breadcrumb Styling */
+  .breadcrumb {
+      color: #000;
+  }
 
-    .checkout form .form-label {
-        font-weight: bold;
-    }
+  .breadcrumb-item a {
+      color: #000;
+      text-decoration: none;
+  }
 
-    .summary-box {
-        background-color: white;
-        border-radius: 4px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        margin-top: 130px;
-    }
+  .breadcrumb-item a:hover {
+      color: #000;
+  }
 
-    .summary-box h4 {
-        font-size: 20px;
-        font-weight: bold;
-    }
+  .breadcrumb-item.active {
+      color: #555;
+  }
 
-    .summary-box ul {
-        padding: 0;
-        list-style: none;
-    }
+  
+  /* Responsive for Tablet */
+  @media (max-width: 768px) {
+      h1 {
+          font-size: 2rem;
+      }
 
-    .summary-box p {
-        font-size: 18px;
-    }
+      h2 {
+          font-size: 1.75rem;
+      }
 
-    button {
-        cursor: pointer;
-        padding: 10px 20px;
-        border: none;
-        background-color: black;
-        color: white;
-        border-radius: 5px;
-    }
+      h3 {
+          font-size: 1.5rem;
+      }
 
-    .btn-view-all {
-        display: block;
-        margin: 0 auto;
-        margin-top: 20px;
-        border-radius: 50px;
-    }
+      h4 {
+          font-size: 1.25rem;
+      }
 
-    /* Footer */
-    .footer {
-        background-color: black;
-        color: white;
-        padding: 50px 20px;
-    }
+      h5 {
+          font-size: 1.1rem;
+      }
 
-    .footer-top {
-        text-align: center;
-    }
+      p {
+          font-size: 0.9rem;
+      }
+  }
 
-    .footer-top h3 {
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
+  /* Responsive for Mobile */
+  @media (max-width: 480px) {
+      body {
+          padding: 10px;
+      }
 
-    .contact-info {
-        display: flex;
-        justify-content: center;
-        gap: 50px;
-        margin-bottom: 40px;
-    }
+      h1 {
+          font-size: 1.75rem;
+      }
 
-    .contact-item {
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-    }
+      h2 {
+          font-size: 1.5rem;
+      }
 
-    .icon {
-        font-size: 24px;
-        margin-right: 10px;
-    }
+      h3 {
+          font-size: 1.25rem;
+      }
 
-    .staff-section {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        margin-bottom: 50px;
-    }
+      h4 {
+          font-size: 1rem;
+      }
 
-    .staff-item {
-        text-align: center;
-    }
+      h5 {
+          font-size: 0.9rem;
+      }
 
-    .staff-item img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .staff-item p {
-        font-size: 18px;
-        margin: 10px 0 5px;
-    }
-
-    .staff-item span {
-        font-size: 16px;
-        color: #ccc;
-    }
-
-    .footer-bottom {
-        display: flex;
-        justify-content: space-around;
-        border-top: 1px solid #444;
-        padding-top: 40px;
-    }
-
-    .footer-column {
-        width: 200px;
-    }
-
-    .footer-column h4 {
-        margin-bottom: 15px;
-        font-size: 18px;
-        color: #fff;
-    }
-
-    .footer-column p {
-        font-size: 16px;
-        color: #ccc;
-    }
-
-
+      p {
+          font-size: 0.85rem;
+      }
+  }
 /* Styles from productdetail.html */
 
 
@@ -3574,6 +3701,7 @@ button {
 .breadcrumb-item.active {
     color: #555; /* สีของ breadcrumb ที่ active */
 }
+
 
 /* Responsive Typography */
 h1 {

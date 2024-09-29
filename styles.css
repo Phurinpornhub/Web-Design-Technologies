@@ -3515,11 +3515,7 @@ button {
             font-size: 14px;
             color: #555;
         }
-<<<<<<< HEAD
-        .address-card .edit-link {
-=======
         .address-card .edit-link  {
->>>>>>> cb76d58648d2f36e1043f3c36b5f4bdffa29c783
             position: absolute;
             right: 20px;
             top: 20px;
@@ -3552,33 +3548,4 @@ button {
 }
 
 
-<<<<<<< HEAD
     
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-
-  button {
-    width: 100%;
-    padding: 15px 0;
-  }
-}
-
-/* Responsive Design for larger screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1400px;
-  }
-}
-=======
-    
->>>>>>> cb76d58648d2f36e1043f3c36b5f4bdffa29c783

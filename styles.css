@@ -371,7 +371,7 @@
 
 .product-image {
     margin-left: 150px;
-  max-width: 50%;
+  max-width: 60%;
   height: auto;
 }
 
@@ -408,7 +408,16 @@
   width: 140px;
   border-radius: 50px;
 }
+.product-images {
+    max-width: 50px; /* กำหนดความกว้างสูงสุด */
+    margin: left; /* จัดกลาง */
+    
+}
 
+.product-images img {
+    width: 100%; /* ทำให้ภาพเต็มความกว้างของ div */
+    height: auto; /* รักษาสัดส่วนของภาพ */
+}
 
 
 /* Styles from homepage.html */
@@ -2935,6 +2944,11 @@ button {
     color: black;
     text-decoration: underline;
 }
+.icon-black {
+        font-size: 5rem; 
+        color: black;
+}
+
 /* Footer */
 .footer {
     background-color: black;

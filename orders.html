@@ -1,121 +1,163 @@
 <!DOCTYPE html>
 
 <html lang="th">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>การซื้อของฉัน</title>
-<!-- Include Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <title>การซื้อของฉัน</title>
+        <!-- Include Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap"
+            rel="stylesheet" />
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/></head>
-<body>
-<!-- Header -->
-<header class="header py-3 shadow-sm">
-<div class="container d-flex justify-content-between align-items-center">
-<div class="d-flex align-items-center">
-<img alt="Sportix Logo" class="logo" src="img/image.png"/>
-<div class="input-group search-bar">
-<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
-</div>
-</div>
-<nav class="d-flex gap-4">
-    <a class="nav-link" href="#">สินค้า</a>
-    <a class="nav-link" href="#">การสั่งซื้อ</a>
-    <a class="nav-link" href="/news.html">ข่าวสาร</a>
-    <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
-    <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
-    <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
-    </nav>
-</div>
-</header>
-<!-- Breadcrumb -->
-<nav aria-label="breadcrumb" class="breadcrumb-container my-3">
-<div class="container">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
-<li class="breadcrumb-item"><a href="#">สมาชิก</a></li>
-<li aria-current="page" class="breadcrumb-item active">การซื้อของฉัน</li>
-</ol>
-</div>
-</nav>
-<!-- Main Content -->
-<div class="container">
-<div class="row">
-<!-- Sidebar -->
-<aside class="col-md-3 sidebar">
-<ul class="list-group shadow-sm">
-<li class="list-group-item"><a href="member.html">หน้าหลัก</a></li>
-<li class="list-group-item active"><a class="text-white" href="orders.html">การซื้อของฉัน</a></li>
-<li class="list-group-item"><a href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
-<li class="list-group-item"><a href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
-<li class="list-group-item"><a href="account-settings.html">ตั้งค่าบัญชี</a></li>
-<li class="list-group-item"><a href="delivery-addresses.html">ที่อยู่จัดส่ง</a></li>
-<li class="list-group-item"><a href="payment-settings.html">ตั้งค่าการชำระเงิน</a></li>
-</ul>
-</aside>
-<!-- Profile Section -->
-<main class="col-md-9">
-<div class="card profile-section shadow-sm">
-<div class="d-flex align-items-center">
-<img alt="โปรไฟล์" class="profile-img me-3" src="img/jan.jpg"/>
-<div class="flex-grow-1">
-<h2 class="mb-0">แคป</h2>
-</div>
-<button class="btn logout-button ms-auto mt-2">ออกจากระบบ</button>
-</div>
-</div>
-<!-- Orders Section -->
-<div class="orders-section shadow-sm">
-<h3 class="mb-3">คำสั่งซื้อล่าสุด</h3>
-<div class="row g-4">
-<div class="col-md-6 col-lg-4">
-<div class="card h-100 shadow-sm">
-<img alt="Essentials 3-Stripes" class="card-img-top" src="img/image 11.png"/>
-<div class="card-body text-center">
-<h5 class="card-title">Essentials 3-Stripes</h5>
-<p class="card-text">x1 ฿360</p>
-<div class="d-grid gap-2">
-<button class="btn btn-outline-secondary rounded-pill"><a href="help-center.html">ติดต่อผู้ขาย</a></button>
-<button class="btn btn-dark rounded-pill"><a href="#">ซื้ออีกครั้ง</a></button>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="card h-100 shadow-sm">
-<img alt="Air Jordan 1 Low Quai 54" class="card-img-top" src="img/image 4.png"/>
-<div class="card-body text-center">
-<h5 class="card-title">Air Jordan 1 Low Quai 54</h5>
-<p class="card-text">x1 ฿5,400</p>
-<div class="d-grid gap-2">
-<button class="btn btn-outline-secondary rounded-pill"><a href="help-center.html">ติดต่อผู้ขาย</a></button>
-<button class="btn btn-dark rounded-pill"><a href="#">ซื้ออีกครั้ง</a></button>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="card h-100 shadow-sm">
-<img alt="Nike Free RN NN" class="card-img-top" src="img/image 5.png"/>
-<div class="card-body text-center">
-<h5 class="card-title">Nike Free RN NN</h5>
-<p class="card-text">x1 ฿2,219</p>
-<div class="d-grid gap-2">
-<button class="btn btn-outline-secondary rounded-pill"><a href="help-center.html">ติดต่อผู้ขาย</a></button>
-<button class="btn btn-dark rounded-pill"><a href="#">ซื้ออีกครั้ง</a></button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-</div>
-</div>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet" />
+        <link href="styles.css" rel="stylesheet" /></head>
+    <body>
+        <!-- Header -->
+        <header class="header py-3 shadow-sm">
+            <div
+                class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                    <img alt="Sportix Logo" class="logo" src="img/image.png" />
+                    <div class="input-group search-bar">
+                        <input class="form-control rounded-pill"
+                            placeholder="ค้นหา..." type="text" />
+                    </div>
+                </div>
+                <nav class="d-flex gap-4">
+                    <a class="nav-link" href="#">สินค้า</a>
+                    <a class="nav-link" href="#">การสั่งซื้อ</a>
+                    <a class="nav-link" href="/news.html">ข่าวสาร</a>
+                    <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
+                    <a class="nav-link" href="/shoping_card.html"><i
+                            class="bi bi-cart"></i></a>
+                    <a class="nav-link" href="/member.html"><i
+                            class="bi bi-person"></i></a>
+                </nav>
+            </div>
+        </header>
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="breadcrumb-container my-3">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+                    <li class="breadcrumb-item"><a href="#">สมาชิก</a></li>
+                    <li aria-current="page"
+                        class="breadcrumb-item active">การซื้อของฉัน</li>
+                </ol>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <div class="container">
+            <div class="row">
+                <!-- Sidebar -->
+                <aside class="col-md-3 sidebar">
+                    <ul class="list-group shadow-sm">
+                        <li class="list-group-item"><a
+                                href="member.html">หน้าหลัก</a></li>
+                        <li class="list-group-item active"><a class="text-white"
+                                href="orders.html">การซื้อของฉัน</a></li>
+                        <li class="list-group-item"><a
+                                href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
+                        <li class="list-group-item"><a
+                                href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
+                        <li class="list-group-item"><a
+                                href="account-settings.html">ตั้งค่าบัญชี</a></li>
+                        <li class="list-group-item"><a
+                                href="delivery-addresses.html">ที่อยู่จัดส่ง</a></li>
+                        <li class="list-group-item"><a
+                                href="payment-settings.html">ตั้งค่าการชำระเงิน</a></li>
+                    </ul>
+                </aside>
+                <!-- Profile Section -->
+                <main class="col-md-9">
+                    <div class="card profile-section shadow-sm">
+                        <div class="d-flex align-items-center">
+                            <img alt="โปรไฟล์" class="profile-img me-3"
+                                src="img/jan.jpg" />
+                            <div class="flex-grow-1">
+                                <h2 class="mb-0">แคป</h2>
+                            </div>
+                            <button
+                                class="btn logout-button ms-auto mt-2">ออกจากระบบ</button>
+                        </div>
+                    </div>
+                    <!-- Orders Section -->
+                    <div class="orders-section shadow-sm">
+                        <h3 class="mb-3">คำสั่งซื้อล่าสุด</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm">
+                                    <img alt="Essentials 3-Stripes"
+                                        class="card-img-top"
+                                        src="img/image 11.png" />
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Essentials
+                                            3-Stripes</h5>
+                                        <p class="card-text">x1 ฿360</p>
+                                        <div class="d-grid gap-2">
+                                            <button
+                                                class="btn btn-outline-secondary rounded-pill"><a
+                                                    href="help-center.html">ติดต่อผู้ขาย</a></button>
+                                            <button
+                                                class="btn btn-dark rounded-pill"><a
+                                                    href="#">ซื้ออีกครั้ง</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm">
+                                    <img alt="Air Jordan 1 Low Quai 54"
+                                        class="card-img-top"
+                                        src="img/image 4.png" />
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Air Jordan 1 Low
+                                            Quai 54</h5>
+                                        <p class="card-text">x1 ฿5,400</p>
+                                        <div class="d-grid gap-2">
+                                            <button
+                                                class="btn btn-outline-secondary rounded-pill"><a
+                                                    href="help-center.html">ติดต่อผู้ขาย</a></button>
+                                            <button
+                                                class="btn btn-dark rounded-pill"><a
+                                                    href="#">ซื้ออีกครั้ง</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="card h-100 shadow-sm">
+                                    <img alt="Nike Free RN NN"
+                                        class="card-img-top"
+                                        src="img/image 5.png" />
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Nike Free RN
+                                            NN</h5>
+                                        <p class="card-text">x1 ฿2,219</p>
+                                        <div class="d-grid gap-2">
+                                            <button
+                                                class="btn btn-outline-secondary rounded-pill"><a
+                                                    href="help-center.html">ติดต่อผู้ขาย</a></button>
+                                            <button
+                                                class="btn btn-dark rounded-pill"><a
+                                                    href="#">ซื้ออีกครั้ง</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <!-- Bootstrap JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

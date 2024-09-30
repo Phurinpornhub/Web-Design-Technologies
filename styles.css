@@ -1,36 +1,86 @@
 /* Footer */
 .footer {
-    background-color: #2f2f2f;
+    background-color: black;
     color: white;
-    padding: 30px 10px; /* ลด padding ให้เล็กลง */
-}
-
-.footer h4 {
-    font-size: 16px; /* ลดขนาด font ให้เล็กลง */
-    margin-bottom: 10px; /* ลด margin-bottom */
-}
-
-.footer p {
-    color: #ccc;
-    font-size: 14px; /* ลดขนาดตัวอักษรใน p */
+    padding: 50px 20px;
 }
 
 .footer-top {
     text-align: center;
-    margin-bottom: 20px; /* ลด margin-bottom ให้เล็กลง */
+}
+
+.footer-top h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.staff-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.staff-item {
+    text-align: center;
+}
+
+.staff-item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.staff-item p {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.staff-item span {
+    font-size: 16px;
+    color: #ccc;
 }
 
 .footer-bottom {
     display: flex;
     justify-content: space-around;
     border-top: 1px solid #444;
-    padding-top: 20px; /* ลด padding-top */
+    padding-top: 40px;
 }
 
 .footer-column {
-    width: 180px; /* ลดความกว้างของแต่ละคอลัมน์ */
+    width: 200px;
 }
 
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer-column p {
+    font-size: 16px;
+    color: #ccc;
+}
 .contact-info {
     display: flex;
     justify-content: center;

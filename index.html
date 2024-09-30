@@ -7,58 +7,30 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<style>
-  
-</style>
-</head>
-<body>
 </head>
 <body>
 <!-- Header -->
 <header class="header py-3 shadow-sm">
-  <div class="container d-flex justify-content-between align-items-center">
-    <div class="d-flex align-items-center">
-        <a href="/index.html"><img alt="Sportix Logo" class="logo" src="img/image.png" /></a>
-      <div class="input-group search-bar">
-        <input class="form-control rounded-pill" placeholder="ค้นหา..." type="text" />
-        <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
-      </div>
-    </div>
-    
-    <nav class="d-flex gap-4">
-      <!-- Menu 3 ชั้นสำหรับสินค้า -->
-      <div class="dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          สินค้า
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <!-- ชั้นที่ 2 -->
-          <li class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" href="#">ผู้หญิง</a>
-            <ul class="dropdown-menu">
-              <!-- ชั้นที่ 3 -->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Logo -->
+      <a class="navbar-brand" href="/index.html">
+        <img alt="Sportix Logo" class="logo" src="img/image.png" />
+      </a>
+
+      <!-- Hamburger button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">สินค้า</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
               <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="/clothes_children.html">เสื้อ</a></li>
-                  <li><a class="dropdown-item" href="#">กางเกง</a></li>
-                </ul>
-              </li>
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
-                  <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" href="#">ผู้ชาย</a>
-            <ul class="dropdown-menu">
-              <!-- ชั้นที่ 3 -->
-             <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                <a class="dropdown-item dropdown-toggle" href="#">ผู้หญิง</a>
                 <ul class="dropdown-menu">
 <<<<<<< HEAD
                   <li><a class="dropdown-item" href="clotheswomen.html">เสื้อ</a></li>
@@ -69,166 +41,92 @@
                 </ul>
               </li>
               <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                <a class="dropdown-item dropdown-toggle" href="#">ผู้ชาย</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
-                  <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                  <li><a class="dropdown-item" href="/clothesmen.html">เสื้อ</a></li>
+                  <li><a class="dropdown-item" href="#">กางเกง</a></li>
                 </ul>
               </li>
-            </ul>
-          </li>
-          <li class="dropdown-submenu">
-            <a class="dropdown-item dropdown-toggle" href="#">เด็ก</a>
-            <ul class="dropdown-menu">
-              <!-- ชั้นที่ 3 -->
-             <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">เด็ก</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="/clothes_children.html">เสื้อ</a></li>
                   <li><a class="dropdown-item" href="#">กางเกง</a></li>
                 </ul>
               </li>
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
-                  <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
-                </ul>
-              </li>
+              <li><a class="dropdown-item" href="sports_equipment.html">อุปกรณ์กีฬา</a></li>
             </ul>
           </li>
-          <li class="dropdown-submenu">
-            <a class="dropdown-item " href="sports_equipment.html">อุปกรณ์กีฬา</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="orderMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">การสั่งซื้อ</a>
+            <ul class="dropdown-menu" aria-labelledby="orderMenuLink">
+              <li><a class="dropdown-item" href="payment.html">แจ้งชำระเงิน</a></li>
+              <li><a class="dropdown-item" href="track_order.html">ตรวจสอบสถานะออเดอร์</a></li>
+            </ul>
           </li>
+          <li class="nav-item"><a class="nav-link" href="/news.html">ข่าวสาร</a></li>
+          <li class="nav-item"><a class="nav-link" href="/combined.html">ติดต่อเรา</a></li>
+          <li class="nav-item"><a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a></li>
         </ul>
       </div>
-      <!-- เมนูย่อยสำหรับการสั่งซื้อ -->
-      <div class="dropdown">
-        <a class="nav-link dropdown-toggle" href="#" role="button" id="orderMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          การสั่งซื้อ
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="orderMenuLink">
-          <li><a class="dropdown-item" href="payment.html">แจ้งชำระเงิน</a></li>
-          <li><a class="dropdown-item" href="track_order.html">ตรวจสอบสถานะออเดอร์</a></li>
-        </ul>
-      </div>
-      <!-- เมนูอื่น ๆ -->
-      <a class="nav-link" href="/news.html">ข่าวสาร</a>
-      <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
-      <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
-      <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
     </nav>
   </div>
 </header>
 
 <!-- Hero Section -->
 <section class="hero-section">
-<div class="container text-center">
-<img alt="SportX Banner" class="img-fluid" src="/img/Homepage.jpg"/>
-<h2 class="mt-4">อย่าให้ความเชื่อมั่นของคุณสูญเปล่า</h2>
-<p class="hero-text text-dark">
-        ในสนามที่เต็มไปด้วยเสียงเชียร์ ความตื่นเต้น และการทุ่มเทของนักกีฬา<br/>
-        ทุกการเคลื่อนไหวคือการทำศึกที่ไม่มีวันยอมแพ้
-      </p>
-<button class="btn-view-all btn-dark"><a href="/product.html">รายละเอียด</a></button>
-</div>
+  <div class="container text-center">
+    <img alt="SportX Banner" class="img-fluid" src="/img/Homepage.jpg"/>
+    <h2 class="mt-4">อย่าให้ความเชื่อมั่นของคุณสูญเปล่า</h2>
+    <p class="hero-text text-dark">
+      ในสนามที่เต็มไปด้วยเสียงเชียร์ ความตื่นเต้น และการทุ่มเทของนักกีฬา<br/>
+      ทุกการเคลื่อนไหวคือการทำศึกที่ไม่มีวันยอมแพ้
+    </p>
+    <button class="btn-view-all btn-dark"><a href="/product.html">รายละเอียด</a></button>
+  </div>
 </section>
-<!-- Recommended Products -->
-<section class="products-section">
-<div class="container">
-<h3 class="text-center">สินค้าแนะนำ</h3>
-<div class="row mt-4">
-<div class="col-md-4 product-item">
-<img alt="Product 1" class="img-fluid" src="/img/productjacket.jpg"/>
-<p>Jordan Renegade</p>
-<p>เสื้อแจ็คเก็ตน้ำหนักเบาผู้หญิง</p>
-<span>฿5,300</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Product 2" class="img-fluid" src="/img/productplant2.jpg"/>
-<p>Jordan Chicago</p>
-<p>กางเกงขายาวผู้หญิง</p>
-<span>฿3,400</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Product 3" class="img-fluid" src="/img/product3.jpg"/>
-<p>Air Jordan 1 Low</p>
-<p>รองเท้าผู้หญิง</p>
-<span>฿4,300</span>
-</div>
-</div>
-<div class="row mt-4">
-<div class="col-md-4 product-item">
-<img alt="Product 4" class="img-fluid" src="/img/product4.jpg"/>
-<p>Air Jordan 1 Low SE</p>
-<p>รองเท้าผู้ชาย</p>
-<span>฿4,900</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Product 5" class="img-fluid" src="/img/productplant.jpg"/>
-<p>Jordan Chicago (ชาย)</p>
-<button class="btn-view-all btn-dark"><a href="/product.html">ดูสินค้าทั้งหมด</a></button>
-</div>
-</div>
-</div>
+
 <!-- Footer -->
 <footer class="footer">
-<div class="footer-top">
-<h3>ติดต่อเรา</h3>
-<div class="contact-info">
-<div class="contact-item">
-<span class="icon">📞</span>
-<p>โทรศัพท์: 099-123-5567</p>
-</div>
-<div class="contact-item">
-<span class="icon">💬</span>
-<p>แอดไลน์: SportX</p>
-</div>
-</div>
-</div>
-<div class="staff-section">
-<div class="staff-item">
-<img alt="แพน" src="/img/Pan.jpg"/>
-<p>แพน</p>
-<span>ฝ่ายขาย</span>
-</div>
-<div class="staff-item">
-<img alt="เนย" src="/img/Noey.jpg"/>
-<p>เนย</p>
-<span>ฝ่ายขาย</span>
-</div>
-<div class="staff-item">
-<img alt="ภัทร" src="/img/Put.jpg"/>
-<p>ภัทร</p>
-<span>ฝ่ายจัดส่ง</span>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="footer-column">
-<h4>บริษัท SportX จำกัด</h4>
-<p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น
-                        ขอนแก่น 40000</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-<p>ชุดออกกำลังกาย</p>
-<p>อุปกรณ์เล่นกีฬา</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>นโยบายธุรกิจ</p>
-<p>นโยบายความเป็นส่วนตัว</p>
-<p>ขอคืนเงิน/สินค้า</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>ติดต่อเรา</p>
-<p>คำถามที่พบบ่อย</p>
-<p>วิธีดูแลสินค้า</p>
-</div>
-</div>
+  <div class="footer-top">
+    <h3>ติดต่อเรา</h3>
+    <div class="contact-info">
+      <div class="contact-item"><span class="icon">📞</span><p>โทรศัพท์: 099-123-5567</p></div>
+      <div class="contact-item"><span class="icon">💬</span><p>แอดไลน์: SportX</p></div>
+    </div>
+  </div>
+  <div class="staff-section">
+    <div class="staff-item"><img alt="แพน" src="/img/Pan.jpg"/><p>แพน</p><span>ฝ่ายขาย</span></div>
+    <div class="staff-item"><img alt="เนย" src="/img/Noey.jpg"/><p>เนย</p><span>ฝ่ายขาย</span></div>
+    <div class="staff-item"><img alt="ภัทร" src="/img/Put.jpg"/><p>ภัทร</p><span>ฝ่ายจัดส่ง</span></div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-column">
+      <h4>บริษัท SportX จำกัด</h4>
+      <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+    </div>
+    <div class="footer-column">
+      <h4>สินค้าต่างๆ</h4>
+      <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+      <p>ชุดออกกำลังกาย</p>
+      <p>อุปกรณ์เล่นกีฬา</p>
+    </div>
+    <div class="footer-column">
+      <h4>นโยบายต่างๆ</h4>
+      <p>นโยบายธุรกิจ</p>
+      <p>นโยบายความเป็นส่วนตัว</p>
+      <p>ขอคืนเงิน/สินค้า</p>
+    </div>
+    <div class="footer-column">
+      <h4>ช่วยเหลือ</h4>
+      <p>ติดต่อเรา</p>
+      <p>คำถามที่พบบ่อย</p>
+      <p>วิธีดูแลสินค้า</p>
+    </div>
+  </div>
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</section></body>
+</body>
 </html>

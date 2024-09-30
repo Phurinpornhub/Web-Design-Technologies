@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ที่อยู่จัดส่ง</title>
+<!-- Include Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
+<body>
+<!-- Header -->
+<header class="header py-3 shadow-sm">
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+<span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+</div>
+</div>
+<nav class="d-flex gap-4">
+    <a class="nav-link" href="#">สินค้า</a>
+    <a class="nav-link" href="#">การสั่งซื้อ</a>
+    <a class="nav-link" href="/news.html">ข่าวสาร</a>
+    <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
+    <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
+    <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
+    </nav>
+</div>
+</header>
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="breadcrumb-container my-3">
+<div class="container">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="homepage.html">หน้าแรก</a></li>
+<li class="breadcrumb-item"><a href="member.html">โปรไฟล์</a></li>
+<li aria-current="page" class="breadcrumb-item active">ที่อยู่จัดส่ง</li>
+</ol>
+</div>
+</nav>
+<!-- Main Content -->
+<div class="container">
+<div class="row">
+<!-- Sidebar -->
+<aside class="col-md-3 sidebar">
+<ul class="list-group shadow-sm">
+<li class="list-group-item"><a href="member.html">หน้าหลัก</a></li>
+<li class="list-group-item"><a href="orders.html">การซื้อของฉัน</a></li>
+<li class="list-group-item"><a href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
+<li class="list-group-item"><a href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
+<li class="list-group-item"><a href="account-settings.html">ตั้งค่าบัญชี</a></li>
+<li class="list-group-item active"><a class="text-white" href="delivery-addresses.html">ที่อยู่จัดส่ง</a></li>
+<li class="list-group-item"><a href="payment-settings.html">ตั้งค่าการชำระเงิน</a></li>
+</ul>
+</aside>
+<!-- Delivery Addresses Section -->
+<section class="col-md-9">
+<div class="address-card">
+<h5>เจน (ค่าเริ่มต้น)</h5>
+<p>123 หมู่ที่ 16 ถ.มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40002</p>
+<p>09xxxxxxxx</p>
+<a class="edit-link" href="edit-address.html">แก้ไข</a>
+</div>
+<div class="address-card">
+<h5>โมว์</h5>
+<p>239 ถ. ห้วยแก้ว ตำบลสุเทพ อำเภอเมืองเชียงใหม่ เชียงใหม่ 50200</p>
+<p>09xxxxxxxx</p>
+<a class="edit-link" href="edit-address.html">แก้ไข</a>
+</div>
+<div class="address-card">
+<h5>แคป</h5>
+<p>41 ตำบล บางเรียง อำเภอกันทรวิชัย มหาสารคาม 44150</p>
+<p>09xxxxxxxx</p>
+<a class="edit-link" href="edit-address.html">แก้ไข</a>
+</div>
+<div class="text-end mt-4">
+<button class="btn btn-save">บันทึก</button>
+</div>
+</section>
+</div>
+</div>
+<!-- Bootstrap JS and Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>

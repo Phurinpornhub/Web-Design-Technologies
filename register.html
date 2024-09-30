@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>สมัครสมาชิก</title>
+<!-- Include Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
+<body>
+<!-- Header -->
+<header class="header py-3 shadow-sm">
+<div class="container d-flex justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<img alt="Sportix Logo" class="logo" src="img/image.png"/>
+<div class="input-group search-bar">
+<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
+</div>
+</div>
+<nav class="d-flex gap-4">
+    <a class="nav-link" href="#">สินค้า</a>
+    <a class="nav-link" href="#">การสั่งซื้อ</a>
+    <a class="nav-link" href="/news.html">ข่าวสาร</a>
+    <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
+    <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
+    <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
+    </nav>
+</div>
+</header>
+<!-- Main Content -->
+<div class="container d-flex justify-content-center align-items-center">
+<div class="col-md-6">
+<div class="signup-form">
+<h1 class="text-center">สมัครสมาชิก</h1>
+<!-- Sign Up Form -->
+<form action="#" method="POST">
+<div class="mb-3">
+<label class="form-label" for="first-name">ชื่อ<span class="text-danger">*</span></label>
+<input class="form-control" id="first-name" placeholder="กรอกชื่อ" required="" type="text"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="last-name">นามสกุล<span class="text-danger">*</span></label>
+<input class="form-control" id="last-name" placeholder="กรอกนามสกุล" required="" type="text"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="email">Email<span class="text-danger">*</span></label>
+<input class="form-control" id="email" placeholder="กรอกอีเมล" required="" type="email"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="password">รหัสผ่าน<span class="text-danger">*</span></label>
+<input class="form-control" id="password" placeholder="กรอกรหัสผ่าน" required="" type="password"/>
+</div>
+<div class="mb-3">
+<label class="form-label" for="confirm-password">ยืนยันรหัสผ่าน<span class="text-danger">*</span></label>
+<input class="form-control" id="confirm-password" placeholder="กรอกยืนยันรหัสผ่าน" required="" type="password"/>
+</div>
+<!-- Gender Selection -->
+<div class="mb-3">
+<label class="form-label">เพศ</label>
+<div class="form-check">
+<input checked="" class="form-check-input" id="male" name="gender" type="radio" value="male"/>
+<label class="form-check-label" for="male">ชาย</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" id="female" name="gender" type="radio" value="female"/>
+<label class="form-check-label" for="female">หญิง</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" id="other" name="gender" type="radio" value="other"/>
+<label class="form-check-label" for="other">อื่นๆ</label>
+</div>
+</div>
+<!-- Date of Birth -->
+<div class="mb-3 form-date">
+<label class="form-label" for="dob">วันเกิด</label>
+<input class="form-control" id="dob" placeholder="DD/MM/YYYY" type="date"/>
+<i class="bi bi-calendar3"></i>
+</div>
+<p class="mt-3 text-center"></p>
+<a href="login.html">หากมีบัญชีแล้ว</a>
+
+<!-- Submit Button -->
+<button class="btn btn-submit" type="submit">ยืนยัน</button>
+</form>
+</div>
+</div>
+</div>
+<!-- Bootstrap JS and Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>

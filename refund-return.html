@@ -13,25 +13,107 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header py-3 shadow-sm">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <img alt="Sportix Logo" class="logo" src="img/image.png"/>
-                <div class="input-group search-bar ms-3">
-                    <input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
-                </div>
-            </div>
-            <nav class="d-flex gap-4">
-                <a class="nav-link" href="#">สินค้า</a>
-                <a class="nav-link" href="member.html">การสั่งซื้อ</a>
-                <a class="nav-link" href="/news.html">ข่าวสาร</a>
-                <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
-                <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
-                <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
-            </nav>
+<header class="header py-3 shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img alt="Sportix Logo" class="logo" src="img/image.png" />
+        <div class="input-group search-bar">
+          <input class="form-control rounded-pill" placeholder="ค้นหา..." type="text" />
+          <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
         </div>
-    </header>
-    
+      </div>
+      
+      <nav class="d-flex gap-4">
+        <!-- Menu 3 ชั้นสำหรับสินค้า -->
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            สินค้า
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <!-- ชั้นที่ 2 -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">ผู้หญิง</a>
+              <ul class="dropdown-menu">
+                <!-- ชั้นที่ 3 -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">ผู้ชาย</a>
+              <ul class="dropdown-menu">
+                <!-- ชั้นที่ 3 -->
+               <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">เด็ก</a>
+              <ul class="dropdown-menu">
+                <!-- ชั้นที่ 3 -->
+               <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item " href="#">อุปกรณ์กีฬา</a>
+            </li>
+          </ul>
+        </div>
+        <!-- เมนูย่อยสำหรับการสั่งซื้อ -->
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" id="orderMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            การสั่งซื้อ
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="orderMenuLink">
+            <li><a class="dropdown-item" href="payment.html">แจ้งชำระเงิน</a></li>
+            <li><a class="dropdown-item" href="track_order.html">ตรวจสอบสถานะออเดอร์</a></li>
+          </ul>
+        </div>
+        <!-- เมนูอื่น ๆ -->
+        <a class="nav-link" href="/news.html">ข่าวสาร</a>
+        <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
+        <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
+        <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
+      </nav>
+    </div>
+  </header>
     <!-- Breadcrumb -->
     <nav aria-label="breadcrumb" class="breadcrumb-container my-3">
         <div class="container">

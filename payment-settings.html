@@ -13,98 +13,164 @@
             href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&amp;display=swap"
             rel="stylesheet" />
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-            rel="stylesheet" />
-        <link href="styles.css" rel="stylesheet" /></head>
-    <body>
-        <!-- Header -->
-        <header class="header py-3 shadow-sm">
-            <div
-                class="container d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                    <img alt="Sportix Logo" class="logo" src="img/image.png" />
-                    <div class="input-group search-bar">
-                        <input class="form-control rounded-pill"
-                            placeholder="ค้นหา..." type="text" />
-                    </div>
-                </div>
-                <nav class="d-flex gap-4">
-                    <a class="nav-link" href="#">สินค้า</a>
-                    <a class="nav-link" href="#">การสั่งซื้อ</a>
-                    <a class="nav-link" href="/news.html">ข่าวสาร</a>
-                    <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
-                    <a class="nav-link" href="/shoping_card.html"><i
-                            class="bi bi-cart"></i></a>
-                    <a class="nav-link" href="/member.html"><i
-                            class="bi bi-person"></i></a>
-                </nav>
-            </div>
-        </header>
-        <!-- Breadcrumb -->
-        <nav aria-label="breadcrumb" class="breadcrumb-container my-3">
-            <div class="container">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="homepage.html">หน้าแรก</a></li>
-                    <li class="breadcrumb-item"><a href="member.html">โปรไฟล์</a></li>
-                    <li aria-current="page"
-                        class="breadcrumb-item active">ตั้งค่าการชำระเงิน</li>
-                </ol>
-            </div>
-        </nav>
-        <!-- Main Content -->
-        <div class="container">
-            <div class="row">
-                <!-- Sidebar -->
-                <aside class="col-md-3 sidebar">
-                    <ul class="list-group shadow-sm">
-                        <li class="list-group-item"><a
-                                href="member.html">หน้าหลัก</a></li>
-                        <li class="list-group-item"><a
-                                href="orders.html">การซื้อของฉัน</a></li>
-                        <li class="list-group-item"><a
-                                href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
-                        <li class="list-group-item"><a
-                                href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
-                        <li class="list-group-item"><a
-                                href="account-settings.html">ตั้งค่าบัญชี</a></li>
-                        <li class="list-group-item"><a
-                                href="delivery-addresses.html">ที่อยู่จัดส่ง</a></li>
-                        <li class="list-group-item active"><a class="text-white"
-                                href="payment-settings.html">ตั้งค่าการชำระเงิน</a></li>
-                    </ul>
-                </aside>
-                <!-- Payment Settings Section -->
-                <section class="col-md-9">
-                    <h4>บัตรเครดิต-บัตรเดบิต (1)</h4>
-                    <div class="payment-card shadow-sm">
-                        <div class="card-content">
-                            <img alt="MasterCard Logo"
-                                src="img/Mastercard.png" />
-                            <div class="ms-3">
-                                <h5>Mastercard</h5>
-                                <p>*99999</p>
-                            </div>
-                        </div>
-                        <button class="btn btn-add">+ เพิ่มบัตรใหม่</button>
-                    </div>
-                    <div class="payment-card shadow-sm">
-                        <div class="card-content">
-                            <img alt="Kasikorn Bank Logo" src="img/kk.png" />
-                            <div class="ms-3">
-                                <h5>กสิกรไทย</h5>
-                                <p>*99999</p>
-                            </div>
-                        </div>
-                        <button class="btn btn-add">+ เพิ่มบัญชีธนาคาร</button>
-                    </div>
-                </section>
-            </div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
+<body>
+<!-- Header -->
+<header class="header py-3 shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img alt="Sportix Logo" class="logo" src="img/image.png" />
+        <div class="input-group search-bar">
+          <input class="form-control rounded-pill" placeholder="ค้นหา..." type="text" />
+          <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
         </div>
-        <!-- Bootstrap JS and Icons -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
-    </body>
+      </div>
+      
+      <nav class="d-flex gap-4">
+        <!-- Menu 3 ชั้นสำหรับสินค้า -->
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            สินค้า
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <!-- ชั้นที่ 2 -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">ผู้หญิง</a>
+              <ul class="dropdown-menu">
+                <!-- ชั้นที่ 3 -->
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">ผู้ชาย</a>
+              <ul class="dropdown-menu">
+                <!-- ชั้นที่ 3 -->
+               <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">เด็ก</a>
+              <ul class="dropdown-menu">
+                <!-- ชั้นที่ 3 -->
+               <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item " href="#">อุปกรณ์กีฬา</a>
+            </li>
+          </ul>
+        </div>
+        <!-- เมนูย่อยสำหรับการสั่งซื้อ -->
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" id="orderMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            การสั่งซื้อ
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="orderMenuLink">
+            <li><a class="dropdown-item" href="payment.html">แจ้งชำระเงิน</a></li>
+            <li><a class="dropdown-item" href="track_order.html">ตรวจสอบสถานะออเดอร์</a></li>
+          </ul>
+        </div>
+        <!-- เมนูอื่น ๆ -->
+        <a class="nav-link" href="/news.html">ข่าวสาร</a>
+        <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
+        <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
+        <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
+      </nav>
+    </div>
+  </header>
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb" class="breadcrumb-container my-3">
+<div class="container">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="#">หน้าแรก</a></li>
+<li class="breadcrumb-item"><a href="#">โปรไฟล์</a></li>
+<li aria-current="page" class="breadcrumb-item active">ตั้งค่าการชำระเงิน</li>
+</ol>
+</div>
+</nav>
+<!-- Main Content -->
+<div class="container">
+<div class="row">
+<!-- Sidebar -->
+<aside class="col-md-3 sidebar">
+<ul class="list-group shadow-sm">
+<li class="list-group-item"><a href="member.html">หน้าหลัก</a></li>
+<li class="list-group-item"><a href="orders.html">การซื้อของฉัน</a></li>
+<li class="list-group-item"><a href="favorite-items.html">สินค้าที่ถูกใจ</a></li>
+<li class="list-group-item"><a href="refund-return.html">คืนเงิน/คืนสินค้า</a></li>
+<li class="list-group-item"><a href="account-settings.html">ตั้งค่าบัญชี</a></li>
+<li class="list-group-item"><a href="delivery-addresses.html">ที่อยู่จัดส่ง</a></li>
+<li class="list-group-item active"><a class="text-white" href="payment-settings.html">ตั้งค่าการชำระเงิน</a></li>
+</ul>
+</aside>
+<!-- Payment Settings Section -->
+<section class="col-md-9">
+<h4>บัตรเครดิต-บัตรเดบิต (1)</h4>
+<div class="payment-card shadow-sm">
+<div class="card-content">
+<img alt="MasterCard Logo" src="img/Mastercard.png"/>
+<div class="ms-3">
+<h5>Mastercard</h5>
+<p>*99999</p>
+</div>
+</div>
+<button class="btn btn-add">+ เพิ่มบัตรใหม่</button>
+</div>
+<div class="payment-card shadow-sm">
+<div class="card-content">
+<img alt="Kasikorn Bank Logo" src="img/กสิกรไทย.png"/>
+<div class="ms-3">
+<h5>กสิกรไทย</h5>
+<p>*99999</p>
+</div>
+</div>
+<button class="btn btn-add">+ เพิ่มบัญชีธนาคาร</button>
+</div>
+</section>
+</div>
+</div>
+<!-- Bootstrap JS and Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
 </html>

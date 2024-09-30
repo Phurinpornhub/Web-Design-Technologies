@@ -1,175 +1,266 @@
-
 <!DOCTYPE html>
 
 <html lang="th">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>สั่งซื้อ | SportX</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="checkout.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/></head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>สั่งซื้อ | SportX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="checkout.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
 
 <body>
-<!-- Header -->
-<header class="header py-3 shadow-sm">
-<div class="container d-flex justify-content-between align-items-center">
-<div class="d-flex align-items-center">
-<img alt="Sportix Logo" class="logo" src="img/image.png"/>
-<div class="input-group search-bar">
-<input class="form-control rounded-pill" placeholder="ค้นหา..." type="text"/>
-<span class="input-group-text bg-transparent border-0" id="search-icon"></span>
-</div>
-</div>
-<nav class="d-flex gap-4">
-    <a class="nav-link" href="#">สินค้า</a>
-    <a class="nav-link" href="#">การสั่งซื้อ</a>
-    <a class="nav-link" href="/news.html">ข่าวสาร</a>
-    <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
-    <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
-    <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
-    </nav>
-</div>
-</header>
-<!-- Checkout Section -->
-<section class="checkout container mt-5">
-<div class="row">
-<!-- Form Section -->
-<div class="col-md-8">
-<h1 class="mb-4">สั่งซื้อ</h1>
-<form action="#" method="post">
-<h4>รายละเอียดการจัดส่ง</h4>
-<div class="mb-3">
-<label class="form-label" for="firstName">ชื่อ <span class="text-danger">*</span></label>
-<input class="form-control" id="firstName" placeholder="กรอกชื่อ" required="" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="lastName">นามสกุล <span class="text-danger">*</span></label>
-<input class="form-control" id="lastName" placeholder="กรอกนามสกุล" required="" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="province">จังหวัด <span class="text-danger">*</span></label>
-<input class="form-control" id="province" placeholder="กรอกจังหวัด" required="" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="district">อำเภอ <span class="text-danger">*</span></label>
-<input class="form-control" id="district" placeholder="อำเภอ" required="" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="subDistrict">ตำบล</label>
-<input class="form-control" id="subDistrict" placeholder="กรอกตำบล" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="postalCode">รหัสไปรษณีย์ <span class="text-danger">*</span></label>
-<input class="form-control" id="postalCode" placeholder="กรอกรหัสไปรษณีย์" required="" type="text"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="phoneNumber">หมายเลขโทรศัพท์ <span class="text-danger">*</span></label>
-<input class="form-control" id="phoneNumber" placeholder="หมายเลขโทรศัพท์ 66+" required="" type="tel"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="email">Email</label>
-<input class="form-control" id="email" placeholder="กรอกอีเมลล์" type="email"/>
-</div>
-<div class="mb-3">
-<label class="form-label" for="notes">หมายเหตุ</label>
-<textarea class="form-control" id="notes" placeholder="หมายเหตุเพิ่มเติม" rows="3"></textarea>
-</div>
-</form>
-</div>
-<!-- Summary Section -->
-<div class="col-md-4">
-<div class="summary-box p-4 mb-4">
-<h4 class="mb-3">สรุปรายการ</h4>
-<ul class="list-unstyled">
-<li>Air Jordan 1 Low <span class="float-end">4,300 บาท</span></li>
-<li>Air Jordan 1 Low SE <span class="float-end">9,800 บาท</span></li>
-<li>Jordan Renegade <span class="float-end">5,300 บาท</span></li>
-</ul>
-<hr/>
-<p class="mb-3"><strong>ยอดรวม</strong> <span class="float-end">19,400 บาท</span></p>
-<h5 class="mb-3">เลือกแบบการชำระเงิน</h5>
-<div class="form-check">
-<input checked="" class="form-check-input" id="bankTransfer" name="paymentMethod" type="radio"/>
-<label class="form-check-label" for="bankTransfer">
+    <!-- Header -->
+    <header class="header py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img alt="Sportix Logo" class="logo" src="img/image.png" />
+                <div class="input-group search-bar">
+                    <input class="form-control rounded-pill" placeholder="ค้นหา..." type="text" />
+                    <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+                </div>
+            </div>
+
+            <nav class="d-flex gap-4">
+                <!-- Menu 3 ชั้นสำหรับสินค้า -->
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        สินค้า
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <!-- ชั้นที่ 2 -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">ผู้หญิง</a>
+                            <ul class="dropdown-menu">
+                                <!-- ชั้นที่ 3 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                                        <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                                        <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">ผู้ชาย</a>
+                            <ul class="dropdown-menu">
+                                <!-- ชั้นที่ 3 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                                        <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                                        <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">เด็ก</a>
+                            <ul class="dropdown-menu">
+                                <!-- ชั้นที่ 3 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">เสื้อ</a></li>
+                                        <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                                        <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item " href="#">อุปกรณ์กีฬา</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- เมนูย่อยสำหรับการสั่งซื้อ -->
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="orderMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        การสั่งซื้อ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="orderMenuLink">
+                        <li><a class="dropdown-item" href="payment.html">แจ้งชำระเงิน</a></li>
+                        <li><a class="dropdown-item" href="track_order.html">ตรวจสอบสถานะออเดอร์</a></li>
+                    </ul>
+                </div>
+                <!-- เมนูอื่น ๆ -->
+                <a class="nav-link" href="/news.html">ข่าวสาร</a>
+                <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
+                <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
+                <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
+            </nav>
+        </div>
+    </header>
+    <!-- Checkout Section -->
+    <section class="checkout container mt-5">
+        <div class="row">
+            <!-- Form Section -->
+            <div class="col-md-8">
+                <h1 class="mb-4">สั่งซื้อ</h1>
+                <form action="#" method="post">
+                    <h4>รายละเอียดการจัดส่ง</h4>
+                    <div class="mb-3">
+                        <label class="form-label" for="firstName">ชื่อ <span class="text-danger">*</span></label>
+                        <input class="form-control" id="firstName" placeholder="กรอกชื่อ" required="" type="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="lastName">นามสกุล <span class="text-danger">*</span></label>
+                        <input class="form-control" id="lastName" placeholder="กรอกนามสกุล" required="" type="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="province">จังหวัด <span class="text-danger">*</span></label>
+                        <input class="form-control" id="province" placeholder="กรอกจังหวัด" required="" type="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="district">อำเภอ <span class="text-danger">*</span></label>
+                        <input class="form-control" id="district" placeholder="อำเภอ" required="" type="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="subDistrict">ตำบล</label>
+                        <input class="form-control" id="subDistrict" placeholder="กรอกตำบล" type="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="postalCode">รหัสไปรษณีย์ <span
+                                class="text-danger">*</span></label>
+                        <input class="form-control" id="postalCode" placeholder="กรอกรหัสไปรษณีย์" required=""
+                            type="text" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="phoneNumber">หมายเลขโทรศัพท์ <span
+                                class="text-danger">*</span></label>
+                        <input class="form-control" id="phoneNumber" placeholder="หมายเลขโทรศัพท์ 66+" required=""
+                            type="tel" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email</label>
+                        <input class="form-control" id="email" placeholder="กรอกอีเมลล์" type="email" />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="notes">หมายเหตุ</label>
+                        <textarea class="form-control" id="notes" placeholder="หมายเหตุเพิ่มเติม" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <!-- Summary Section -->
+            <div class="col-md-4">
+                <div class="summary-box p-4 mb-4">
+                    <h4 class="mb-3">สรุปรายการ</h4>
+                    <ul class="list-unstyled">
+                        <li>Air Jordan 1 Low <span class="float-end">4,300 บาท</span></li>
+                        <li>Air Jordan 1 Low SE <span class="float-end">9,800 บาท</span></li>
+                        <li>Jordan Renegade <span class="float-end">5,300 บาท</span></li>
+                    </ul>
+                    <hr />
+                    <p class="mb-3"><strong>ยอดรวม</strong> <span class="float-end">19,400 บาท</span></p>
+                    <h5 class="mb-3">เลือกแบบการชำระเงิน</h5>
+                    <div class="form-check">
+                        <input checked="" class="form-check-input" id="bankTransfer" name="paymentMethod"
+                            type="radio" />
+                        <label class="form-check-label" for="bankTransfer">
                             เก็บเงินปลายทาง
                         </label>
-</div>
-<div class="form-check">
-<input class="form-check-input" id="creditCard" name="paymentMethod" type="radio"/>
-<label class="form-check-label" for="creditCard">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="creditCard" name="paymentMethod" type="radio" />
+                        <label class="form-check-label" for="creditCard">
                             บัตรเครดิต - บัตรเดบิต
                         </label>
-</div>
-<div class="form-check">
-<input class="form-check-input" id="bankSlip" name="paymentMethod" type="radio"/>
-<label class="form-check-label" for="bankSlip">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="bankSlip" name="paymentMethod" type="radio" />
+                        <label class="form-check-label" for="bankSlip">
                             โอนผ่านแอปธนาคาร
                         </label>
-</div>
-<button class="btn-view-all">สั่งซื้อสินค้า</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer Section -->
-<footer class="footer">
-<div class="footer-top">
-<h3>ติดต่อเรา</h3>
-<div class="contact-info">
-<div class="contact-item">
-<span class="icon">📞</span>
-<p>โทรศัพท์: 099-123-5567</p>
-</div>
-<div class="contact-item">
-<span class="icon">💬</span>
-<p>แอดไลน์: SportX</p>
-</div>
-</div>
-</div>
-<div class="staff-section">
-<div class="staff-item">
-<img alt="แพน" src="/img/Pan.jpg"/>
-<p>แพน</p>
-<span>ฝ่ายขาย</span>
-</div>
-<div class="staff-item">
-<img alt="เนย" src="/img/Noey.jpg"/>
-<p>เนย</p>
-<span>ฝ่ายขาย</span>
-</div>
-<div class="staff-item">
-<img alt="ภัทร" src="/img/Put.jpg"/>
-<p>ภัทร</p>
-<span>ฝ่ายจัดส่ง</span>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="footer-column">
-<h4>บริษัท SportX จำกัด</h4>
-<p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-<p>ชุดออกกำลังกาย</p>
-<p>อุปกรณ์เล่นกีฬา</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>นโยบายธุรกิจ</p>
-<p>นโยบายความเป็นส่วนตัว</p>
-<p>ขอคืนเงิน/สินค้า</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>ติดต่อเรา</p>
-<p>คำถามที่พบบ่อย</p>
-<p>วิธีดูแลสินค้า</p>
-</div>
-</div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                    </div>
+                    <button class="btn-view-all">สั่งซื้อสินค้า</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <h3>ติดต่อเรา</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <p>โทรศัพท์: 099-123-5567</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">💬</span>
+                    <p>แอดไลน์: SportX</p>
+                </div>
+            </div>
+        </div>
+        <div class="staff-section">
+            <div class="staff-item">
+                <img alt="แพน" src="/img/Pan.jpg" />
+                <p>แพน</p>
+                <span>ฝ่ายขาย</span>
+            </div>
+            <div class="staff-item">
+                <img alt="เนย" src="/img/Noey.jpg" />
+                <p>เนย</p>
+                <span>ฝ่ายขาย</span>
+            </div>
+            <div class="staff-item">
+                <img alt="ภัทร" src="/img/Put.jpg" />
+                <p>ภัทร</p>
+                <span>ฝ่ายจัดส่ง</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4>บริษัท SportX จำกัด</h4>
+                <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+                <p>ชุดออกกำลังกาย</p>
+                <p>อุปกรณ์เล่นกีฬา</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>นโยบายธุรกิจ</p>
+                <p>นโยบายความเป็นส่วนตัว</p>
+                <p>ขอคืนเงิน/สินค้า</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>ติดต่อเรา</p>
+                <p>คำถามที่พบบ่อย</p>
+                <p>วิธีดูแลสินค้า</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

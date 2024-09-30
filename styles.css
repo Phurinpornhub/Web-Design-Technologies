@@ -426,7 +426,7 @@ header {
 }
 
 
-/* Styles from homepage.html */
+/* Styles from index.html */
 
 
 /* Global Styling */
@@ -471,8 +471,9 @@ header {
 
 /* Hero Section */
 .hero-section {
+    display: flex;
     background-color: #fff;
-    text-align: center;
+    justify-content: center;
     padding: 60px 0;
 }
 

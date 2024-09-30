@@ -1,280 +1,288 @@
 <!DOCTYPE html>
 
 <html lang="th">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>สินค้า | SportX</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="products.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/></head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>สินค้า | SportX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="products.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
 
 <body>
-<!-- Header -->
-<header class="header py-3 shadow-sm">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <img alt="Sportix Logo" class="logo" src="img/image.png" />
-        <div class="input-group search-bar">
-          <input class="form-control rounded-pill" placeholder="ค้นหา..." type="text" />
-          <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+    <!-- Header -->
+    <header class="header py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img alt="Sportix Logo" class="logo" src="img/image.png" />
+                <div class="input-group search-bar">
+                    <input class="form-control rounded-pill" placeholder="ค้นหา..." type="text" />
+                    <span class="input-group-text bg-transparent border-0" id="search-icon"></span>
+                </div>
+            </div>
+
+            <nav class="d-flex gap-4">
+                <!-- Menu 3 ชั้นสำหรับสินค้า -->
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        สินค้า
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <!-- ชั้นที่ 2 -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">ผู้หญิง</a>
+                            <ul class="dropdown-menu">
+                                <!-- ชั้นที่ 3 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="clotheswomen.html">เสื้อ</a></li>
+                                        <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                                        <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">ผู้ชาย</a>
+                            <ul class="dropdown-menu">
+                                <!-- ชั้นที่ 3 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="clotheswomen.html">เสื้อ</a></li>
+                                        <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                                        <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#">เด็ก</a>
+                            <ul class="dropdown-menu">
+                                <!-- ชั้นที่ 3 -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="clotheswomen.html">เสื้อ</a></li>
+                                        <li><a class="dropdown-item" href="#">กางเกง</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
+                                        <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item " href="sports_equipment.html">อุปกรณ์กีฬา</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- เมนูย่อยสำหรับการสั่งซื้อ -->
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" id="orderMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        การสั่งซื้อ
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="orderMenuLink">
+                        <li><a class="dropdown-item" href="payment.html">แจ้งชำระเงิน</a></li>
+                        <li><a class="dropdown-item" href="track_order.html">ตรวจสอบสถานะออเดอร์</a></li>
+                    </ul>
+                </div>
+                <!-- เมนูอื่น ๆ -->
+                <a class="nav-link" href="/news.html">ข่าวสาร</a>
+                <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
+                <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
+                <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
+            </nav>
         </div>
-      </div>
-      
-      <nav class="d-flex gap-4">
-        <!-- Menu 3 ชั้นสำหรับสินค้า -->
-        <div class="dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            สินค้า
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <!-- ชั้นที่ 2 -->
-            <li class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">ผู้หญิง</a>
-              <ul class="dropdown-menu">
-                <!-- ชั้นที่ 3 -->
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
-                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
-                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">ผู้ชาย</a>
-              <ul class="dropdown-menu">
-                <!-- ชั้นที่ 3 -->
-               <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
-                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
-                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown-submenu">
-              <a class="dropdown-item dropdown-toggle" href="#">เด็ก</a>
-              <ul class="dropdown-menu">
-                <!-- ชั้นที่ 3 -->
-               <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">เสื้อผ้า</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">เสื้อ</a></li>
-                    <li><a class="dropdown-item" href="#">กางเกง</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a class="dropdown-item dropdown-toggle" href="#">รองเท้า</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">รองเท้าวิ่ง</a></li>
-                    <li><a class="dropdown-item" href="#">รองเท้าลำลอง</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown-submenu">
-              <a class="dropdown-item " href="sports_equipment.html">อุปกรณ์กีฬา</a>
-            </li>
-          </ul>
-        </div>
-        <!-- เมนูย่อยสำหรับการสั่งซื้อ -->
-        <div class="dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" id="orderMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            การสั่งซื้อ
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="orderMenuLink">
-            <li><a class="dropdown-item" href="payment.html">แจ้งชำระเงิน</a></li>
-            <li><a class="dropdown-item" href="track_order.html">ตรวจสอบสถานะออเดอร์</a></li>
-          </ul>
-        </div>
-        <!-- เมนูอื่น ๆ -->
-        <a class="nav-link" href="/news.html">ข่าวสาร</a>
-        <a class="nav-link" href="/combined.html">ติดต่อเรา</a>
-        <a class="nav-link" href="/shoping_card.html"><i class="bi bi-cart"></i></a>
-        <a class="nav-link" href="/member.html"><i class="bi bi-person"></i></a>
-      </nav>
+    </header>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container container mt-4">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">หน้าแรก</a></li>
+                <li class="breadcrumb-item"><a href="/product.html">สินค้า</a></li>
+                <li class="breadcrumb-item"><a href="/product.html">ผู้หญิง</a></li>
+                <li aria-current="page" class="breadcrumb-item active">เสื้อผ้า</li>
+            </ol>
+        </nav>
     </div>
-  </header>
-<!-- Breadcrumb -->
-<div class="breadcrumb-container container mt-4">
-<nav aria-label="breadcrumb">
-<ol class="breadcrumb">
-<li class="breadcrumb-item"><a href="/index.html">หน้าแรก</a></li>
-<li aria-current="page" class="breadcrumb-item active">สินค้า</li>
-</ol>
-</nav>
-</div>
-<!-- Main Product Section -->
-<section class="products-section container">
-<h1 class="mb-4">สินค้า</h1>
-<div class="row">
-<!-- Filters Section -->
-<div class="col-md-3">
-<div class="filter-box p-3 bg-light">
-<h4>คัดกรองสินค้า</h4>
-<form>
-<label>ราคา</label>
-<div class="form-check">
-<input class="form-check-input" id="lowPrice" name="priceFilter" type="radio"/>
-<label class="form-check-label" for="lowPrice">ราคาต่ำสุด</label>
-</div>
-<div class="form-check">
-<input class="form-check-input" id="highPrice" name="priceFilter" type="radio"/>
-<label class="form-check-label" for="highPrice">ราคาสูงสุด</label>
-</div>
-<label>สินค้า</label>
-<div class="form-check">
-<input class="form-check-input" id="bestSeller" type="checkbox"/>
-<label class="form-check-label" for="bestSeller">สินค้าขายดี</label>
-</div>
-<div class="form-check">
-<input class="form-check-input" id="newArrival" type="checkbox"/>
-<label class="form-check-label" for="newArrival">ใหม่ล่าสุด</label>
-</div>
-</form>
-</div>
-</div>
-<!-- Products Section -->
-<div class="col-md-9">
-<h2>เชิ้ตที่เข้าคู่กัน</h2>
-<div class="row product-list mb-4">
-<div class="col-md-4 product-item">
-<a href="/productdetail.html"><img alt="Product 1" class="img-fluid" src="/img/productbag.jpg"/></a>
-<p>Nike Heritage</p>
-<p>เป้สะพายหลัง Eugene สำหรับฤดูหนาว</p>
-<span>฿2,300</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Product 2" class="img-fluid" src="/img/productplant2.jpg"/>
-<p>Jordan Chicago</p>
-<p>กางเกงขายาวผู้หญิง</p>
-<span>฿3,400</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Product 3" class="img-fluid" src="/img/product3.jpg"/>
-<p>Air Jordan 1 Low</p>
-<p>รองเท้าผู้หญิง</p>
-<span>฿4,300</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Product 4" class="img-fluid" src="/img/product4.jpg"/>
-<p>Air Jordan 1 Low SE</p>
-<p>รองเท้าผู้ชาย</p>
-<span>฿4,900</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Product 5" class="img-fluid" src="/img/productplant.jpg"/>
-<p>Jordan Chicago (ชาย)</p>
-<p>กางเกงขายาวผู้ชาย</p>
-<span>฿3,400</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Product 6" class="img-fluid" src="/img/product6.jpg"/>
-<p>Jordan Stadium 90</p>
-<p>รองเท้าผู้หญิง</p>
-<span>฿5,400</span>
-</div>
-</div>
-<button class="btn-view-all">ดูเพิ่มเติม</button>
-<h2>อุปกรณ์กีฬา</h2>
-<div class="row product-list mb-4">
-<div class="col-md-4 product-item">
-<img alt="Sport Equipment 1" class="img-fluid" src="/img/YONEX_Astrox_99_Play.jpg"/>
-<p>YONEX Astrox 99 Play</p>
-<p>ไม้แบดมินตัน</p>
-<span>฿1,870</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Sport Equipment 2" class="img-fluid" src="/img/S_SPORTS_SPQ123TENNIS4.jpg"/>
-<p>S SPORTS SPQ123TENNIS4 ลูกเทนนิส</p>
-<p>ลูกเทนนิส (แพ็ค 3 ลูก)</p>
-<span>฿260</span>
-</div>
-<div class="col-md-4 product-item">
-<img alt="Sport Equipment 3" class="img-fluid" src="/img/MOLTEN_B7G4500.jpg"/>
-<p>MOLTEN B7G4500 ลูกบาสเกตบอล</p>
-<p>ลูกบาสเกตบอล</p>
-<span>฿1,990</span>
-</div>
-</div>
-<button class="btn-view-all">ดูเพิ่มเติม</button>
-</div>
-</div>
-</section>
-<!-- Footer Section -->
-<footer class="footer">
-<div class="footer-top">
-<h3>ติดต่อเรา</h3>
-<div class="contact-info">
-<div class="contact-item">
-<span class="icon">📞</span>
-<p>โทรศัพท์: 099-123-5567</p>
-</div>
-<div class="contact-item">
-<span class="icon">💬</span>
-<p>แอดไลน์: SportX</p>
-</div>
-</div>
-</div>
-<div class="staff-section">
-<div class="staff-item">
-<img alt="แพน" src="/img/Pan.jpg"/>
-<p>แพน</p>
-<span>ฝ่ายขาย</span>
-</div>
-<div class="staff-item">
-<img alt="เนย" src="/img/Noey.jpg"/>
-<p>เนย</p>
-<span>ฝ่ายขาย</span>
-</div>
-<div class="staff-item">
-<img alt="ภัทร" src="/img/Put.jpg"/>
-<p>ภัทร</p>
-<span>ฝ่ายจัดส่ง</span>
-</div>
-</div>
-<div class="footer-bottom">
-<div class="footer-column">
-<h4>บริษัท SportX จำกัด</h4>
-<p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
-<p>ชุดออกกำลังกาย</p>
-<p>อุปกรณ์เล่นกีฬา</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>นโยบายธุรกิจ</p>
-<p>นโยบายความเป็นส่วนตัว</p>
-<p>ขอคืนเงิน/สินค้า</p>
-</div>
-<div class="footer-column">
-<h4>สินค้าต่างๆ</h4>
-<p>ติดต่อเรา</p>
-<p>คำถามที่พบบ่อย</p>
-<p>วิธีดูแลสินค้า</p>
-</div>
-</div>
-</footer>
+    <!-- Main Product Section -->
+    <section class="products-section container">
+        <h1 class="mb-4">สินค้า</h1>
+        <div class="row">
+            <!-- Filters Section -->
+            <div class="col-md-3">
+                <div class="filter-box p-3 bg-light">
+                    <h4>คัดกรองสินค้า</h4>
+                    <form>
+                        <label>ราคา</label>
+                        <div class="form-check">
+                            <input class="form-check-input" id="lowPrice" name="priceFilter" type="radio" />
+                            <label class="form-check-label" for="lowPrice">ราคาต่ำสุด</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="highPrice" name="priceFilter" type="radio" />
+                            <label class="form-check-label" for="highPrice">ราคาสูงสุด</label>
+                        </div>
+                        <label>สินค้า</label>
+                        <div class="form-check">
+                            <input class="form-check-input" id="bestSeller" type="checkbox" />
+                            <label class="form-check-label" for="bestSeller">สินค้าขายดี</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="newArrival" type="checkbox" />
+                            <label class="form-check-label" for="newArrival">ใหม่ล่าสุด</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Products Section -->
+            <div class="col-md-9">
+                <h2>เซ็ตที่เข้าคู่กัน</h2>
+                <div class="row product-list mb-4">
+                    <div class="col-md-4 product-item">
+                        <a href="/productdetail.html"><img alt="Product 1" class="img-fluid"
+                                src="/img/Tartan_Collegiate_Jacket_Blue_IX1040_21_model.avif" /></a>
+                        <p>Tartan Collegiate Jacket</p>
+                        <p>เสื้อแจ็กเก็ต</p>
+                        <span>฿5,400</span>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <img alt="Product 2" class="img-fluid" src="/img/Adizero_Running_Lightweight_Jacket_Women_White_IY5079_HM1.jpg" />
+                        <p>Jacket Women</p>
+                        <p>เสื้อแจ็กเก็ต</p>
+                        <span>฿3,400</span>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <img alt="Product 3" class="img-fluid" src="/img/Adicolor_70s_Montreal_Track_Top_Brown_JL9629_21_model.avif" />
+                        <p>Adicolor 70s</p>
+                        <p>Montreal Track Top</p>
+                        <span>฿3,400</span>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <img alt="Product 4" class="img-fluid" src="/img/AS+W+NK+SWSH+MED+SPT+BRA.png" />
+                        <p>Nike Swoosh Medium Support</p>
+                        <p>สปอร์ตบราผู้หญิงเสริมฟองน้ำ</p>
+                        <span>฿1,400</span>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <img alt="Product 5" class="img-fluid" src="/img/abc.jpg" />
+                        <p>Nike Sportswear Phoenix Fleece</p>
+                        <p>เสื้อวอร์มคอกลมผ้าเฟรนช์เทรีขนาดโอเวอร์-โอเวอร์ไซส์ผู้หญิง</p>
+                        <span>฿1,949</span>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <img alt="Product 6" class="img-fluid" src="/img/cde.jpg" />
+                        <p>Jordan Stadium 90</p>
+                        <p>รองเท้าผู้หญิง</p>
+                        <span>฿5,400</span>
+                    </div>
+                </div>
+                <button class="btn-view-all">ดูเพิ่มเติม</button>
+                <h2>สินค้าที่คุณอาจสนใจ</h2>
+                <div class="row product-list mb-4">
+                    <div class="col-md-4 product-item">
+                        <img alt="Sport Equipment 1" class="img-fluid" src="/img/Loose_Crop_Polo_Shirt_Blue_IX3543_01_laydown.avif" />
+                        <p>Loose Crop Polo Shirt</p>
+                        <p>เสื้อครอปโปโล</p>
+                        <span>฿1,800</span>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <img alt="Sport Equipment 2" class="img-fluid" src="/img/Baby_Tee_Grey_JN3013_01_laydown.avif" />
+                        <p>Baby Tee</p>
+                        <p>เสื้อ</p>
+                        <span>฿1,300</span>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <img alt="Sport Equipment 3" class="img-fluid" src="/img/Les_Mills_Graphic_Tee_Red_JJ3152_01_laydown.avif" />
+                        <p>Les Mills Graphic Tee</p>
+                        <p>เสื้อยืด</p>
+                        <span>฿1,600</span>
+                    </div>
+                </div>
+                <button class="btn-view-all">ดูเพิ่มเติม</button>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <h3>ติดต่อเรา</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="icon">📞</span>
+                    <p>โทรศัพท์: 099-123-5567</p>
+                </div>
+                <div class="contact-item">
+                    <span class="icon">💬</span>
+                    <p>แอดไลน์: SportX</p>
+                </div>
+            </div>
+        </div>
+        <div class="staff-section">
+            <div class="staff-item">
+                <img alt="แพน" src="/img/Pan.jpg" />
+                <p>แพน</p>
+                <span>ฝ่ายขาย</span>
+            </div>
+            <div class="staff-item">
+                <img alt="เนย" src="/img/Noey.jpg" />
+                <p>เนย</p>
+                <span>ฝ่ายขาย</span>
+            </div>
+            <div class="staff-item">
+                <img alt="ภัทร" src="/img/Put.jpg" />
+                <p>ภัทร</p>
+                <span>ฝ่ายจัดส่ง</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-column">
+                <h4>บริษัท SportX จำกัด</h4>
+                <p>123 หมู่ที่ 16 ถ. มิตรภาพ ตำบลในเมือง อำเภอเมืองขอนแก่น ขอนแก่น 40000</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>รองเท้าออกกำลังกาย/เล่นกีฬา</p>
+                <p>ชุดออกกำลังกาย</p>
+                <p>อุปกรณ์เล่นกีฬา</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>นโยบายธุรกิจ</p>
+                <p>นโยบายความเป็นส่วนตัว</p>
+                <p>ขอคืนเงิน/สินค้า</p>
+            </div>
+            <div class="footer-column">
+                <h4>สินค้าต่างๆ</h4>
+                <p>ติดต่อเรา</p>
+                <p>คำถามที่พบบ่อย</p>
+                <p>วิธีดูแลสินค้า</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

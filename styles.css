@@ -1,3 +1,77 @@
+/* Footer */
+.footer {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 30px 10px; /* ลด padding ให้เล็กลง */
+}
+
+.footer h4 {
+    font-size: 16px; /* ลดขนาด font ให้เล็กลง */
+    margin-bottom: 10px; /* ลด margin-bottom */
+}
+
+.footer p {
+    color: #ccc;
+    font-size: 14px; /* ลดขนาดตัวอักษรใน p */
+}
+
+.footer-top {
+    text-align: center;
+    margin-bottom: 20px; /* ลด margin-bottom ให้เล็กลง */
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #444;
+    padding-top: 20px; /* ลด padding-top */
+}
+
+.footer-column {
+    width: 180px; /* ลดความกว้างของแต่ละคอลัมน์ */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* ลดช่องว่างระหว่าง contact-item */
+    margin-bottom: 20px; /* ลด margin-bottom */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* ลดขนาด font */
+}
+
+.icon {
+    font-size: 20px; /* ลดขนาด icon */
+    margin-right: 8px;
+}
+
+.staff-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* ลดช่องว่างระหว่าง staff-item */
+    margin-bottom: 30px; /* ลด margin-bottom */
+}
+
+.staff-item img {
+    width: 100px; /* ลดขนาดภาพ */
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.staff-item p {
+    font-size: 16px; /* ลดขนาด font */
+    margin: 8px 0 3px;
+}
+
+.staff-item span {
+    font-size: 14px;
+    color: #ccc;
+}
 /* Styles from checkout_product.html */
 
 
@@ -93,83 +167,6 @@ header {
 
 .nav .nav-link:hover {
     color: #777;
-}
-
-/* Footer */
-.footer {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer p {
-    color: #ccc;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
 }
 
 /* Button Styling */
@@ -551,104 +548,6 @@ header {
     box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
     transform: translateY(-2px);
 }
-
-/* Footer */
-.footer {
-    background-color: #1e1e1e;
-    color: white;
-    padding: 40px 0;
-}
-
-.footer a {
-    color: white;
-}
-
-.footer .footer-heading {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.footer-bottom {
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    text-align: center;
-    color: #bbb;
-}
-
-/* Footer Sections */
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-
-/* Footer Contact */
-.footer-top {
-    text-align: center;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
 
 /* Styles from product.html */
 
@@ -1105,16 +1004,6 @@ header {
     /* สีของ breadcrumb ที่ active */
 }
 
-
-/* Footer Logo */
-.footer-logo {
-    width: 250px;
-    display: block;
-    margin: 50px auto;
-}
-
-
-
 /* Styles from forgot-password.html */
 
 
@@ -1270,90 +1159,6 @@ header {
     color: #555;
 }
 
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-top h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-
 
 /* Styles from product_refun.html */
 
@@ -1408,23 +1213,6 @@ h2 {
     margin-top: 20px;
     font-size: 18px;
 }
-
-/* Footer */
-.footer {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 40px 20px;
-}
-
-.footer h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer p {
-    color: #ccc;
-}
-
 
 
 /* Styles from payment-settings.html */
@@ -1644,95 +1432,6 @@ button {
     margin-top: 20px;
     border-radius: 50px;
 }
-
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-top h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-
-
-
-
-
 
 /* Styles from register.html */
 
@@ -2145,93 +1844,6 @@ header {
     border-radius: 50px;
 }
 
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-top h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-
-
-
-
 /* Styles from news.html */
 
 
@@ -2314,21 +1926,6 @@ header {
 
 }
 
-/* Footer */
-.footer {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 40px 20px;
-}
-
-.footer h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer p {
-    color: #ccc;
-}
 
 
 /* Styles from my-purchases-faq.html */
@@ -2829,91 +2426,6 @@ button {
     border-radius: 0px;
 } */
 
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-top h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-
-
 /* Styles from account-settings.html */
 
 
@@ -3188,92 +2700,6 @@ header {
     color: black;
 }
 
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-top h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-
-
-
 
 /* Styles from order_summary.html */
 
@@ -3372,92 +2798,6 @@ header {
     text-decoration: underline;
     text-decoration: none;
 }
-
-/* Footer */
-.footer {
-    background-color: black;
-    color: white;
-    padding: 50px 20px;
-}
-
-.footer-top {
-    text-align: center;
-}
-
-.footer-top h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin-bottom: 40px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-}
-
-.icon {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
-.staff-section {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.staff-item {
-    text-align: center;
-}
-
-.staff-item img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.staff-item p {
-    font-size: 18px;
-    margin: 10px 0 5px;
-}
-
-.staff-item span {
-    font-size: 16px;
-    color: #ccc;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-around;
-    border-top: 1px solid #444;
-    padding-top: 40px;
-}
-
-.footer-column {
-    width: 200px;
-}
-
-.footer-column h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #fff;
-}
-
-.footer-column p {
-    font-size: 16px;
-    color: #ccc;
-}
-
-
 
 /* Styles from combined.html */
 
@@ -3574,23 +2914,6 @@ header {
     border: none;
 }
 
-/* Footer */
-.footer {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 40px 20px;
-}
-
-.footer h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer p {
-    color: #ccc;
-}
-
-
 
 /* Styles from refun.html */
 
@@ -3653,24 +2976,6 @@ header {
     margin-top: 20px;
     font-size: 18px;
 }
-
-/* Footer */
-.footer {
-    background-color: #2f2f2f;
-    color: white;
-    padding: 40px 20px;
-}
-
-.footer h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.footer p {
-    color: #ccc;
-}
-
-
 
 /* Styles from track_status.html */
 

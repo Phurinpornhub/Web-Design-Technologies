@@ -310,24 +310,7 @@ button:hover,
 /* Styles from productdetail.html */
 
 
-/* Global Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Kanit', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-/* Header */
-header {
-    padding: 15px 0;
-    background-color: #fff;
-}
 
 .logo {
     width: 100px;
@@ -645,24 +628,7 @@ button {
 /* Styles from edit-address.html */
 
 
-/* Global Styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: 'Kanit', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-/* Header */
-header {
-    padding: 15px 0;
-    background-color: #fff;
-}
 
 .logo {
     width: 100px;
